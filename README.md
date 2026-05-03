@@ -49,6 +49,12 @@ name may still differ until a later filesystem rename.
 - `docs/`: repo-oriented technical documents
 - `scripts/`: local setup, run, and smoke-test scripts
 
+## Git Branching
+
+- `develop` is the active integration and development branch
+- `main` is kept as the stable branch
+- the GitHub default branch is now `develop`
+
 ## Frontend Structure
 
 The current web app is intentionally split so the main runtime files do
@@ -56,7 +62,7 @@ not become giant again:
 
 - `frontend/src/App.tsx` handles route and shared-state orchestration
 - `frontend/src/app/pages/` holds route surfaces and page-local panels
-- `frontend/src/app/types.ts`, `constants.ts`, `utils.ts`, `ui.tsx`,
+- `frontend/src/app/types.ts`, `constants.ts`, `utils/`, `ui.tsx`,
   and `diagrams.tsx` hold shared app concerns
 - `frontend/src/styles/workspace.css` is only the style entrypoint and
   imports smaller partials:
@@ -102,7 +108,8 @@ instead of presenting every model as equivalent.
 
 ## Persistent Project Memory
 
-Planning and state now live inside the repository:
+Planning and state now live in the repository working tree as local-only
+memory outside Git tracking:
 
 - [wip/session-start.md](wip/session-start.md)
 - [wip/master-plan.md](wip/master-plan.md)
