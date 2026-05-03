@@ -194,6 +194,15 @@ is now interpreted explicitly rather than preserved as a vague archive:
 - [legacy/README.md](legacy/README.md)
 - [wiki/legacy-audit.md](wiki/legacy-audit.md)
 
+## License
+
+This repository is licensed under Apache-2.0. See [LICENSE](LICENSE).
+
+Code, documentation, and original repo structure are covered by that
+license. Datasets, curated derived artifacts, papers, and other
+third-party materials remain subject to their own upstream licenses,
+terms of use, attribution rules, and redistribution limits.
+
 ## External Scientific Anchors
 
 - repository:
