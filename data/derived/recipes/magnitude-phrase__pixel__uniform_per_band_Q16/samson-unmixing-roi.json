@@ -1,0 +1,327 @@
+{
+  "scene_id": "samson-unmixing-roi",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "uniform_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "unlabeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 9025,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 156,
+    "p5": 156.0,
+    "p25": 156.0,
+    "median": 156.0,
+    "p75": 156.0,
+    "p95": 156.0,
+    "max": 156,
+    "mean": 156.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q02",
+      "global_frequency": 212811,
+      "document_frequency": 6069,
+      "idf": 1.396751
+    },
+    {
+      "token": "q00",
+      "global_frequency": 190899,
+      "document_frequency": 4158,
+      "idf": 1.774835
+    },
+    {
+      "token": "q03",
+      "global_frequency": 162809,
+      "document_frequency": 5944,
+      "idf": 1.417559
+    },
+    {
+      "token": "q01",
+      "global_frequency": 152808,
+      "document_frequency": 5384,
+      "idf": 1.516492
+    },
+    {
+      "token": "q09",
+      "global_frequency": 116839,
+      "document_frequency": 3782,
+      "idf": 1.869592
+    },
+    {
+      "token": "q07",
+      "global_frequency": 106079,
+      "document_frequency": 4850,
+      "idf": 1.620924
+    },
+    {
+      "token": "q10",
+      "global_frequency": 90109,
+      "document_frequency": 2996,
+      "idf": 2.102498
+    },
+    {
+      "token": "q04",
+      "global_frequency": 89666,
+      "document_frequency": 4774,
+      "idf": 1.636715
+    },
+    {
+      "token": "q08",
+      "global_frequency": 83479,
+      "document_frequency": 4336,
+      "idf": 1.732926
+    },
+    {
+      "token": "q06",
+      "global_frequency": 75820,
+      "document_frequency": 4524,
+      "idf": 1.690492
+    },
+    {
+      "token": "q05",
+      "global_frequency": 64857,
+      "document_frequency": 3857,
+      "idf": 1.84996
+    },
+    {
+      "token": "q11",
+      "global_frequency": 32595,
+      "document_frequency": 1602,
+      "idf": 2.728232
+    },
+    {
+      "token": "q12",
+      "global_frequency": 15907,
+      "document_frequency": 799,
+      "idf": 3.423253
+    },
+    {
+      "token": "q13",
+      "global_frequency": 7074,
+      "document_frequency": 403,
+      "idf": 4.10645
+    },
+    {
+      "token": "q14",
+      "global_frequency": 4264,
+      "document_frequency": 203,
+      "idf": 4.789745
+    },
+    {
+      "token": "q15",
+      "global_frequency": 1884,
+      "document_frequency": 88,
+      "idf": 5.619228
+    }
+  ],
+  "document_length_vs_label": null,
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0000",
+      "source_kind": "pixel",
+      "xy": [
+        0,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0001",
+      "source_kind": "pixel",
+      "xy": [
+        1,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0002",
+      "source_kind": "pixel",
+      "xy": [
+        2,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0003",
+      "source_kind": "pixel",
+      "xy": [
+        3,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0000_0004",
+      "source_kind": "pixel",
+      "xy": [
+        4,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0000_0005",
+      "source_kind": "pixel",
+      "xy": [
+        5,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0000_0006",
+      "source_kind": "pixel",
+      "xy": [
+        6,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0000_0007",
+      "source_kind": "pixel",
+      "xy": [
+        7,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0000_0008",
+      "source_kind": "pixel",
+      "xy": [
+        8,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0000_0009",
+      "source_kind": "pixel",
+      "xy": [
+        9,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 156,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/uniform_per_band_Q16/samson-unmixing-roi.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

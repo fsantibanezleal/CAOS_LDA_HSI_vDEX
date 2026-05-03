@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caos-lda-hsi.local/output-schemas/manifest-index.schema.json",
+  "title": "CAOS LDA HSI Derived Manifest Index",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "git_sha",
+    "builders",
+    "scenes",
+    "artifacts",
+    "claims_allowed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": {
+      "type": "string"
+    },
+    "git_sha": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "builders": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "version",
+          "status",
+          "script_path",
+          "ran_at",
+          "duration_s"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "script_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ran_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "duration_s": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "n_pixels",
+          "n_labelled",
+          "wavelengths_present"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "n_pixels": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "n_labelled": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "wavelengths_present": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "format",
+          "bytes",
+          "schema",
+          "input_hash"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          },
+          "bytes": {
+            "type": "integer"
+          },
+          "schema": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "input_hash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "claims_allowed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

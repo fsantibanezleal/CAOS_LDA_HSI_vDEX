@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" fill="none">
+  <rect width="1200" height="680" fill="#f5f0e7"/>
+  <rect x="44" y="44" width="1112" height="592" rx="28" fill="#fffaf3" stroke="#d7ccb9" stroke-width="2"/>
+  <text x="78" y="98" fill="#2a241d" font-family="Bahnschrift, Segoe UI, sans-serif" font-size="34" font-weight="700">Workspace Flow</text>
+  <text x="78" y="132" fill="#6d6358" font-family="Aptos, Segoe UI, sans-serif" font-size="18">A guided interaction model for the rebuilt application</text>
+
+  <g font-family="Aptos, Segoe UI, sans-serif">
+    <rect x="82" y="190" width="170" height="118" rx="20" fill="#39444b"/>
+    <text x="108" y="228" fill="#f6efe4" font-size="22" font-weight="700">1. Family</text>
+    <text x="108" y="258" fill="#d6e0e5" font-size="16">A / B / C / D</text>
+    <text x="108" y="282" fill="#d6e0e5" font-size="16">sets the scientific</text>
+    <text x="108" y="304" fill="#d6e0e5" font-size="16">contract</text>
+
+    <rect x="300" y="190" width="190" height="118" rx="20" fill="#a04f28"/>
+    <text x="326" y="228" fill="#fff4ea" font-size="22" font-weight="700">2. Subset</text>
+    <text x="326" y="258" fill="#ffe0cf" font-size="16">publishable slice</text>
+    <text x="326" y="282" fill="#ffe0cf" font-size="16">with supported</text>
+    <text x="326" y="304" fill="#ffe0cf" font-size="16">claims and caveats</text>
+
+    <rect x="540" y="190" width="190" height="118" rx="20" fill="#8b7333"/>
+    <text x="566" y="228" fill="#fff9e9" font-size="22" font-weight="700">3. Dataset</text>
+    <text x="566" y="258" fill="#fff2c8" font-size="16">pick concrete source</text>
+    <text x="566" y="282" fill="#fff2c8" font-size="16">and read short</text>
+    <text x="566" y="304" fill="#fff2c8" font-size="16">technical context</text>
+
+    <rect x="780" y="190" width="190" height="118" rx="20" fill="#4f6670"/>
+    <text x="806" y="228" fill="#eefbfd" font-size="22" font-weight="700">4. Stage</text>
+    <text x="806" y="258" fill="#d8edf2" font-size="16">evidence</text>
+    <text x="806" y="282" fill="#d8edf2" font-size="16">corpus</text>
+    <text x="806" y="304" fill="#d8edf2" font-size="16">topics → validation</text>
+
+    <rect x="470" y="392" width="300" height="164" rx="24" fill="#fff3e0" stroke="#deb47f" stroke-width="2"/>
+    <text x="496" y="432" fill="#3b2f21" font-size="24" font-weight="700">Detail Reveal</text>
+    <text x="496" y="468" fill="#665645" font-size="18">The workspace should expose one analytical surface at a time:</text>
+    <text x="496" y="500" fill="#665645" font-size="18">• preview images or sample supports</text>
+    <text x="496" y="528" fill="#665645" font-size="18">• corpus definition and token evidence</text>
+    <text x="496" y="556" fill="#665645" font-size="18">• topic profiles and benchmark comparisons</text>
+  </g>
+
+  <g stroke="#9f907d" stroke-width="4" stroke-linecap="round">
+    <line x1="252" y1="248" x2="300" y2="248"/>
+    <line x1="490" y1="248" x2="540" y2="248"/>
+    <line x1="730" y1="248" x2="780" y2="248"/>
+    <line x1="875" y1="308" x2="875" y2="358"/>
+    <line x1="875" y1="358" x2="620" y2="358"/>
+    <line x1="620" y1="358" x2="620" y2="392"/>
+  </g>
+  <g fill="#9f907d">
+    <path d="M291 240 L302 248 L291 256 Z"/>
+    <path d="M531 240 L542 248 L531 256 Z"/>
+    <path d="M771 240 L782 248 L771 256 Z"/>
+    <path d="M612 381 L620 392 L628 381 Z"/>
+  </g>
+
+  <text x="82" y="610" fill="#6a5d50" font-family="Aptos, Segoe UI, sans-serif" font-size="17">Rule: the app is a guided scientific workspace, not a scrolling report and not a generic admin console.</text>
+</svg>

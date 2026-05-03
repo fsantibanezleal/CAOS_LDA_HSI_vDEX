@@ -1,0 +1,444 @@
+{
+  "scene_id": "indian-pines-corrected",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "uniform_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "labeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 10000,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 200,
+    "p5": 200.0,
+    "p25": 200.0,
+    "median": 200.0,
+    "p75": 200.0,
+    "p95": 200.0,
+    "max": 200,
+    "mean": 200.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q08",
+      "global_frequency": 353097,
+      "document_frequency": 9942,
+      "idf": 1.005816
+    },
+    {
+      "token": "q07",
+      "global_frequency": 326796,
+      "document_frequency": 9984,
+      "idf": 1.001601
+    },
+    {
+      "token": "q06",
+      "global_frequency": 238946,
+      "document_frequency": 9986,
+      "idf": 1.001401
+    },
+    {
+      "token": "q09",
+      "global_frequency": 228213,
+      "document_frequency": 9598,
+      "idf": 1.041026
+    },
+    {
+      "token": "q05",
+      "global_frequency": 159070,
+      "document_frequency": 9875,
+      "idf": 1.012578
+    },
+    {
+      "token": "q10",
+      "global_frequency": 129024,
+      "document_frequency": 8231,
+      "idf": 1.194656
+    },
+    {
+      "token": "q04",
+      "global_frequency": 109244,
+      "document_frequency": 8831,
+      "idf": 1.124304
+    },
+    {
+      "token": "q01",
+      "global_frequency": 103923,
+      "document_frequency": 6052,
+      "idf": 1.502131
+    },
+    {
+      "token": "q03",
+      "global_frequency": 102433,
+      "document_frequency": 7147,
+      "idf": 1.335852
+    },
+    {
+      "token": "q02",
+      "global_frequency": 84863,
+      "document_frequency": 5014,
+      "idf": 1.690252
+    },
+    {
+      "token": "q00",
+      "global_frequency": 61580,
+      "document_frequency": 5193,
+      "idf": 1.655181
+    },
+    {
+      "token": "q11",
+      "global_frequency": 60677,
+      "document_frequency": 6468,
+      "idf": 1.435664
+    },
+    {
+      "token": "q12",
+      "global_frequency": 26468,
+      "document_frequency": 3717,
+      "idf": 1.989499
+    },
+    {
+      "token": "q13",
+      "global_frequency": 11778,
+      "document_frequency": 1525,
+      "idf": 2.880035
+    },
+    {
+      "token": "q14",
+      "global_frequency": 3378,
+      "document_frequency": 574,
+      "idf": 3.85607
+    },
+    {
+      "token": "q15",
+      "global_frequency": 510,
+      "document_frequency": 162,
+      "idf": 5.11669
+    }
+  ],
+  "document_length_vs_label": {
+    "metric": "eta_squared",
+    "eta_squared": 0.0,
+    "per_label": [
+      {
+        "label_id": 1,
+        "label_name": "Alfalfa",
+        "document_count": 45,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 2,
+        "label_name": "Corn-notill",
+        "document_count": 1393,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 3,
+        "label_name": "Corn-mintill",
+        "document_count": 810,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 4,
+        "label_name": "Corn",
+        "document_count": 231,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 5,
+        "label_name": "Grass-pasture",
+        "document_count": 471,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 6,
+        "label_name": "Grass-trees",
+        "document_count": 712,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 7,
+        "label_name": "Grass-pasture-mowed",
+        "document_count": 27,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 8,
+        "label_name": "Hay-windrowed",
+        "document_count": 466,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 9,
+        "label_name": "Oats",
+        "document_count": 20,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 10,
+        "label_name": "Soybean-notill",
+        "document_count": 948,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 11,
+        "label_name": "Soybean-mintill",
+        "document_count": 2395,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 12,
+        "label_name": "Soybean-clean",
+        "document_count": 579,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 13,
+        "label_name": "Wheat",
+        "document_count": 200,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 14,
+        "label_name": "Woods",
+        "document_count": 1234,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 15,
+        "label_name": "Buildings-Grass-Trees-Drives",
+        "document_count": 377,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      },
+      {
+        "label_id": 16,
+        "label_name": "Stone-Steel-Towers",
+        "document_count": 91,
+        "mean_length": 200.0,
+        "median_length": 200.0
+      }
+    ]
+  },
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0000",
+      "source_kind": "pixel",
+      "xy": [
+        0,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0001",
+      "source_kind": "pixel",
+      "xy": [
+        1,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0002",
+      "source_kind": "pixel",
+      "xy": [
+        2,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0003",
+      "source_kind": "pixel",
+      "xy": [
+        3,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0000_0004",
+      "source_kind": "pixel",
+      "xy": [
+        4,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0000_0005",
+      "source_kind": "pixel",
+      "xy": [
+        5,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0000_0006",
+      "source_kind": "pixel",
+      "xy": [
+        6,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0000_0007",
+      "source_kind": "pixel",
+      "xy": [
+        7,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0000_0008",
+      "source_kind": "pixel",
+      "xy": [
+        8,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0000_0009",
+      "source_kind": "pixel",
+      "xy": [
+        9,
+        0
+      ],
+      "label_id": 3,
+      "label_name": "Corn-mintill",
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/uniform_per_band_Q16/indian-pines-corrected.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

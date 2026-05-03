@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caos-lda-hsi.local/output-schemas/quantization_scene.schema.json",
+  "title": "CAOS LDA HSI Quantization Scene Summary",
+  "type": "object",
+  "required": [
+    "scheme",
+    "domain",
+    "Q",
+    "scene_id",
+    "vocab_size_per_recipe",
+    "doc_length_distribution_per_recipe",
+    "zero_token_doc_rate_per_recipe",
+    "bin_population",
+    "info_preserved_bits_per_band",
+    "reconstruction_rmse_per_band",
+    "sensitivity_to_neighbour_Q",
+    "downstream_lda_at_canonical_K"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "scheme": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "Q": {
+      "type": "integer"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "vocab_size_per_recipe": {
+      "type": "object"
+    },
+    "doc_length_distribution_per_recipe": {
+      "type": "object"
+    },
+    "zero_token_doc_rate_per_recipe": {
+      "type": "object"
+    },
+    "bin_population": {
+      "type": "array"
+    },
+    "info_preserved_bits_per_band": {
+      "type": "array"
+    },
+    "reconstruction_rmse_per_band": {
+      "type": "array"
+    },
+    "sensitivity_to_neighbour_Q": {
+      "type": "object"
+    },
+    "downstream_lda_at_canonical_K": {
+      "type": "object"
+    }
+  }
+}

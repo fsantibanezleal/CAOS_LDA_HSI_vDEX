@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caos-lda-hsi.local/output-schemas/recipe_scene.schema.json",
+  "title": "CAOS LDA HSI Recipe Scene Summary",
+  "type": "object",
+  "required": [
+    "scene_id",
+    "recipe_variant_id",
+    "recipe_id",
+    "document_constructor_id",
+    "quantization_config_id",
+    "document_count",
+    "vocabulary_size",
+    "document_length_distribution",
+    "zero_token_document_rate",
+    "top_tokens",
+    "token_to_band_reverse_map",
+    "example_documents"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "scene_id": {
+      "type": "string"
+    },
+    "recipe_variant_id": {
+      "type": "string"
+    },
+    "recipe_id": {
+      "type": "string"
+    },
+    "document_constructor_id": {
+      "type": "string"
+    },
+    "quantization_config_id": {
+      "type": "string"
+    },
+    "document_count": {
+      "type": "integer"
+    },
+    "vocabulary_size": {
+      "type": "integer"
+    },
+    "document_length_distribution": {
+      "type": "object"
+    },
+    "zero_token_document_rate": {
+      "type": "number"
+    },
+    "top_tokens": {
+      "type": "array"
+    },
+    "token_to_band_reverse_map": {
+      "type": "object"
+    },
+    "example_documents": {
+      "type": "array"
+    }
+  }
+}

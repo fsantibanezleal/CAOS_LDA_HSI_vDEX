@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <rect width="1200" height="640" fill="#f6f1e8"/>
+  <rect x="40" y="40" width="1120" height="560" rx="28" fill="#fffaf2" stroke="#d8c9b2" stroke-width="2"/>
+  <text x="70" y="95" fill="#2d261d" font-family="Bahnschrift, Segoe UI, sans-serif" font-size="34" font-weight="700">Spectral Topic Pipeline</text>
+  <text x="70" y="128" fill="#6d6255" font-family="Aptos, Segoe UI, sans-serif" font-size="18">From spectral population to validated topic-aware inference</text>
+
+  <g font-family="Aptos, Segoe UI, sans-serif">
+    <rect x="70" y="180" width="170" height="140" rx="20" fill="#2f3b45"/>
+    <text x="95" y="222" fill="#f7efe3" font-size="24" font-weight="700">Acquire</text>
+    <text x="95" y="256" fill="#d8e0e4" font-size="17">spectral population</text>
+    <text x="95" y="282" fill="#d8e0e4" font-size="17">pixels, patches,</text>
+    <text x="95" y="306" fill="#d8e0e4" font-size="17">samples, supports</text>
+
+    <rect x="270" y="180" width="170" height="140" rx="20" fill="#a44f2a"/>
+    <text x="295" y="222" fill="#fff4ea" font-size="24" font-weight="700">Prepare</text>
+    <text x="295" y="256" fill="#ffe2d2" font-size="17">normalize</text>
+    <text x="295" y="282" fill="#ffe2d2" font-size="17">mask bad bands</text>
+    <text x="295" y="306" fill="#ffe2d2" font-size="17">quantize / transform</text>
+
+    <rect x="470" y="180" width="170" height="140" rx="20" fill="#8f7a34"/>
+    <text x="495" y="222" fill="#fff9e8" font-size="24" font-weight="700">Encode</text>
+    <text x="495" y="256" fill="#fff2c8" font-size="17">alphabet</text>
+    <text x="495" y="282" fill="#fff2c8" font-size="17">word</text>
+    <text x="495" y="306" fill="#fff2c8" font-size="17">document</text>
+
+    <rect x="670" y="180" width="170" height="140" rx="20" fill="#37555d"/>
+    <text x="695" y="222" fill="#eefbfd" font-size="24" font-weight="700">Model</text>
+    <text x="695" y="256" fill="#d8eef2" font-size="17">LDA / PTM</text>
+    <text x="695" y="282" fill="#d8eef2" font-size="17">PM-LDA</text>
+    <text x="695" y="306" fill="#d8eef2" font-size="17">Dirichlet latent</text>
+
+    <rect x="870" y="180" width="170" height="140" rx="20" fill="#4e3a64"/>
+    <text x="895" y="222" fill="#f7efff" font-size="24" font-weight="700">Validate</text>
+    <text x="895" y="256" fill="#eadcff" font-size="17">stability</text>
+    <text x="895" y="282" fill="#eadcff" font-size="17">alignment</text>
+    <text x="895" y="306" fill="#eadcff" font-size="17">supervision</text>
+  </g>
+
+  <g stroke="#9a8b77" stroke-width="4" stroke-linecap="round">
+    <line x1="240" y1="250" x2="270" y2="250"/>
+    <line x1="440" y1="250" x2="470" y2="250"/>
+    <line x1="640" y1="250" x2="670" y2="250"/>
+    <line x1="840" y1="250" x2="870" y2="250"/>
+  </g>
+  <g fill="#9a8b77">
+    <path d="M261 242 L272 250 L261 258 Z"/>
+    <path d="M461 242 L472 250 L461 258 Z"/>
+    <path d="M661 242 L672 250 L661 258 Z"/>
+    <path d="M861 242 L872 250 L861 258 Z"/>
+  </g>
+
+  <rect x="70" y="390" width="970" height="150" rx="22" fill="#fff4e6" stroke="#d7b995" stroke-width="2"/>
+  <text x="96" y="432" fill="#3d3022" font-family="Bahnschrift, Segoe UI, sans-serif" font-size="24" font-weight="700">Interpretation Guardrails</text>
+  <text x="96" y="468" fill="#5f5143" font-family="Aptos, Segoe UI, sans-serif" font-size="18">A topic is a probability distribution over spectral tokens, not automatically a mineral, class, or process.</text>
+  <text x="96" y="498" fill="#5f5143" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Claims strengthen only when topic behavior is compared with labels, measurements, calibrated wavelengths, or trusted references.</text>
+  <text x="96" y="528" fill="#5f5143" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Family D is the hardest but most meaningful test: groups of spectra linked to external targets and explicit split logic.</text>
+
+  <circle cx="1084" cy="465" r="60" fill="#2f3b45"/>
+  <text x="1045" y="458" fill="#f7efe3" font-family="Bahnschrift, Segoe UI, sans-serif" font-size="20" font-weight="700">Topics</text>
+  <text x="1050" y="485" fill="#d8e0e4" font-family="Aptos, Segoe UI, sans-serif" font-size="16">as regimes</text>
+</svg>

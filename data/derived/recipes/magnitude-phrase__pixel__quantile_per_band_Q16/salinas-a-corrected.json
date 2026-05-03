@@ -1,0 +1,374 @@
+{
+  "scene_id": "salinas-a-corrected",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "quantile_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "labeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 7138,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 204,
+    "p5": 204.0,
+    "p25": 204.0,
+    "median": 204.0,
+    "p75": 204.0,
+    "p95": 204.0,
+    "max": 204,
+    "mean": 204.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q15",
+      "global_frequency": 94536,
+      "document_frequency": 3413,
+      "idf": 1.737688
+    },
+    {
+      "token": "q03",
+      "global_frequency": 93580,
+      "document_frequency": 5203,
+      "idf": 1.316145
+    },
+    {
+      "token": "q11",
+      "global_frequency": 93349,
+      "document_frequency": 5983,
+      "idf": 1.176483
+    },
+    {
+      "token": "q14",
+      "global_frequency": 92813,
+      "document_frequency": 4158,
+      "idf": 1.540298
+    },
+    {
+      "token": "q07",
+      "global_frequency": 91891,
+      "document_frequency": 5623,
+      "idf": 1.23853
+    },
+    {
+      "token": "q10",
+      "global_frequency": 91486,
+      "document_frequency": 6319,
+      "idf": 1.121854
+    },
+    {
+      "token": "q13",
+      "global_frequency": 91394,
+      "document_frequency": 4863,
+      "idf": 1.383712
+    },
+    {
+      "token": "q09",
+      "global_frequency": 91130,
+      "document_frequency": 6447,
+      "idf": 1.101803
+    },
+    {
+      "token": "q04",
+      "global_frequency": 90898,
+      "document_frequency": 5133,
+      "idf": 1.329688
+    },
+    {
+      "token": "q06",
+      "global_frequency": 90247,
+      "document_frequency": 5060,
+      "idf": 1.344009
+    },
+    {
+      "token": "q01",
+      "global_frequency": 90231,
+      "document_frequency": 3816,
+      "idf": 1.626108
+    },
+    {
+      "token": "q12",
+      "global_frequency": 90110,
+      "document_frequency": 5232,
+      "idf": 1.310588
+    },
+    {
+      "token": "q02",
+      "global_frequency": 89220,
+      "document_frequency": 4358,
+      "idf": 1.49333
+    },
+    {
+      "token": "q05",
+      "global_frequency": 89176,
+      "document_frequency": 5306,
+      "idf": 1.296546
+    },
+    {
+      "token": "q08",
+      "global_frequency": 88185,
+      "document_frequency": 5951,
+      "idf": 1.181845
+    },
+    {
+      "token": "q00",
+      "global_frequency": 87906,
+      "document_frequency": 2649,
+      "idf": 1.991013
+    }
+  ],
+  "document_length_vs_label": {
+    "metric": "eta_squared",
+    "eta_squared": 0.0,
+    "per_label": [
+      {
+        "label_id": 1,
+        "label_name": "Brocoli_green_weeds_1",
+        "document_count": 391,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 10,
+        "label_name": null,
+        "document_count": 1343,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 11,
+        "label_name": null,
+        "document_count": 616,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 12,
+        "label_name": null,
+        "document_count": 1525,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 13,
+        "label_name": null,
+        "document_count": 674,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 14,
+        "label_name": null,
+        "document_count": 799,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      }
+    ]
+  },
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0000",
+      "source_kind": "pixel",
+      "xy": [
+        0,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0001",
+      "source_kind": "pixel",
+      "xy": [
+        1,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0002",
+      "source_kind": "pixel",
+      "xy": [
+        2,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0003",
+      "source_kind": "pixel",
+      "xy": [
+        3,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0000_0004",
+      "source_kind": "pixel",
+      "xy": [
+        4,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0000_0005",
+      "source_kind": "pixel",
+      "xy": [
+        5,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0000_0006",
+      "source_kind": "pixel",
+      "xy": [
+        6,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0000_0007",
+      "source_kind": "pixel",
+      "xy": [
+        7,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0000_0008",
+      "source_kind": "pixel",
+      "xy": [
+        8,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0000_0009",
+      "source_kind": "pixel",
+      "xy": [
+        9,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Brocoli_green_weeds_1",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/quantile_per_band_Q16/salinas-a-corrected.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

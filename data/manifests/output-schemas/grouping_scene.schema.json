@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caos-lda-hsi.local/output-schemas/grouping_scene.schema.json",
+  "title": "CAOS LDA HSI Grouping Scene Summary",
+  "type": "object",
+  "required": [
+    "scene_id",
+    "method_id",
+    "role",
+    "n_groups",
+    "group_size_distribution",
+    "between_within_ratio",
+    "group_ids",
+    "mean_spectrum_per_group",
+    "std_spectrum_per_group",
+    "agreement_with_label",
+    "agreement_with_methods",
+    "centroid_embedding_2d",
+    "centroid_embedding_3d",
+    "preview_path"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "scene_id": {
+      "type": "string"
+    },
+    "method_id": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "n_groups": {
+      "type": "integer"
+    },
+    "group_size_distribution": {
+      "type": "object"
+    },
+    "between_within_ratio": {
+      "type": "number"
+    },
+    "group_ids": {
+      "type": "array"
+    },
+    "mean_spectrum_per_group": {
+      "type": "object"
+    },
+    "std_spectrum_per_group": {
+      "type": "object"
+    },
+    "agreement_with_label": {
+      "type": "object"
+    },
+    "agreement_with_methods": {
+      "type": "object"
+    },
+    "centroid_embedding_2d": {
+      "type": "array"
+    },
+    "centroid_embedding_3d": {
+      "type": "array"
+    },
+    "preview_path": {
+      "type": "string"
+    }
+  }
+}

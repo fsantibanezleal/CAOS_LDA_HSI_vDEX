@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-03T11:58:47Z",
+  "source": "Initial web claim boundary for the master-plan pipeline transition",
+  "version": "0.1.0",
+  "claims_allowed": [
+    "Compact scene and dataset inventory summaries backed by checked-in derived JSON",
+    "Document-grouping summaries for implemented methods when they are backed by named derived groupings artifacts",
+    "Quantization summaries for implemented configs when the claim is limited to vocabulary size, document length, bin population, reconstruction error, entropy proxies, or quantizer-level sensitivity present in data/derived/quantization/",
+    "Recipe summaries for named corpora when they are backed by data/derived/recipes/ artifacts and the UI states the recipe, document constructor, quantization config, and any sampling caveat",
+    "Corpus preview definitions that explicitly state alphabet, word, document, corpus, and caveats",
+    "Compact local-core benchmark summaries for labeled, unlabeled, unmixing, and measured-target cases",
+    "Compact HIDSAG subset inventory, region-document, band-quality, and preprocessing-sensitivity summaries",
+    "Segmentation baseline summaries and preview overlays generated offline",
+    "Derived PCA or KMeans analytical diagnostics computed from compact derived assets"
+  ],
+  "claims_blocked": [
+    "Any topic-view, downstream-LDA quantization claim, or cross-method claim not present in derived/manifests/index.json",
+    "Any measurement or label association claim lacking a named derived artifact",
+    "Any on-the-fly computation in the web layer from raw or local-only assets"
+  ],
+  "notes": [
+    "This contract is intentionally conservative while the current derived tree is still transitional.",
+    "Wordification claims must expose whether the corpus is full-inventory or sampled, especially for pixel-document slices.",
+    "The claim boundary should widen only when dedicated master-plan builders land and publish named artifacts."
+  ]
+}

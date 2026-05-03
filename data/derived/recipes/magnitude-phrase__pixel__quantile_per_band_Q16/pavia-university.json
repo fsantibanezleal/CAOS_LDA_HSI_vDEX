@@ -1,0 +1,395 @@
+{
+  "scene_id": "pavia-university",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "quantile_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "labeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 10000,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 103,
+    "p5": 103.0,
+    "p25": 103.0,
+    "median": 103.0,
+    "p75": 103.0,
+    "p95": 103.0,
+    "max": 103,
+    "mean": 103.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q11",
+      "global_frequency": 77316,
+      "document_frequency": 6887,
+      "idf": 1.372904
+    },
+    {
+      "token": "q10",
+      "global_frequency": 73281,
+      "document_frequency": 7263,
+      "idf": 1.319754
+    },
+    {
+      "token": "q05",
+      "global_frequency": 72322,
+      "document_frequency": 7261,
+      "idf": 1.32003
+    },
+    {
+      "token": "q06",
+      "global_frequency": 71956,
+      "document_frequency": 7525,
+      "idf": 1.284321
+    },
+    {
+      "token": "q14",
+      "global_frequency": 71687,
+      "document_frequency": 4040,
+      "idf": 1.906193
+    },
+    {
+      "token": "q13",
+      "global_frequency": 71619,
+      "document_frequency": 5279,
+      "idf": 1.638759
+    },
+    {
+      "token": "q09",
+      "global_frequency": 69896,
+      "document_frequency": 7589,
+      "idf": 1.275853
+    },
+    {
+      "token": "q12",
+      "global_frequency": 69253,
+      "document_frequency": 6158,
+      "idf": 1.484771
+    },
+    {
+      "token": "q08",
+      "global_frequency": 68950,
+      "document_frequency": 7851,
+      "idf": 1.241917
+    },
+    {
+      "token": "q07",
+      "global_frequency": 68573,
+      "document_frequency": 7775,
+      "idf": 1.251643
+    },
+    {
+      "token": "q04",
+      "global_frequency": 68501,
+      "document_frequency": 6682,
+      "idf": 1.403118
+    },
+    {
+      "token": "q02",
+      "global_frequency": 57663,
+      "document_frequency": 4974,
+      "idf": 1.69826
+    },
+    {
+      "token": "q03",
+      "global_frequency": 56161,
+      "document_frequency": 5819,
+      "idf": 1.541385
+    },
+    {
+      "token": "q15",
+      "global_frequency": 52988,
+      "document_frequency": 1848,
+      "idf": 2.68804
+    },
+    {
+      "token": "q01",
+      "global_frequency": 48844,
+      "document_frequency": 3668,
+      "idf": 2.002766
+    },
+    {
+      "token": "q00",
+      "global_frequency": 30990,
+      "document_frequency": 2043,
+      "idf": 2.587776
+    }
+  ],
+  "document_length_vs_label": {
+    "metric": "eta_squared",
+    "eta_squared": 0.0,
+    "per_label": [
+      {
+        "label_id": 1,
+        "label_name": "Asphalt",
+        "document_count": 1550,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 2,
+        "label_name": "Meadows",
+        "document_count": 4360,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 3,
+        "label_name": "Gravel",
+        "document_count": 491,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 4,
+        "label_name": "Trees",
+        "document_count": 716,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 5,
+        "label_name": "Painted metal sheets",
+        "document_count": 314,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 6,
+        "label_name": "Bare Soil",
+        "document_count": 1176,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 7,
+        "label_name": "Bitumen",
+        "document_count": 311,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 8,
+        "label_name": "Self-Blocking Bricks",
+        "document_count": 861,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      },
+      {
+        "label_id": 9,
+        "label_name": "Shadows",
+        "document_count": 221,
+        "mean_length": 103.0,
+        "median_length": 103.0
+      }
+    ]
+  },
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0112",
+      "source_kind": "pixel",
+      "xy": [
+        112,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Asphalt",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0113",
+      "source_kind": "pixel",
+      "xy": [
+        113,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Asphalt",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0114",
+      "source_kind": "pixel",
+      "xy": [
+        114,
+        0
+      ],
+      "label_id": 1,
+      "label_name": "Asphalt",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0174",
+      "source_kind": "pixel",
+      "xy": [
+        174,
+        0
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0000_0176",
+      "source_kind": "pixel",
+      "xy": [
+        176,
+        0
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0000_0177",
+      "source_kind": "pixel",
+      "xy": [
+        177,
+        0
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0001_0172",
+      "source_kind": "pixel",
+      "xy": [
+        172,
+        1
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0001_0174",
+      "source_kind": "pixel",
+      "xy": [
+        174,
+        1
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0001_0175",
+      "source_kind": "pixel",
+      "xy": [
+        175,
+        1
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0001_0180",
+      "source_kind": "pixel",
+      "xy": [
+        180,
+        1
+      ],
+      "label_id": 4,
+      "label_name": "Trees",
+      "source_spectra_count": 1,
+      "document_length": 103,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/quantile_per_band_Q16/pavia-university.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

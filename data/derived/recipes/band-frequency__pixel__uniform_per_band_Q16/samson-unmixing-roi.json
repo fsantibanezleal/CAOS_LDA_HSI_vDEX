@@ -1,0 +1,1792 @@
+{
+  "scene_id": "samson-unmixing-roi",
+  "recipe_variant_id": "band-frequency__pixel",
+  "recipe_id": "band-frequency",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "uniform_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "unlabeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one band token weighted by quantized magnitude per band.",
+  "document_count": 9025,
+  "vocabulary_size": 156,
+  "document_length_distribution": {
+    "min": 36,
+    "p5": 153.0,
+    "p25": 207.0,
+    "median": 660.0,
+    "p75": 1096.0,
+    "p95": 1440.6,
+    "max": 2062,
+    "mean": 697.739501
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "0719nm",
+      "global_frequency": 51288,
+      "document_frequency": 6555,
+      "idf": 1.319729
+    },
+    {
+      "token": "0722nm",
+      "global_frequency": 50266,
+      "document_frequency": 6552,
+      "idf": 1.320186
+    },
+    {
+      "token": "0725nm",
+      "global_frequency": 49282,
+      "document_frequency": 6540,
+      "idf": 1.322019
+    },
+    {
+      "token": "0716nm",
+      "global_frequency": 49167,
+      "document_frequency": 6548,
+      "idf": 1.320797
+    },
+    {
+      "token": "0889nm",
+      "global_frequency": 49129,
+      "document_frequency": 6909,
+      "idf": 1.26714
+    },
+    {
+      "token": "0728nm",
+      "global_frequency": 48969,
+      "document_frequency": 6537,
+      "idf": 1.322478
+    },
+    {
+      "token": "0886nm",
+      "global_frequency": 48379,
+      "document_frequency": 6685,
+      "idf": 1.300094
+    },
+    {
+      "token": "0883nm",
+      "global_frequency": 48271,
+      "document_frequency": 6630,
+      "idf": 1.308354
+    },
+    {
+      "token": "0870nm",
+      "global_frequency": 47247,
+      "document_frequency": 6584,
+      "idf": 1.315315
+    },
+    {
+      "token": "0876nm",
+      "global_frequency": 47227,
+      "document_frequency": 6590,
+      "idf": 1.314404
+    },
+    {
+      "token": "0842nm",
+      "global_frequency": 47213,
+      "document_frequency": 6606,
+      "idf": 1.31198
+    },
+    {
+      "token": "0848nm",
+      "global_frequency": 47212,
+      "document_frequency": 6587,
+      "idf": 1.314859
+    },
+    {
+      "token": "0732nm",
+      "global_frequency": 47152,
+      "document_frequency": 6521,
+      "idf": 1.324928
+    },
+    {
+      "token": "0823nm",
+      "global_frequency": 47106,
+      "document_frequency": 6593,
+      "idf": 1.313949
+    },
+    {
+      "token": "0854nm",
+      "global_frequency": 47031,
+      "document_frequency": 6571,
+      "idf": 1.317291
+    },
+    {
+      "token": "0835nm",
+      "global_frequency": 46786,
+      "document_frequency": 6567,
+      "idf": 1.3179
+    },
+    {
+      "token": "0713nm",
+      "global_frequency": 46720,
+      "document_frequency": 6508,
+      "idf": 1.326923
+    },
+    {
+      "token": "0817nm",
+      "global_frequency": 46662,
+      "document_frequency": 6583,
+      "idf": 1.315467
+    },
+    {
+      "token": "0861nm",
+      "global_frequency": 46533,
+      "document_frequency": 6575,
+      "idf": 1.316683
+    },
+    {
+      "token": "0829nm",
+      "global_frequency": 46355,
+      "document_frequency": 6555,
+      "idf": 1.319729
+    },
+    {
+      "token": "0864nm",
+      "global_frequency": 46332,
+      "document_frequency": 6565,
+      "idf": 1.318204
+    },
+    {
+      "token": "0867nm",
+      "global_frequency": 46249,
+      "document_frequency": 6569,
+      "idf": 1.317595
+    },
+    {
+      "token": "0845nm",
+      "global_frequency": 46123,
+      "document_frequency": 6565,
+      "idf": 1.318204
+    },
+    {
+      "token": "0810nm",
+      "global_frequency": 46119,
+      "document_frequency": 6593,
+      "idf": 1.313949
+    },
+    {
+      "token": "0858nm",
+      "global_frequency": 46089,
+      "document_frequency": 6564,
+      "idf": 1.318357
+    },
+    {
+      "token": "0851nm",
+      "global_frequency": 46053,
+      "document_frequency": 6562,
+      "idf": 1.318661
+    },
+    {
+      "token": "0880nm",
+      "global_frequency": 45966,
+      "document_frequency": 6590,
+      "idf": 1.314404
+    },
+    {
+      "token": "0873nm",
+      "global_frequency": 45935,
+      "document_frequency": 6571,
+      "idf": 1.317291
+    },
+    {
+      "token": "0839nm",
+      "global_frequency": 45861,
+      "document_frequency": 6551,
+      "idf": 1.320339
+    },
+    {
+      "token": "0735nm",
+      "global_frequency": 45836,
+      "document_frequency": 6517,
+      "idf": 1.325542
+    },
+    {
+      "token": "0826nm",
+      "global_frequency": 45778,
+      "document_frequency": 6564,
+      "idf": 1.318357
+    },
+    {
+      "token": "0804nm",
+      "global_frequency": 45677,
+      "document_frequency": 6566,
+      "idf": 1.318052
+    },
+    {
+      "token": "0820nm",
+      "global_frequency": 45600,
+      "document_frequency": 6571,
+      "idf": 1.317291
+    },
+    {
+      "token": "0832nm",
+      "global_frequency": 45512,
+      "document_frequency": 6549,
+      "idf": 1.320644
+    },
+    {
+      "token": "0813nm",
+      "global_frequency": 45228,
+      "document_frequency": 6590,
+      "idf": 1.314404
+    },
+    {
+      "token": "0738nm",
+      "global_frequency": 44751,
+      "document_frequency": 6513,
+      "idf": 1.326156
+    },
+    {
+      "token": "0807nm",
+      "global_frequency": 44738,
+      "document_frequency": 6570,
+      "idf": 1.317443
+    },
+    {
+      "token": "0540nm",
+      "global_frequency": 44612,
+      "document_frequency": 8849,
+      "idf": 1.019692
+    },
+    {
+      "token": "0798nm",
+      "global_frequency": 44583,
+      "document_frequency": 6544,
+      "idf": 1.321408
+    },
+    {
+      "token": "0543nm",
+      "global_frequency": 44539,
+      "document_frequency": 8846,
+      "idf": 1.020031
+    },
+    {
+      "token": "0754nm",
+      "global_frequency": 44447,
+      "document_frequency": 6585,
+      "idf": 1.315163
+    },
+    {
+      "token": "0801nm",
+      "global_frequency": 44441,
+      "document_frequency": 6551,
+      "idf": 1.320339
+    },
+    {
+      "token": "0546nm",
+      "global_frequency": 44371,
+      "document_frequency": 8844,
+      "idf": 1.020257
+    },
+    {
+      "token": "0536nm",
+      "global_frequency": 44283,
+      "document_frequency": 8841,
+      "idf": 1.020596
+    },
+    {
+      "token": "0750nm",
+      "global_frequency": 44189,
+      "document_frequency": 6528,
+      "idf": 1.323856
+    },
+    {
+      "token": "0533nm",
+      "global_frequency": 44128,
+      "document_frequency": 8837,
+      "idf": 1.021049
+    },
+    {
+      "token": "0795nm",
+      "global_frequency": 44121,
+      "document_frequency": 6541,
+      "idf": 1.321866
+    },
+    {
+      "token": "0757nm",
+      "global_frequency": 44113,
+      "document_frequency": 6559,
+      "idf": 1.319119
+    },
+    {
+      "token": "0741nm",
+      "global_frequency": 44098,
+      "document_frequency": 6513,
+      "idf": 1.326156
+    },
+    {
+      "token": "0549nm",
+      "global_frequency": 44085,
+      "document_frequency": 8844,
+      "idf": 1.020257
+    },
+    {
+      "token": "0710nm",
+      "global_frequency": 44043,
+      "document_frequency": 6475,
+      "idf": 1.332006
+    },
+    {
+      "token": "0791nm",
+      "global_frequency": 43940,
+      "document_frequency": 6545,
+      "idf": 1.321255
+    },
+    {
+      "token": "0788nm",
+      "global_frequency": 43887,
+      "document_frequency": 6537,
+      "idf": 1.322478
+    },
+    {
+      "token": "0552nm",
+      "global_frequency": 43683,
+      "document_frequency": 8839,
+      "idf": 1.020822
+    },
+    {
+      "token": "0782nm",
+      "global_frequency": 43646,
+      "document_frequency": 6526,
+      "idf": 1.324162
+    },
+    {
+      "token": "0744nm",
+      "global_frequency": 43629,
+      "document_frequency": 6512,
+      "idf": 1.326309
+    },
+    {
+      "token": "0747nm",
+      "global_frequency": 43536,
+      "document_frequency": 6505,
+      "idf": 1.327384
+    },
+    {
+      "token": "0527nm",
+      "global_frequency": 43526,
+      "document_frequency": 8840,
+      "idf": 1.020709
+    },
+    {
+      "token": "0530nm",
+      "global_frequency": 43468,
+      "document_frequency": 8829,
+      "idf": 1.021954
+    },
+    {
+      "token": "0760nm",
+      "global_frequency": 43377,
+      "document_frequency": 6528,
+      "idf": 1.323856
+    },
+    {
+      "token": "0524nm",
+      "global_frequency": 43355,
+      "document_frequency": 8840,
+      "idf": 1.020709
+    },
+    {
+      "token": "0555nm",
+      "global_frequency": 43257,
+      "document_frequency": 8838,
+      "idf": 1.020936
+    },
+    {
+      "token": "0776nm",
+      "global_frequency": 43248,
+      "document_frequency": 6516,
+      "idf": 1.325695
+    },
+    {
+      "token": "0785nm",
+      "global_frequency": 43180,
+      "document_frequency": 6523,
+      "idf": 1.324622
+    },
+    {
+      "token": "0558nm",
+      "global_frequency": 43119,
+      "document_frequency": 8837,
+      "idf": 1.021049
+    },
+    {
+      "token": "0766nm",
+      "global_frequency": 43099,
+      "document_frequency": 6513,
+      "idf": 1.326156
+    },
+    {
+      "token": "0763nm",
+      "global_frequency": 43078,
+      "document_frequency": 6512,
+      "idf": 1.326309
+    },
+    {
+      "token": "0779nm",
+      "global_frequency": 42972,
+      "document_frequency": 6515,
+      "idf": 1.325849
+    },
+    {
+      "token": "0769nm",
+      "global_frequency": 42966,
+      "document_frequency": 6514,
+      "idf": 1.326002
+    },
+    {
+      "token": "0773nm",
+      "global_frequency": 42939,
+      "document_frequency": 6513,
+      "idf": 1.326156
+    },
+    {
+      "token": "0521nm",
+      "global_frequency": 42909,
+      "document_frequency": 8829,
+      "idf": 1.021954
+    },
+    {
+      "token": "0562nm",
+      "global_frequency": 42511,
+      "document_frequency": 8831,
+      "idf": 1.021728
+    },
+    {
+      "token": "0517nm",
+      "global_frequency": 42468,
+      "document_frequency": 8840,
+      "idf": 1.020709
+    },
+    {
+      "token": "0565nm",
+      "global_frequency": 41914,
+      "document_frequency": 8832,
+      "idf": 1.021615
+    },
+    {
+      "token": "0514nm",
+      "global_frequency": 41821,
+      "document_frequency": 8833,
+      "idf": 1.021501
+    },
+    {
+      "token": "0706nm",
+      "global_frequency": 41569,
+      "document_frequency": 6419,
+      "idf": 1.340691
+    },
+    {
+      "token": "0568nm",
+      "global_frequency": 40965,
+      "document_frequency": 8826,
+      "idf": 1.022294
+    },
+    {
+      "token": "0511nm",
+      "global_frequency": 40727,
+      "document_frequency": 8780,
+      "idf": 1.027519
+    },
+    {
+      "token": "0571nm",
+      "global_frequency": 40489,
+      "document_frequency": 8830,
+      "idf": 1.021841
+    },
+    {
+      "token": "0703nm",
+      "global_frequency": 40085,
+      "document_frequency": 6458,
+      "idf": 1.334635
+    },
+    {
+      "token": "0508nm",
+      "global_frequency": 39920,
+      "document_frequency": 8773,
+      "idf": 1.028316
+    },
+    {
+      "token": "0574nm",
+      "global_frequency": 39816,
+      "document_frequency": 8816,
+      "idf": 1.023428
+    },
+    {
+      "token": "0505nm",
+      "global_frequency": 39674,
+      "document_frequency": 8756,
+      "idf": 1.030256
+    },
+    {
+      "token": "0489nm",
+      "global_frequency": 39466,
+      "document_frequency": 8733,
+      "idf": 1.032886
+    },
+    {
+      "token": "0502nm",
+      "global_frequency": 39365,
+      "document_frequency": 8728,
+      "idf": 1.033458
+    },
+    {
+      "token": "0499nm",
+      "global_frequency": 39263,
+      "document_frequency": 8730,
+      "idf": 1.033229
+    },
+    {
+      "token": "0495nm",
+      "global_frequency": 39197,
+      "document_frequency": 8729,
+      "idf": 1.033344
+    },
+    {
+      "token": "0577nm",
+      "global_frequency": 39166,
+      "document_frequency": 8801,
+      "idf": 1.02513
+    },
+    {
+      "token": "0492nm",
+      "global_frequency": 39061,
+      "document_frequency": 8726,
+      "idf": 1.033688
+    },
+    {
+      "token": "0486nm",
+      "global_frequency": 38948,
+      "document_frequency": 8768,
+      "idf": 1.028887
+    },
+    {
+      "token": "0458nm",
+      "global_frequency": 38898,
+      "document_frequency": 8812,
+      "idf": 1.023881
+    },
+    {
+      "token": "0461nm",
+      "global_frequency": 38675,
+      "document_frequency": 8807,
+      "idf": 1.024449
+    },
+    {
+      "token": "0580nm",
+      "global_frequency": 38597,
+      "document_frequency": 8789,
+      "idf": 1.026495
+    },
+    {
+      "token": "0477nm",
+      "global_frequency": 38411,
+      "document_frequency": 8775,
+      "idf": 1.028089
+    },
+    {
+      "token": "0483nm",
+      "global_frequency": 38327,
+      "document_frequency": 8719,
+      "idf": 1.03449
+    },
+    {
+      "token": "0584nm",
+      "global_frequency": 38287,
+      "document_frequency": 8791,
+      "idf": 1.026267
+    },
+    {
+      "token": "0464nm",
+      "global_frequency": 38265,
+      "document_frequency": 8787,
+      "idf": 1.026722
+    },
+    {
+      "token": "0480nm",
+      "global_frequency": 38189,
+      "document_frequency": 8744,
+      "idf": 1.031627
+    },
+    {
+      "token": "0467nm",
+      "global_frequency": 38188,
+      "document_frequency": 8763,
+      "idf": 1.029457
+    },
+    {
+      "token": "0700nm",
+      "global_frequency": 38113,
+      "document_frequency": 6439,
+      "idf": 1.337581
+    },
+    {
+      "token": "0455nm",
+      "global_frequency": 38079,
+      "document_frequency": 8771,
+      "idf": 1.028544
+    },
+    {
+      "token": "0473nm",
+      "global_frequency": 38007,
+      "document_frequency": 8769,
+      "idf": 1.028772
+    },
+    {
+      "token": "0587nm",
+      "global_frequency": 37862,
+      "document_frequency": 8787,
+      "idf": 1.026722
+    },
+    {
+      "token": "0451nm",
+      "global_frequency": 37483,
+      "document_frequency": 8766,
+      "idf": 1.029115
+    },
+    {
+      "token": "0470nm",
+      "global_frequency": 37355,
+      "document_frequency": 8745,
+      "idf": 1.031513
+    },
+    {
+      "token": "0445nm",
+      "global_frequency": 37138,
+      "document_frequency": 8773,
+      "idf": 1.028316
+    },
+    {
+      "token": "0429nm",
+      "global_frequency": 37131,
+      "document_frequency": 8810,
+      "idf": 1.024108
+    },
+    {
+      "token": "0590nm",
+      "global_frequency": 37005,
+      "document_frequency": 8780,
+      "idf": 1.027519
+    },
+    {
+      "token": "0448nm",
+      "global_frequency": 37005,
+      "document_frequency": 8770,
+      "idf": 1.028658
+    },
+    {
+      "token": "0432nm",
+      "global_frequency": 36983,
+      "document_frequency": 8814,
+      "idf": 1.023654
+    },
+    {
+      "token": "0426nm",
+      "global_frequency": 36852,
+      "document_frequency": 8753,
+      "idf": 1.030599
+    },
+    {
+      "token": "0593nm",
+      "global_frequency": 36598,
+      "document_frequency": 8770,
+      "idf": 1.028658
+    },
+    {
+      "token": "0439nm",
+      "global_frequency": 36480,
+      "document_frequency": 8764,
+      "idf": 1.029343
+    },
+    {
+      "token": "0697nm",
+      "global_frequency": 36464,
+      "document_frequency": 6484,
+      "idf": 1.330617
+    },
+    {
+      "token": "0442nm",
+      "global_frequency": 36346,
+      "document_frequency": 8741,
+      "idf": 1.03197
+    },
+    {
+      "token": "0596nm",
+      "global_frequency": 36327,
+      "document_frequency": 8773,
+      "idf": 1.028316
+    },
+    {
+      "token": "0599nm",
+      "global_frequency": 36325,
+      "document_frequency": 8777,
+      "idf": 1.027861
+    },
+    {
+      "token": "0602nm",
+      "global_frequency": 36299,
+      "document_frequency": 8780,
+      "idf": 1.027519
+    },
+    {
+      "token": "0436nm",
+      "global_frequency": 36238,
+      "document_frequency": 8787,
+      "idf": 1.026722
+    },
+    {
+      "token": "0606nm",
+      "global_frequency": 35677,
+      "document_frequency": 8769,
+      "idf": 1.028772
+    },
+    {
+      "token": "0423nm",
+      "global_frequency": 35641,
+      "document_frequency": 8644,
+      "idf": 1.043128
+    },
+    {
+      "token": "0609nm",
+      "global_frequency": 35563,
+      "document_frequency": 8775,
+      "idf": 1.028089
+    },
+    {
+      "token": "0417nm",
+      "global_frequency": 35311,
+      "document_frequency": 8627,
+      "idf": 1.045097
+    },
+    {
+      "token": "0694nm",
+      "global_frequency": 34912,
+      "document_frequency": 6547,
+      "idf": 1.32095
+    },
+    {
+      "token": "0420nm",
+      "global_frequency": 34901,
+      "document_frequency": 8599,
+      "idf": 1.048347
+    },
+    {
+      "token": "0612nm",
+      "global_frequency": 34594,
+      "document_frequency": 8758,
+      "idf": 1.030028
+    },
+    {
+      "token": "0615nm",
+      "global_frequency": 34488,
+      "document_frequency": 8741,
+      "idf": 1.03197
+    },
+    {
+      "token": "0618nm",
+      "global_frequency": 34433,
+      "document_frequency": 8749,
+      "idf": 1.031056
+    },
+    {
+      "token": "0414nm",
+      "global_frequency": 34312,
+      "document_frequency": 8517,
+      "idf": 1.057928
+    },
+    {
+      "token": "0621nm",
+      "global_frequency": 34180,
+      "document_frequency": 8734,
+      "idf": 1.032771
+    },
+    {
+      "token": "0410nm",
+      "global_frequency": 34091,
+      "document_frequency": 8506,
+      "idf": 1.05922
+    },
+    {
+      "token": "0625nm",
+      "global_frequency": 33924,
+      "document_frequency": 8738,
+      "idf": 1.032314
+    },
+    {
+      "token": "0691nm",
+      "global_frequency": 33703,
+      "document_frequency": 6866,
+      "idf": 1.273382
+    },
+    {
+      "token": "0628nm",
+      "global_frequency": 33653,
+      "document_frequency": 8731,
+      "idf": 1.033115
+    },
+    {
+      "token": "0688nm",
+      "global_frequency": 33515,
+      "document_frequency": 8043,
+      "idf": 1.115183
+    },
+    {
+      "token": "0631nm",
+      "global_frequency": 33439,
+      "document_frequency": 8713,
+      "idf": 1.035178
+    },
+    {
+      "token": "0634nm",
+      "global_frequency": 33335,
+      "document_frequency": 8709,
+      "idf": 1.035638
+    },
+    {
+      "token": "0637nm",
+      "global_frequency": 33253,
+      "document_frequency": 8706,
+      "idf": 1.035982
+    },
+    {
+      "token": "0684nm",
+      "global_frequency": 33199,
+      "document_frequency": 8570,
+      "idf": 1.051725
+    },
+    {
+      "token": "0407nm",
+      "global_frequency": 32931,
+      "document_frequency": 8362,
+      "idf": 1.076292
+    },
+    {
+      "token": "0640nm",
+      "global_frequency": 32910,
+      "document_frequency": 8671,
+      "idf": 1.04001
+    },
+    {
+      "token": "0643nm",
+      "global_frequency": 32608,
+      "document_frequency": 8648,
+      "idf": 1.042666
+    },
+    {
+      "token": "0647nm",
+      "global_frequency": 32494,
+      "document_frequency": 8646,
+      "idf": 1.042897
+    },
+    {
+      "token": "0650nm",
+      "global_frequency": 32466,
+      "document_frequency": 8641,
+      "idf": 1.043475
+    },
+    {
+      "token": "0681nm",
+      "global_frequency": 32435,
+      "document_frequency": 8576,
+      "idf": 1.051025
+    },
+    {
+      "token": "0653nm",
+      "global_frequency": 32406,
+      "document_frequency": 8630,
+      "idf": 1.044749
+    },
+    {
+      "token": "0656nm",
+      "global_frequency": 32069,
+      "document_frequency": 8564,
+      "idf": 1.052425
+    },
+    {
+      "token": "0678nm",
+      "global_frequency": 31677,
+      "document_frequency": 8349,
+      "idf": 1.077848
+    },
+    {
+      "token": "0659nm",
+      "global_frequency": 31618,
+      "document_frequency": 8396,
+      "idf": 1.072235
+    },
+    {
+      "token": "0675nm",
+      "global_frequency": 31556,
+      "document_frequency": 8356,
+      "idf": 1.07701
+    },
+    {
+      "token": "0672nm",
+      "global_frequency": 31349,
+      "document_frequency": 8125,
+      "idf": 1.105041
+    },
+    {
+      "token": "0669nm",
+      "global_frequency": 31078,
+      "document_frequency": 7856,
+      "idf": 1.138704
+    },
+    {
+      "token": "0404nm",
+      "global_frequency": 30996,
+      "document_frequency": 8200,
+      "idf": 1.095853
+    },
+    {
+      "token": "0662nm",
+      "global_frequency": 30800,
+      "document_frequency": 7687,
+      "idf": 1.160449
+    },
+    {
+      "token": "0665nm",
+      "global_frequency": 30734,
+      "document_frequency": 7538,
+      "idf": 1.18002
+    },
+    {
+      "token": "0401nm",
+      "global_frequency": 25787,
+      "document_frequency": 7331,
+      "idf": 1.207861
+    }
+  ],
+  "document_length_vs_label": null,
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {
+    "0401nm": {
+      "band_index": 0,
+      "wavelength_nm": 401.0
+    },
+    "0404nm": {
+      "band_index": 1,
+      "wavelength_nm": 404.148376
+    },
+    "0407nm": {
+      "band_index": 2,
+      "wavelength_nm": 407.296783
+    },
+    "0410nm": {
+      "band_index": 3,
+      "wavelength_nm": 410.44516
+    },
+    "0414nm": {
+      "band_index": 4,
+      "wavelength_nm": 413.593536
+    },
+    "0417nm": {
+      "band_index": 5,
+      "wavelength_nm": 416.741943
+    },
+    "0420nm": {
+      "band_index": 6,
+      "wavelength_nm": 419.89032
+    },
+    "0423nm": {
+      "band_index": 7,
+      "wavelength_nm": 423.038696
+    },
+    "0426nm": {
+      "band_index": 8,
+      "wavelength_nm": 426.187103
+    },
+    "0429nm": {
+      "band_index": 9,
+      "wavelength_nm": 429.33548
+    },
+    "0432nm": {
+      "band_index": 10,
+      "wavelength_nm": 432.483856
+    },
+    "0436nm": {
+      "band_index": 11,
+      "wavelength_nm": 435.632263
+    },
+    "0439nm": {
+      "band_index": 12,
+      "wavelength_nm": 438.78064
+    },
+    "0442nm": {
+      "band_index": 13,
+      "wavelength_nm": 441.929047
+    },
+    "0445nm": {
+      "band_index": 14,
+      "wavelength_nm": 445.077423
+    },
+    "0448nm": {
+      "band_index": 15,
+      "wavelength_nm": 448.2258
+    },
+    "0451nm": {
+      "band_index": 16,
+      "wavelength_nm": 451.374207
+    },
+    "0455nm": {
+      "band_index": 17,
+      "wavelength_nm": 454.522583
+    },
+    "0458nm": {
+      "band_index": 18,
+      "wavelength_nm": 457.670959
+    },
+    "0461nm": {
+      "band_index": 19,
+      "wavelength_nm": 460.819366
+    },
+    "0464nm": {
+      "band_index": 20,
+      "wavelength_nm": 463.967743
+    },
+    "0467nm": {
+      "band_index": 21,
+      "wavelength_nm": 467.116119
+    },
+    "0470nm": {
+      "band_index": 22,
+      "wavelength_nm": 470.264526
+    },
+    "0473nm": {
+      "band_index": 23,
+      "wavelength_nm": 473.412903
+    },
+    "0477nm": {
+      "band_index": 24,
+      "wavelength_nm": 476.561279
+    },
+    "0480nm": {
+      "band_index": 25,
+      "wavelength_nm": 479.709686
+    },
+    "0483nm": {
+      "band_index": 26,
+      "wavelength_nm": 482.858063
+    },
+    "0486nm": {
+      "band_index": 27,
+      "wavelength_nm": 486.006439
+    },
+    "0489nm": {
+      "band_index": 28,
+      "wavelength_nm": 489.154846
+    },
+    "0492nm": {
+      "band_index": 29,
+      "wavelength_nm": 492.303223
+    },
+    "0495nm": {
+      "band_index": 30,
+      "wavelength_nm": 495.451599
+    },
+    "0499nm": {
+      "band_index": 31,
+      "wavelength_nm": 498.600006
+    },
+    "0502nm": {
+      "band_index": 32,
+      "wavelength_nm": 501.748383
+    },
+    "0505nm": {
+      "band_index": 33,
+      "wavelength_nm": 504.896759
+    },
+    "0508nm": {
+      "band_index": 34,
+      "wavelength_nm": 508.045166
+    },
+    "0511nm": {
+      "band_index": 35,
+      "wavelength_nm": 511.193542
+    },
+    "0514nm": {
+      "band_index": 36,
+      "wavelength_nm": 514.341919
+    },
+    "0517nm": {
+      "band_index": 37,
+      "wavelength_nm": 517.490295
+    },
+    "0521nm": {
+      "band_index": 38,
+      "wavelength_nm": 520.638733
+    },
+    "0524nm": {
+      "band_index": 39,
+      "wavelength_nm": 523.787109
+    },
+    "0527nm": {
+      "band_index": 40,
+      "wavelength_nm": 526.935486
+    },
+    "0530nm": {
+      "band_index": 41,
+      "wavelength_nm": 530.083862
+    },
+    "0533nm": {
+      "band_index": 42,
+      "wavelength_nm": 533.232239
+    },
+    "0536nm": {
+      "band_index": 43,
+      "wavelength_nm": 536.380615
+    },
+    "0540nm": {
+      "band_index": 44,
+      "wavelength_nm": 539.529053
+    },
+    "0543nm": {
+      "band_index": 45,
+      "wavelength_nm": 542.677429
+    },
+    "0546nm": {
+      "band_index": 46,
+      "wavelength_nm": 545.825806
+    },
+    "0549nm": {
+      "band_index": 47,
+      "wavelength_nm": 548.974182
+    },
+    "0552nm": {
+      "band_index": 48,
+      "wavelength_nm": 552.122559
+    },
+    "0555nm": {
+      "band_index": 49,
+      "wavelength_nm": 555.270996
+    },
+    "0558nm": {
+      "band_index": 50,
+      "wavelength_nm": 558.419373
+    },
+    "0562nm": {
+      "band_index": 51,
+      "wavelength_nm": 561.567749
+    },
+    "0565nm": {
+      "band_index": 52,
+      "wavelength_nm": 564.716125
+    },
+    "0568nm": {
+      "band_index": 53,
+      "wavelength_nm": 567.864502
+    },
+    "0571nm": {
+      "band_index": 54,
+      "wavelength_nm": 571.012878
+    },
+    "0574nm": {
+      "band_index": 55,
+      "wavelength_nm": 574.161316
+    },
+    "0577nm": {
+      "band_index": 56,
+      "wavelength_nm": 577.309692
+    },
+    "0580nm": {
+      "band_index": 57,
+      "wavelength_nm": 580.458069
+    },
+    "0584nm": {
+      "band_index": 58,
+      "wavelength_nm": 583.606445
+    },
+    "0587nm": {
+      "band_index": 59,
+      "wavelength_nm": 586.754822
+    },
+    "0590nm": {
+      "band_index": 60,
+      "wavelength_nm": 589.903198
+    },
+    "0593nm": {
+      "band_index": 61,
+      "wavelength_nm": 593.051636
+    },
+    "0596nm": {
+      "band_index": 62,
+      "wavelength_nm": 596.200012
+    },
+    "0599nm": {
+      "band_index": 63,
+      "wavelength_nm": 599.348389
+    },
+    "0602nm": {
+      "band_index": 64,
+      "wavelength_nm": 602.496765
+    },
+    "0606nm": {
+      "band_index": 65,
+      "wavelength_nm": 605.645142
+    },
+    "0609nm": {
+      "band_index": 66,
+      "wavelength_nm": 608.793518
+    },
+    "0612nm": {
+      "band_index": 67,
+      "wavelength_nm": 611.941956
+    },
+    "0615nm": {
+      "band_index": 68,
+      "wavelength_nm": 615.090332
+    },
+    "0618nm": {
+      "band_index": 69,
+      "wavelength_nm": 618.238708
+    },
+    "0621nm": {
+      "band_index": 70,
+      "wavelength_nm": 621.387085
+    },
+    "0625nm": {
+      "band_index": 71,
+      "wavelength_nm": 624.535461
+    },
+    "0628nm": {
+      "band_index": 72,
+      "wavelength_nm": 627.683899
+    },
+    "0631nm": {
+      "band_index": 73,
+      "wavelength_nm": 630.832275
+    },
+    "0634nm": {
+      "band_index": 74,
+      "wavelength_nm": 633.980652
+    },
+    "0637nm": {
+      "band_index": 75,
+      "wavelength_nm": 637.129028
+    },
+    "0640nm": {
+      "band_index": 76,
+      "wavelength_nm": 640.277405
+    },
+    "0643nm": {
+      "band_index": 77,
+      "wavelength_nm": 643.425781
+    },
+    "0647nm": {
+      "band_index": 78,
+      "wavelength_nm": 646.574219
+    },
+    "0650nm": {
+      "band_index": 79,
+      "wavelength_nm": 649.722595
+    },
+    "0653nm": {
+      "band_index": 80,
+      "wavelength_nm": 652.870972
+    },
+    "0656nm": {
+      "band_index": 81,
+      "wavelength_nm": 656.019348
+    },
+    "0659nm": {
+      "band_index": 82,
+      "wavelength_nm": 659.167725
+    },
+    "0662nm": {
+      "band_index": 83,
+      "wavelength_nm": 662.316101
+    },
+    "0665nm": {
+      "band_index": 84,
+      "wavelength_nm": 665.464539
+    },
+    "0669nm": {
+      "band_index": 85,
+      "wavelength_nm": 668.612915
+    },
+    "0672nm": {
+      "band_index": 86,
+      "wavelength_nm": 671.761292
+    },
+    "0675nm": {
+      "band_index": 87,
+      "wavelength_nm": 674.909668
+    },
+    "0678nm": {
+      "band_index": 88,
+      "wavelength_nm": 678.058044
+    },
+    "0681nm": {
+      "band_index": 89,
+      "wavelength_nm": 681.206482
+    },
+    "0684nm": {
+      "band_index": 90,
+      "wavelength_nm": 684.354858
+    },
+    "0688nm": {
+      "band_index": 91,
+      "wavelength_nm": 687.503235
+    },
+    "0691nm": {
+      "band_index": 92,
+      "wavelength_nm": 690.651611
+    },
+    "0694nm": {
+      "band_index": 93,
+      "wavelength_nm": 693.799988
+    },
+    "0697nm": {
+      "band_index": 94,
+      "wavelength_nm": 696.948364
+    },
+    "0700nm": {
+      "band_index": 95,
+      "wavelength_nm": 700.096802
+    },
+    "0703nm": {
+      "band_index": 96,
+      "wavelength_nm": 703.245178
+    },
+    "0706nm": {
+      "band_index": 97,
+      "wavelength_nm": 706.393555
+    },
+    "0710nm": {
+      "band_index": 98,
+      "wavelength_nm": 709.541931
+    },
+    "0713nm": {
+      "band_index": 99,
+      "wavelength_nm": 712.690308
+    },
+    "0716nm": {
+      "band_index": 100,
+      "wavelength_nm": 715.838684
+    },
+    "0719nm": {
+      "band_index": 101,
+      "wavelength_nm": 718.987122
+    },
+    "0722nm": {
+      "band_index": 102,
+      "wavelength_nm": 722.135498
+    },
+    "0725nm": {
+      "band_index": 103,
+      "wavelength_nm": 725.283875
+    },
+    "0728nm": {
+      "band_index": 104,
+      "wavelength_nm": 728.432251
+    },
+    "0732nm": {
+      "band_index": 105,
+      "wavelength_nm": 731.580627
+    },
+    "0735nm": {
+      "band_index": 106,
+      "wavelength_nm": 734.729004
+    },
+    "0738nm": {
+      "band_index": 107,
+      "wavelength_nm": 737.877441
+    },
+    "0741nm": {
+      "band_index": 108,
+      "wavelength_nm": 741.025818
+    },
+    "0744nm": {
+      "band_index": 109,
+      "wavelength_nm": 744.174194
+    },
+    "0747nm": {
+      "band_index": 110,
+      "wavelength_nm": 747.322571
+    },
+    "0750nm": {
+      "band_index": 111,
+      "wavelength_nm": 750.470947
+    },
+    "0754nm": {
+      "band_index": 112,
+      "wavelength_nm": 753.619385
+    },
+    "0757nm": {
+      "band_index": 113,
+      "wavelength_nm": 756.767761
+    },
+    "0760nm": {
+      "band_index": 114,
+      "wavelength_nm": 759.916138
+    },
+    "0763nm": {
+      "band_index": 115,
+      "wavelength_nm": 763.064514
+    },
+    "0766nm": {
+      "band_index": 116,
+      "wavelength_nm": 766.212891
+    },
+    "0769nm": {
+      "band_index": 117,
+      "wavelength_nm": 769.361267
+    },
+    "0773nm": {
+      "band_index": 118,
+      "wavelength_nm": 772.509705
+    },
+    "0776nm": {
+      "band_index": 119,
+      "wavelength_nm": 775.658081
+    },
+    "0779nm": {
+      "band_index": 120,
+      "wavelength_nm": 778.806458
+    },
+    "0782nm": {
+      "band_index": 121,
+      "wavelength_nm": 781.954834
+    },
+    "0785nm": {
+      "band_index": 122,
+      "wavelength_nm": 785.10321
+    },
+    "0788nm": {
+      "band_index": 123,
+      "wavelength_nm": 788.251587
+    },
+    "0791nm": {
+      "band_index": 124,
+      "wavelength_nm": 791.400024
+    },
+    "0795nm": {
+      "band_index": 125,
+      "wavelength_nm": 794.548401
+    },
+    "0798nm": {
+      "band_index": 126,
+      "wavelength_nm": 797.696777
+    },
+    "0801nm": {
+      "band_index": 127,
+      "wavelength_nm": 800.845154
+    },
+    "0804nm": {
+      "band_index": 128,
+      "wavelength_nm": 803.99353
+    },
+    "0807nm": {
+      "band_index": 129,
+      "wavelength_nm": 807.141907
+    },
+    "0810nm": {
+      "band_index": 130,
+      "wavelength_nm": 810.290344
+    },
+    "0813nm": {
+      "band_index": 131,
+      "wavelength_nm": 813.438721
+    },
+    "0817nm": {
+      "band_index": 132,
+      "wavelength_nm": 816.587097
+    },
+    "0820nm": {
+      "band_index": 133,
+      "wavelength_nm": 819.735474
+    },
+    "0823nm": {
+      "band_index": 134,
+      "wavelength_nm": 822.88385
+    },
+    "0826nm": {
+      "band_index": 135,
+      "wavelength_nm": 826.032288
+    },
+    "0829nm": {
+      "band_index": 136,
+      "wavelength_nm": 829.180664
+    },
+    "0832nm": {
+      "band_index": 137,
+      "wavelength_nm": 832.329041
+    },
+    "0835nm": {
+      "band_index": 138,
+      "wavelength_nm": 835.477417
+    },
+    "0839nm": {
+      "band_index": 139,
+      "wavelength_nm": 838.625793
+    },
+    "0842nm": {
+      "band_index": 140,
+      "wavelength_nm": 841.77417
+    },
+    "0845nm": {
+      "band_index": 141,
+      "wavelength_nm": 844.922607
+    },
+    "0848nm": {
+      "band_index": 142,
+      "wavelength_nm": 848.070984
+    },
+    "0851nm": {
+      "band_index": 143,
+      "wavelength_nm": 851.21936
+    },
+    "0854nm": {
+      "band_index": 144,
+      "wavelength_nm": 854.367737
+    },
+    "0858nm": {
+      "band_index": 145,
+      "wavelength_nm": 857.516113
+    },
+    "0861nm": {
+      "band_index": 146,
+      "wavelength_nm": 860.66449
+    },
+    "0864nm": {
+      "band_index": 147,
+      "wavelength_nm": 863.812927
+    },
+    "0867nm": {
+      "band_index": 148,
+      "wavelength_nm": 866.961304
+    },
+    "0870nm": {
+      "band_index": 149,
+      "wavelength_nm": 870.10968
+    },
+    "0873nm": {
+      "band_index": 150,
+      "wavelength_nm": 873.258057
+    },
+    "0876nm": {
+      "band_index": 151,
+      "wavelength_nm": 876.406433
+    },
+    "0880nm": {
+      "band_index": 152,
+      "wavelength_nm": 879.55481
+    },
+    "0883nm": {
+      "band_index": 153,
+      "wavelength_nm": 882.703247
+    },
+    "0886nm": {
+      "band_index": 154,
+      "wavelength_nm": 885.851624
+    },
+    "0889nm": {
+      "band_index": 155,
+      "wavelength_nm": 889.0
+    }
+  },
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0000",
+      "source_kind": "pixel",
+      "xy": [
+        0,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 197,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0001",
+      "source_kind": "pixel",
+      "xy": [
+        1,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 209,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0002",
+      "source_kind": "pixel",
+      "xy": [
+        2,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 209,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0003",
+      "source_kind": "pixel",
+      "xy": [
+        3,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0000_0004",
+      "source_kind": "pixel",
+      "xy": [
+        4,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 201,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0000_0005",
+      "source_kind": "pixel",
+      "xy": [
+        5,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 198,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0000_0006",
+      "source_kind": "pixel",
+      "xy": [
+        6,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 209,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0000_0007",
+      "source_kind": "pixel",
+      "xy": [
+        7,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 203,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0000_0008",
+      "source_kind": "pixel",
+      "xy": [
+        8,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 200,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0000_0009",
+      "source_kind": "pixel",
+      "xy": [
+        9,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 206,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "band-frequency__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/band-frequency__pixel/uniform_per_band_Q16/samson-unmixing-roi.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

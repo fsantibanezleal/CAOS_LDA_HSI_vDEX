@@ -1,0 +1,430 @@
+{
+  "scene_id": "botswana",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "uniform_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "labeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 10000,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 145,
+    "p5": 145.0,
+    "p25": 145.0,
+    "median": 145.0,
+    "p75": 145.0,
+    "p95": 145.0,
+    "max": 145,
+    "mean": 145.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q01",
+      "global_frequency": 227969,
+      "document_frequency": 9997,
+      "idf": 1.0003
+    },
+    {
+      "token": "q00",
+      "global_frequency": 205143,
+      "document_frequency": 9873,
+      "idf": 1.01278
+    },
+    {
+      "token": "q07",
+      "global_frequency": 144638,
+      "document_frequency": 8438,
+      "idf": 1.169821
+    },
+    {
+      "token": "q04",
+      "global_frequency": 129516,
+      "document_frequency": 9349,
+      "idf": 1.067309
+    },
+    {
+      "token": "q08",
+      "global_frequency": 125555,
+      "document_frequency": 7271,
+      "idf": 1.318654
+    },
+    {
+      "token": "q06",
+      "global_frequency": 124735,
+      "document_frequency": 8886,
+      "idf": 1.118096
+    },
+    {
+      "token": "q03",
+      "global_frequency": 120824,
+      "document_frequency": 9485,
+      "idf": 1.052868
+    },
+    {
+      "token": "q05",
+      "global_frequency": 112854,
+      "document_frequency": 9126,
+      "idf": 1.091448
+    },
+    {
+      "token": "q02",
+      "global_frequency": 108980,
+      "document_frequency": 9655,
+      "idf": 1.035106
+    },
+    {
+      "token": "q09",
+      "global_frequency": 84337,
+      "document_frequency": 5205,
+      "idf": 1.652873
+    },
+    {
+      "token": "q10",
+      "global_frequency": 44988,
+      "document_frequency": 2912,
+      "idf": 2.233502
+    },
+    {
+      "token": "q11",
+      "global_frequency": 14071,
+      "document_frequency": 1133,
+      "idf": 3.176934
+    },
+    {
+      "token": "q12",
+      "global_frequency": 4140,
+      "document_frequency": 323,
+      "idf": 4.429697
+    },
+    {
+      "token": "q13",
+      "global_frequency": 1916,
+      "document_frequency": 118,
+      "idf": 5.431317
+    },
+    {
+      "token": "q15",
+      "global_frequency": 172,
+      "document_frequency": 3,
+      "idf": 8.824146
+    },
+    {
+      "token": "q14",
+      "global_frequency": 162,
+      "document_frequency": 19,
+      "idf": 7.214708
+    }
+  ],
+  "document_length_vs_label": {
+    "metric": "eta_squared",
+    "eta_squared": 0.0,
+    "per_label": [
+      {
+        "label_id": 1,
+        "label_name": "Water",
+        "document_count": 270,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 2,
+        "label_name": "Hippo grass",
+        "document_count": 101,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 3,
+        "label_name": "Floodplain grasses 1",
+        "document_count": 251,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 4,
+        "label_name": "Floodplain grasses 2",
+        "document_count": 215,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 5,
+        "label_name": "Reeds",
+        "document_count": 269,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 6,
+        "label_name": "Riparian",
+        "document_count": 269,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 7,
+        "label_name": "Firescar",
+        "document_count": 259,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 8,
+        "label_name": "Island interior",
+        "document_count": 203,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 9,
+        "label_name": "Acacia woodlands",
+        "document_count": 314,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 10,
+        "label_name": "Acacia shrublands",
+        "document_count": 248,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 11,
+        "label_name": "Acacia grasslands",
+        "document_count": 305,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 12,
+        "label_name": "Short mopane",
+        "document_count": 181,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 13,
+        "label_name": "Mixed mopane",
+        "document_count": 268,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      },
+      {
+        "label_id": 14,
+        "label_name": "Exposed soils",
+        "document_count": 95,
+        "mean_length": 145.0,
+        "median_length": 145.0
+      }
+    ]
+  },
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0117",
+      "source_kind": "pixel",
+      "xy": [
+        117,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0153",
+      "source_kind": "pixel",
+      "xy": [
+        153,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0155",
+      "source_kind": "pixel",
+      "xy": [
+        155,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0236",
+      "source_kind": "pixel",
+      "xy": [
+        236,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0001_0087",
+      "source_kind": "pixel",
+      "xy": [
+        87,
+        1
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0001_0109",
+      "source_kind": "pixel",
+      "xy": [
+        109,
+        1
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0001_0135",
+      "source_kind": "pixel",
+      "xy": [
+        135,
+        1
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0001_0241",
+      "source_kind": "pixel",
+      "xy": [
+        241,
+        1
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0002_0092",
+      "source_kind": "pixel",
+      "xy": [
+        92,
+        2
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0002_0191",
+      "source_kind": "pixel",
+      "xy": [
+        191,
+        2
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 145,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/uniform_per_band_Q16/botswana.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "scene_id": "salinas-corrected",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "uniform_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "labeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 10000,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 204,
+    "p5": 204.0,
+    "p25": 204.0,
+    "median": 204.0,
+    "p75": 204.0,
+    "p95": 204.0,
+    "max": 204,
+    "mean": 204.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q02",
+      "global_frequency": 337023,
+      "document_frequency": 10000,
+      "idf": 1.0
+    },
+    {
+      "token": "q06",
+      "global_frequency": 265502,
+      "document_frequency": 9336,
+      "idf": 1.0687
+    },
+    {
+      "token": "q01",
+      "global_frequency": 218044,
+      "document_frequency": 10000,
+      "idf": 1.0
+    },
+    {
+      "token": "q00",
+      "global_frequency": 216245,
+      "document_frequency": 10000,
+      "idf": 1.0
+    },
+    {
+      "token": "q07",
+      "global_frequency": 208653,
+      "document_frequency": 8826,
+      "idf": 1.12487
+    },
+    {
+      "token": "q03",
+      "global_frequency": 202427,
+      "document_frequency": 10000,
+      "idf": 1.0
+    },
+    {
+      "token": "q04",
+      "global_frequency": 197725,
+      "document_frequency": 9996,
+      "idf": 1.0004
+    },
+    {
+      "token": "q05",
+      "global_frequency": 185015,
+      "document_frequency": 9495,
+      "idf": 1.051814
+    },
+    {
+      "token": "q08",
+      "global_frequency": 68559,
+      "document_frequency": 5880,
+      "idf": 1.530958
+    },
+    {
+      "token": "q10",
+      "global_frequency": 35321,
+      "document_frequency": 2621,
+      "idf": 2.338748
+    },
+    {
+      "token": "q09",
+      "global_frequency": 33315,
+      "document_frequency": 3129,
+      "idf": 2.161652
+    },
+    {
+      "token": "q11",
+      "global_frequency": 25673,
+      "document_frequency": 2198,
+      "idf": 2.514682
+    },
+    {
+      "token": "q13",
+      "global_frequency": 13328,
+      "document_frequency": 1014,
+      "idf": 3.287796
+    },
+    {
+      "token": "q12",
+      "global_frequency": 13136,
+      "document_frequency": 1465,
+      "idf": 2.920147
+    },
+    {
+      "token": "q14",
+      "global_frequency": 12827,
+      "document_frequency": 798,
+      "idf": 3.527079
+    },
+    {
+      "token": "q15",
+      "global_frequency": 7207,
+      "document_frequency": 401,
+      "idf": 4.213988
+    }
+  ],
+  "document_length_vs_label": {
+    "metric": "eta_squared",
+    "eta_squared": 0.0,
+    "per_label": [
+      {
+        "label_id": 1,
+        "label_name": "Brocoli_green_weeds_1",
+        "document_count": 371,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 2,
+        "label_name": "Brocoli_green_weeds_2",
+        "document_count": 688,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 3,
+        "label_name": "Fallow",
+        "document_count": 365,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 4,
+        "label_name": "Fallow_rough_plow",
+        "document_count": 258,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 5,
+        "label_name": "Fallow_smooth",
+        "document_count": 495,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 6,
+        "label_name": "Stubble",
+        "document_count": 731,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 7,
+        "label_name": "Celery",
+        "document_count": 661,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 8,
+        "label_name": "Grapes_untrained",
+        "document_count": 2082,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 9,
+        "label_name": "Soil_vinyard_develop",
+        "document_count": 1146,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 10,
+        "label_name": "Corn_senesced_green_weeds",
+        "document_count": 606,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 11,
+        "label_name": "Lettuce_romaine_4wk",
+        "document_count": 197,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 12,
+        "label_name": "Lettuce_romaine_5wk",
+        "document_count": 356,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 13,
+        "label_name": "Lettuce_romaine_6wk",
+        "document_count": 169,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 14,
+        "label_name": "Lettuce_romaine_7wk",
+        "document_count": 198,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 15,
+        "label_name": "Vinyard_untrained",
+        "document_count": 1343,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      },
+      {
+        "label_id": 16,
+        "label_name": "Vinyard_vertical_trellis",
+        "document_count": 334,
+        "mean_length": 204.0,
+        "median_length": 204.0
+      }
+    ]
+  },
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0001_0093",
+      "source_kind": "pixel",
+      "xy": [
+        93,
+        1
+      ],
+      "label_id": 6,
+      "label_name": "Stubble",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0001_0098",
+      "source_kind": "pixel",
+      "xy": [
+        98,
+        1
+      ],
+      "label_id": 6,
+      "label_name": "Stubble",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0001_0104",
+      "source_kind": "pixel",
+      "xy": [
+        104,
+        1
+      ],
+      "label_id": 6,
+      "label_name": "Stubble",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0001_0112",
+      "source_kind": "pixel",
+      "xy": [
+        112,
+        1
+      ],
+      "label_id": 6,
+      "label_name": "Stubble",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0001_0116",
+      "source_kind": "pixel",
+      "xy": [
+        116,
+        1
+      ],
+      "label_id": 6,
+      "label_name": "Stubble",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0001_0123",
+      "source_kind": "pixel",
+      "xy": [
+        123,
+        1
+      ],
+      "label_id": 7,
+      "label_name": "Celery",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0001_0133",
+      "source_kind": "pixel",
+      "xy": [
+        133,
+        1
+      ],
+      "label_id": 7,
+      "label_name": "Celery",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0001_0135",
+      "source_kind": "pixel",
+      "xy": [
+        135,
+        1
+      ],
+      "label_id": 7,
+      "label_name": "Celery",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0001_0136",
+      "source_kind": "pixel",
+      "xy": [
+        136,
+        1
+      ],
+      "label_id": 7,
+      "label_name": "Celery",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0002_0089",
+      "source_kind": "pixel",
+      "xy": [
+        89,
+        2
+      ],
+      "label_id": 6,
+      "label_name": "Stubble",
+      "source_spectra_count": 1,
+      "document_length": 204,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/uniform_per_band_Q16/salinas-corrected.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

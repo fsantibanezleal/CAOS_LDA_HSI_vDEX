@@ -1,0 +1,116 @@
+.workspace-shell {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr) 300px;
+  gap: 16px;
+  align-items: start;
+}
+
+.workspace-navigator,
+.workspace-stage,
+.workspace-inspector {
+  position: sticky;
+  top: 172px;
+  align-content: start;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(14, 21, 29, 0.98), rgba(19, 29, 40, 0.95)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.workspace-navigator,
+.workspace-inspector {
+  padding: 18px;
+}
+
+.workspace-stage {
+  min-height: calc(100vh - 220px);
+  padding: 20px 22px 22px;
+}
+
+.workspace-tab-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.workspace-tab,
+.family-switch-button,
+.subset-tile,
+.topic-choice {
+  padding: 14px;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.workspace-tab {
+  min-height: 58px;
+  align-items: center;
+  justify-items: start;
+}
+
+.family-switch {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.subset-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.subset-list {
+  max-height: min(56vh, 800px);
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.image-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.compact-image-grid {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.image-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.image-card img {
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.05);
+}
+
+.image-card figcaption {
+  padding: 12px 14px;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.code-block {
+  margin: 0;
+  overflow: auto;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  background: #0a0f15;
+  padding: 16px;
+}
+
+.code-block code {
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+

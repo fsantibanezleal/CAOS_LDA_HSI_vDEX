@@ -1,0 +1,327 @@
+{
+  "scene_id": "cuprite-aviris-reflectance",
+  "recipe_variant_id": "magnitude-phrase__pixel",
+  "recipe_id": "magnitude-phrase",
+  "document_constructor_id": "pixel",
+  "quantization_config_id": "quantile_per_band_Q16",
+  "preprocessing_id": "raw",
+  "family_id": "unlabeled-spectral-image",
+  "recipe_summary": "One sampled valid spectrum per document; one magnitude token per band position.",
+  "document_count": 10000,
+  "vocabulary_size": 16,
+  "document_length_distribution": {
+    "min": 224,
+    "p5": 224.0,
+    "p25": 224.0,
+    "median": 224.0,
+    "p75": 224.0,
+    "p95": 224.0,
+    "max": 224,
+    "mean": 224.0
+  },
+  "zero_token_document_rate": 0.0,
+  "top_tokens": [
+    {
+      "token": "q00",
+      "global_frequency": 326865,
+      "document_frequency": 10000,
+      "idf": 1.0
+    },
+    {
+      "token": "q10",
+      "global_frequency": 133328,
+      "document_frequency": 9067,
+      "idf": 1.097933
+    },
+    {
+      "token": "q12",
+      "global_frequency": 131146,
+      "document_frequency": 7441,
+      "idf": 1.295545
+    },
+    {
+      "token": "q03",
+      "global_frequency": 128668,
+      "document_frequency": 6488,
+      "idf": 1.432577
+    },
+    {
+      "token": "q13",
+      "global_frequency": 128533,
+      "document_frequency": 5872,
+      "idf": 1.53232
+    },
+    {
+      "token": "q02",
+      "global_frequency": 128109,
+      "document_frequency": 5797,
+      "idf": 1.545172
+    },
+    {
+      "token": "q01",
+      "global_frequency": 127746,
+      "document_frequency": 4870,
+      "idf": 1.719386
+    },
+    {
+      "token": "q05",
+      "global_frequency": 126989,
+      "document_frequency": 7369,
+      "idf": 1.305267
+    },
+    {
+      "token": "q11",
+      "global_frequency": 126756,
+      "document_frequency": 7183,
+      "idf": 1.330829
+    },
+    {
+      "token": "q14",
+      "global_frequency": 126747,
+      "document_frequency": 4796,
+      "idf": 1.734694
+    },
+    {
+      "token": "q08",
+      "global_frequency": 126605,
+      "document_frequency": 8064,
+      "idf": 1.215151
+    },
+    {
+      "token": "q09",
+      "global_frequency": 126519,
+      "document_frequency": 8008,
+      "idf": 1.222119
+    },
+    {
+      "token": "q04",
+      "global_frequency": 126129,
+      "document_frequency": 6929,
+      "idf": 1.366825
+    },
+    {
+      "token": "q07",
+      "global_frequency": 125584,
+      "document_frequency": 7935,
+      "idf": 1.231276
+    },
+    {
+      "token": "q06",
+      "global_frequency": 125441,
+      "document_frequency": 7617,
+      "idf": 1.272171
+    },
+    {
+      "token": "q15",
+      "global_frequency": 124835,
+      "document_frequency": 3233,
+      "idf": 2.128965
+    }
+  ],
+  "document_length_vs_label": null,
+  "document_length_vs_measurement": null,
+  "token_to_band_reverse_map": {},
+  "example_documents": [
+    {
+      "document_id": 0,
+      "source_document_id": "px_0000_0000",
+      "source_kind": "pixel",
+      "xy": [
+        0,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 1,
+      "source_document_id": "px_0000_0127",
+      "source_kind": "pixel",
+      "xy": [
+        127,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 2,
+      "source_document_id": "px_0000_0161",
+      "source_kind": "pixel",
+      "xy": [
+        161,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 3,
+      "source_document_id": "px_0000_0176",
+      "source_kind": "pixel",
+      "xy": [
+        176,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 4,
+      "source_document_id": "px_0000_0197",
+      "source_kind": "pixel",
+      "xy": [
+        197,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 5,
+      "source_document_id": "px_0000_0254",
+      "source_kind": "pixel",
+      "xy": [
+        254,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 6,
+      "source_document_id": "px_0000_0282",
+      "source_kind": "pixel",
+      "xy": [
+        282,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 7,
+      "source_document_id": "px_0000_0305",
+      "source_kind": "pixel",
+      "xy": [
+        305,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 8,
+      "source_document_id": "px_0000_0332",
+      "source_kind": "pixel",
+      "xy": [
+        332,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    },
+    {
+      "document_id": 9,
+      "source_document_id": "px_0000_0385",
+      "source_kind": "pixel",
+      "xy": [
+        385,
+        0
+      ],
+      "label_id": null,
+      "label_name": null,
+      "source_spectra_count": 1,
+      "document_length": 224,
+      "sampling_strategy": {
+        "kind": "deterministic_valid_pixel_sample",
+        "max_docs": 10000,
+        "random_state": 42
+      },
+      "recipe_variant_id": "magnitude-phrase__pixel"
+    }
+  ],
+  "sampling_strategy": {
+    "kind": "deterministic_valid_pixel_sample",
+    "max_docs": 10000,
+    "random_state": 42
+  },
+  "local_corpus_ref": "data/local/wordifications/magnitude-phrase__pixel/quantile_per_band_Q16/cuprite-aviris-reflectance.parquet",
+  "implementation_scope": {
+    "builder_status": "partial",
+    "pixel_sampling_cap": 10000,
+    "notes": "This slice supports pixel documents via deterministic sampling and region documents for the implemented grouping methods."
+  }
+}

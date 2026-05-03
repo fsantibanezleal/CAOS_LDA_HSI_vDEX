@@ -1,0 +1,325 @@
+{
+  "generated_at": "2026-05-03T11:58:47Z",
+  "source": "CAOS LDA HSI master-plan builder catalog aligned to the current repository scripts",
+  "version": "0.1.0",
+  "thin_slice_goal": [
+    "Generate an explicit builder inventory that maps the current repo to the master-plan builder sequence",
+    "Write derived/manifests/index.json from curated artifacts rather than letting the web infer structure ad hoc",
+    "Treat the current derived tree as transitional until dedicated master-plan builders replace the older reset payload generators"
+  ],
+  "builders": [
+    {
+      "id": "build_eda_views",
+      "order": 0,
+      "status": "implemented",
+      "script": "data-pipeline/build_eda_views.py",
+      "current_repo_equivalents": [
+        "data-pipeline/build_real_samples.py",
+        "data-pipeline/build_local_inventory.py"
+      ],
+      "writes_local": [
+        "data/local/eda/"
+      ],
+      "writes_derived": [
+        "data/derived/eda/"
+      ],
+      "notes": "Implemented as the first master-plan builder slice. Labeled raw scenes emit class-aware EDA summaries; unlabeled scenes currently emit global summaries plus per-band variance rows."
+    },
+    {
+      "id": "build_groupings",
+      "order": 1,
+      "status": "partial",
+      "script": "data-pipeline/build_groupings.py",
+      "current_repo_equivalents": [
+        "data-pipeline/build_segmentation_baselines.py"
+      ],
+      "writes_local": [
+        "data/local/groupings/"
+      ],
+      "writes_derived": [
+        "data/derived/groupings/"
+      ],
+      "notes": "Initial builder slice implemented with patch_15 and slic_200. Local assignment arrays, local metadata, derived summaries, and preview images now exist, but the broader grouping catalog from the master plan is still pending."
+    },
+    {
+      "id": "build_representations",
+      "order": 2,
+      "status": "partial",
+      "script": "data-pipeline/build_representations.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py",
+        "data-pipeline/build_analysis_payload.py"
+      ],
+      "writes_local": [
+        "data/local/representations/",
+        "data/local/embeddings/"
+      ],
+      "writes_derived": [
+        "data/derived/representations/"
+      ],
+      "notes": "Current repo computes compact PCA/NMF/LDA diagnostics but does not persist them under the master-plan representation contract."
+    },
+    {
+      "id": "build_quantization_views",
+      "order": 3,
+      "status": "partial",
+      "script": "data-pipeline/build_quantization_views.py",
+      "current_repo_equivalents": [],
+      "writes_local": [
+        "data/local/wordifications/"
+      ],
+      "writes_derived": [
+        "data/derived/quantization/"
+      ],
+      "notes": "Initial builder slice implemented with uniform and quantile schemes, global and per_band domains, and Q={8,16}. It now publishes quantizer-level summaries and sensitivity metrics under data/derived/quantization/, but downstream LDA-linked quantization surfaces are still pending."
+    },
+    {
+      "id": "build_wordifications",
+      "order": 4,
+      "status": "partial",
+      "script": "data-pipeline/build_wordifications.py",
+      "current_repo_equivalents": [
+        "data-pipeline/build_corpus_previews.py"
+      ],
+      "writes_local": [
+        "data/local/wordifications/"
+      ],
+      "writes_derived": [
+        "data/derived/recipes/"
+      ],
+      "notes": "Initial builder slice implemented with magnitude-phrase__pixel, band-frequency__pixel, band-magnitude__pixel, and region-documents over patch_15 and slic_200. Local Parquet corpora plus document/vocabulary sidecars and derived recipe summaries now exist for uniform_per_band_Q16 and quantile_per_band_Q16, but pixel corpora are still capped by deterministic sampling and the broader recipe catalog remains pending."
+    },
+    {
+      "id": "build_lda_sweep",
+      "order": 5,
+      "status": "planned",
+      "script": "data-pipeline/build_lda_sweep.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py"
+      ],
+      "writes_local": [
+        "data/local/lda_fits/"
+      ],
+      "writes_derived": [
+        "data/derived/lda_sweep/"
+      ],
+      "notes": "Current local-core benchmarks include compact repeated LDA runs but not the explicit K-by-seed sweep artifacts required by the master plan."
+    },
+    {
+      "id": "build_lda_canonical_fits",
+      "order": 6,
+      "status": "planned",
+      "script": "data-pipeline/build_lda_canonical_fits.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py"
+      ],
+      "writes_local": [
+        "data/local/lda_fits/"
+      ],
+      "writes_derived": [
+        "data/derived/lda_canonical/"
+      ],
+      "notes": "Canonical phi/theta outputs and distance matrices are not yet written under the new contract."
+    },
+    {
+      "id": "build_topic_views",
+      "order": 7,
+      "status": "planned",
+      "script": "data-pipeline/build_topic_views.py",
+      "current_repo_equivalents": [
+        "data-pipeline/build_analysis_payload.py"
+      ],
+      "writes_local": [
+        "data/local/lda_fits/"
+      ],
+      "writes_derived": [
+        "data/derived/topic_views/"
+      ],
+      "notes": "Current analysis payload offers compact PCA/KMeans diagnostics, not JS-MDS topic views."
+    },
+    {
+      "id": "build_topic_to_data",
+      "order": 8,
+      "status": "planned",
+      "script": "data-pipeline/build_topic_to_data.py",
+      "current_repo_equivalents": [],
+      "writes_local": [
+        "data/local/lda_fits/"
+      ],
+      "writes_derived": [
+        "data/derived/topic_to_data/"
+      ],
+      "notes": "Topic-to-label, topic-to-measurement, and top-document exports remain pending."
+    },
+    {
+      "id": "build_topic_to_library",
+      "order": 9,
+      "status": "partial",
+      "script": "data-pipeline/build_topic_to_library.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py",
+        "data-pipeline/build_spectral_library_samples.py"
+      ],
+      "writes_local": [
+        "data/local/lda_fits/"
+      ],
+      "writes_derived": [
+        "data/derived/topic_to_library/"
+      ],
+      "notes": "Current repo already computes compact reference-alignment summaries but not under the dedicated topic-to-library contract."
+    },
+    {
+      "id": "build_cross_method_agreement",
+      "order": 10,
+      "status": "planned",
+      "script": "data-pipeline/build_cross_method_agreement.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py"
+      ],
+      "writes_local": [
+        "data/local/representations/"
+      ],
+      "writes_derived": [
+        "data/derived/cross_method_agreement/"
+      ],
+      "notes": "Agreement matrices are not yet exported as their own curated artifact family."
+    },
+    {
+      "id": "build_method_statistics",
+      "order": 11,
+      "status": "partial",
+      "script": "data-pipeline/build_method_statistics.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py",
+        "data-pipeline/run_hidsag_preprocessing_sensitivity.py"
+      ],
+      "writes_local": [
+        "data/local/representations/"
+      ],
+      "writes_derived": [
+        "data/derived/methods/"
+      ],
+      "notes": "The repo already has compact supervised benchmark summaries, but not the full CI/test/effect-size contract."
+    },
+    {
+      "id": "build_spatial_validation",
+      "order": 12,
+      "status": "planned",
+      "script": "data-pipeline/build_spatial_validation.py",
+      "current_repo_equivalents": [
+        "data-pipeline/build_segmentation_baselines.py"
+      ],
+      "writes_local": [
+        "data/local/groupings/"
+      ],
+      "writes_derived": [
+        "data/derived/spatial/"
+      ],
+      "notes": "Current spatial outputs are limited to compact preview overlays and baseline summaries."
+    },
+    {
+      "id": "build_external_validation",
+      "order": 13,
+      "status": "partial",
+      "script": "data-pipeline/build_external_validation.py",
+      "current_repo_equivalents": [
+        "data-pipeline/run_local_core_benchmarks.py"
+      ],
+      "writes_local": [
+        "data/local/representations/"
+      ],
+      "writes_derived": [
+        "data/derived/external_validation/"
+      ],
+      "notes": "Measured-target and library-alignment signals exist in compact form but not in the dedicated external-validation layout."
+    },
+    {
+      "id": "build_spectral_browser",
+      "order": 14,
+      "status": "planned",
+      "script": "data-pipeline/build_spectral_browser.py",
+      "current_repo_equivalents": [
+        "data-pipeline/build_real_samples.py",
+        "data-pipeline/build_field_samples.py",
+        "data-pipeline/build_spectral_library_samples.py"
+      ],
+      "writes_local": [
+        "data/local/spectral_browser/"
+      ],
+      "writes_derived": [
+        "data/derived/spectral_browser/"
+      ],
+      "notes": "Current compact sample payloads are close in spirit but do not yet use the binary-plus-metadata browser contract."
+    },
+    {
+      "id": "build_spectral_density",
+      "order": 15,
+      "status": "planned",
+      "script": "data-pipeline/build_spectral_density.py",
+      "current_repo_equivalents": [],
+      "writes_local": [
+        "data/local/spectral_density/"
+      ],
+      "writes_derived": [
+        "data/derived/spectral_density/"
+      ],
+      "notes": "Density heatmaps remain pending."
+    },
+    {
+      "id": "build_narratives",
+      "order": 16,
+      "status": "planned",
+      "script": "data-pipeline/build_narratives.py",
+      "current_repo_equivalents": [],
+      "writes_local": [],
+      "writes_derived": [
+        "data/derived/narratives/"
+      ],
+      "notes": "Narrative scoring is intentionally deferred until the supporting numeric surfaces exist."
+    },
+    {
+      "id": "build_interpretability",
+      "order": 17,
+      "status": "planned",
+      "script": "data-pipeline/build_interpretability.py",
+      "current_repo_equivalents": [],
+      "writes_local": [
+        "data/local/lda_fits/"
+      ],
+      "writes_derived": [
+        "data/derived/interpretability/"
+      ],
+      "notes": "Topic, document, and band cards are pending the topic-view and topic-to-data builders."
+    },
+    {
+      "id": "build_validation_blocks",
+      "order": 18,
+      "status": "partial",
+      "script": "data-pipeline/build_validation_blocks.py",
+      "current_repo_equivalents": [
+        "data/manifests/corpus_recipes.json",
+        "data-pipeline/run_local_core_benchmarks.py",
+        "data-pipeline/run_hidsag_preprocessing_sensitivity.py"
+      ],
+      "writes_local": [],
+      "writes_derived": [
+        "data/derived/validation_blocks/"
+      ],
+      "notes": "The six validation block definitions exist, but the dedicated builder that replaces nulls with curated metrics is still pending."
+    },
+    {
+      "id": "curate_for_web",
+      "order": 19,
+      "status": "implemented",
+      "script": "data-pipeline/curate_for_web.py",
+      "current_repo_equivalents": [],
+      "writes_local": [],
+      "writes_derived": [
+        "data/derived/manifests/builder_inventory.json",
+        "data/derived/manifests/web_contract.json",
+        "data/derived/manifests/index.json"
+      ],
+      "notes": "Initial master-plan scaffolding implemented in this repo state."
+    }
+  ]
+}

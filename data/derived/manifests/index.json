@@ -1,0 +1,2725 @@
+{
+  "generated_at": "2026-05-03T11:58:47Z",
+  "git_sha": null,
+  "builders": {
+    "build_eda_views": {
+      "version": "0.1.0",
+      "status": "implemented",
+      "script_path": "data-pipeline/build_eda_views.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_groupings": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_groupings.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_representations": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_representations.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_quantization_views": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_quantization_views.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_wordifications": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_wordifications.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_lda_sweep": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_lda_sweep.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_lda_canonical_fits": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_lda_canonical_fits.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_topic_views": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_topic_views.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_topic_to_data": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_topic_to_data.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_topic_to_library": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_topic_to_library.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_cross_method_agreement": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_cross_method_agreement.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_method_statistics": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_method_statistics.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_spatial_validation": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_spatial_validation.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_external_validation": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_external_validation.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_spectral_browser": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_spectral_browser.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_spectral_density": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_spectral_density.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_narratives": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_narratives.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_interpretability": {
+      "version": "0.1.0",
+      "status": "planned",
+      "script_path": "data-pipeline/build_interpretability.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "build_validation_blocks": {
+      "version": "0.1.0",
+      "status": "partial",
+      "script_path": "data-pipeline/build_validation_blocks.py",
+      "ran_at": null,
+      "duration_s": null
+    },
+    "curate_for_web": {
+      "version": "0.1.0",
+      "status": "implemented",
+      "script_path": "data-pipeline/curate_for_web.py",
+      "ran_at": "2026-05-03T11:58:47Z",
+      "duration_s": 0.0
+    }
+  },
+  "scenes": [
+    {
+      "id": "indian-pines-corrected",
+      "n_pixels": 21025,
+      "n_labelled": 10249,
+      "wavelengths_present": true
+    },
+    {
+      "id": "salinas-corrected",
+      "n_pixels": 111104,
+      "n_labelled": 54129,
+      "wavelengths_present": true
+    },
+    {
+      "id": "salinas-a-corrected",
+      "n_pixels": 7138,
+      "n_labelled": 5348,
+      "wavelengths_present": true
+    },
+    {
+      "id": "cuprite-aviris-reflectance",
+      "n_pixels": 314368,
+      "n_labelled": 314368,
+      "wavelengths_present": true
+    },
+    {
+      "id": "pavia-university",
+      "n_pixels": 207400,
+      "n_labelled": 42776,
+      "wavelengths_present": true
+    },
+    {
+      "id": "kennedy-space-center",
+      "n_pixels": 314368,
+      "n_labelled": 5211,
+      "wavelengths_present": true
+    },
+    {
+      "id": "botswana",
+      "n_pixels": 377856,
+      "n_labelled": 3248,
+      "wavelengths_present": true
+    },
+    {
+      "id": "samson-unmixing-roi",
+      "n_pixels": 9025,
+      "n_labelled": 9025,
+      "wavelengths_present": true
+    },
+    {
+      "id": "jasper-ridge-unmixing-roi",
+      "n_pixels": 10000,
+      "n_labelled": 10000,
+      "wavelengths_present": true
+    },
+    {
+      "id": "urban-unmixing-roi",
+      "n_pixels": 94249,
+      "n_labelled": 94249,
+      "wavelengths_present": true
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "analysis.analysis",
+      "path": "data/derived/analysis/analysis.json",
+      "format": "json",
+      "bytes": 166063,
+      "schema": null,
+      "input_hash": "sha256:104d6b0c3c6126053cad4fcd04f2e47dadd4eeae57894bbe3e85176991f82633"
+    },
+    {
+      "id": "baselines.previews.cuprite-aviris-reflectance-slic",
+      "path": "data/derived/baselines/previews/cuprite-aviris-reflectance-slic.png",
+      "format": "png",
+      "bytes": 2857,
+      "schema": null,
+      "input_hash": "sha256:aa20c95888a16409326cbd8d55977646048ebff8ed9ed6452cf53d610cb6850b"
+    },
+    {
+      "id": "baselines.previews.indian-pines-corrected-slic",
+      "path": "data/derived/baselines/previews/indian-pines-corrected-slic.png",
+      "format": "png",
+      "bytes": 809,
+      "schema": null,
+      "input_hash": "sha256:e52c8a52b4ad18262d48c0b4b0ff68ddebe2bc2bc585a4dafa338d00afca47ba"
+    },
+    {
+      "id": "baselines.previews.salinas-a-corrected-slic",
+      "path": "data/derived/baselines/previews/salinas-a-corrected-slic.png",
+      "format": "png",
+      "bytes": 582,
+      "schema": null,
+      "input_hash": "sha256:b0a664c5a19838ceb4e4eb39d4928dd1f8645c0bdf2aff193bbb001442e42ab5"
+    },
+    {
+      "id": "baselines.segmentation_baselines",
+      "path": "data/derived/baselines/segmentation_baselines.json",
+      "format": "json",
+      "bytes": 10315,
+      "schema": null,
+      "input_hash": "sha256:0c7ab69865c78b95daa2da70f7e4b9401dd728b1d2319787e2b95a8bf9d133a8"
+    },
+    {
+      "id": "core.hidsag_band_quality",
+      "path": "data/derived/core/hidsag_band_quality.json",
+      "format": "json",
+      "bytes": 453927,
+      "schema": null,
+      "input_hash": "sha256:a2d61fef1a7296b9ade8b81f27d792110ac538166dc6ec6ce933c6bfaf7c66b1"
+    },
+    {
+      "id": "core.hidsag_curated_subset",
+      "path": "data/derived/core/hidsag_curated_subset.json",
+      "format": "json",
+      "bytes": 52368050,
+      "schema": null,
+      "input_hash": "sha256:973f748bc3fbbe8072cbb9625b19491f1f446721177c014ba4b78cda5f66279b"
+    },
+    {
+      "id": "core.hidsag_preprocessing_sensitivity",
+      "path": "data/derived/core/hidsag_preprocessing_sensitivity.json",
+      "format": "json",
+      "bytes": 467471,
+      "schema": null,
+      "input_hash": "sha256:0a6597d5c3cc3f1fc0f42ea8d74e6a75cb867397a087b82bf02402488a66a843"
+    },
+    {
+      "id": "core.hidsag_region_documents",
+      "path": "data/derived/core/hidsag_region_documents.json",
+      "format": "json",
+      "bytes": 42370,
+      "schema": null,
+      "input_hash": "sha256:2525cb75dcbe1f4225a10657afe47502d222ff41abd3290c211d93e5d28953dd"
+    },
+    {
+      "id": "core.hidsag_region_documents",
+      "path": "data/derived/core/hidsag_region_documents.npz",
+      "format": "npz",
+      "bytes": 23255237,
+      "schema": null,
+      "input_hash": "sha256:111b6903bbee70b1e1a602d39cad92b1e74884aef352d61a26ce67c25808a847"
+    },
+    {
+      "id": "core.hidsag_subset_inventory",
+      "path": "data/derived/core/hidsag_subset_inventory.json",
+      "format": "json",
+      "bytes": 63760,
+      "schema": null,
+      "input_hash": "sha256:ff83b6fdd5b20910c49c6955bb3c90908d8ae1d66fab6bbd92d7f3d7dbee55f1"
+    },
+    {
+      "id": "core.local_core_benchmarks",
+      "path": "data/derived/core/local_core_benchmarks.json",
+      "format": "json",
+      "bytes": 2021411,
+      "schema": null,
+      "input_hash": "sha256:f56ff79180396ebee043e1d4ea9d1290dbbeb646728a684ff7e1980a515c854d"
+    },
+    {
+      "id": "core.local_dataset_inventory",
+      "path": "data/derived/core/local_dataset_inventory.json",
+      "format": "json",
+      "bytes": 53798,
+      "schema": null,
+      "input_hash": "sha256:cbff2d92d08f6e670b00fe3e813e72b4e6a80a4805c785271d844ead9cbb13c2"
+    },
+    {
+      "id": "corpus.corpus_previews",
+      "path": "data/derived/corpus/corpus_previews.json",
+      "format": "json",
+      "bytes": 32388,
+      "schema": null,
+      "input_hash": "sha256:55eee9fefaa139303d9c3952a119e87462fd5c67970d447bbd00493e675c2a01"
+    },
+    {
+      "id": "eda.per_scene.botswana",
+      "path": "data/derived/eda/per_scene/botswana.json",
+      "format": "json",
+      "bytes": 309473,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:032f06ffb6599639aae73869c6343df2d9df37ae21115f61d25208097c7ae657"
+    },
+    {
+      "id": "eda.per_scene.cuprite-aviris-reflectance",
+      "path": "data/derived/eda/per_scene/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 54676,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:c9122faa5f09e6d6ebeb68e4807e9d7d0546a317bdfe919fc618d8690b64c870"
+    },
+    {
+      "id": "eda.per_scene.indian-pines-corrected",
+      "path": "data/derived/eda/per_scene/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 483866,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:76738037c9d66d9fbe1e05725979222a1a053921e3f8dd95609555d7b1330b28"
+    },
+    {
+      "id": "eda.per_scene.jasper-ridge-unmixing-roi",
+      "path": "data/derived/eda/per_scene/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 47127,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:7248d0ce23956f00beb6646c16634939c12a041a8153aef20dc03c2cdd9ffee7"
+    },
+    {
+      "id": "eda.per_scene.kennedy-space-center",
+      "path": "data/derived/eda/per_scene/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 322005,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:135a56d3dd17e7cbc5f5c277887b29b3228dd6d0cc7c079177447db722d4f0c0"
+    },
+    {
+      "id": "eda.per_scene.pavia-university",
+      "path": "data/derived/eda/per_scene/pavia-university.json",
+      "format": "json",
+      "bytes": 149767,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:906bb7ec3da2e965bef60f095c76c58e129742df96ab70ffd0e7eb70accbc6d8"
+    },
+    {
+      "id": "eda.per_scene.salinas-a-corrected",
+      "path": "data/derived/eda/per_scene/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 198254,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:c9328cebd0697237fbb1ff192e1318b25da0d4ff15fa4b36032e510d6db3f2a4"
+    },
+    {
+      "id": "eda.per_scene.salinas-corrected",
+      "path": "data/derived/eda/per_scene/salinas-corrected.json",
+      "format": "json",
+      "bytes": 466749,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:cd99c853fab370c34bdd55424806f18d157d391f3d0d6f7cd8dcab2404643142"
+    },
+    {
+      "id": "eda.per_scene.samson-unmixing-roi",
+      "path": "data/derived/eda/per_scene/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 38534,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:f5e603f8d07b9b1037c8f4492e471812930d6766d1785df2fef316986a76e212"
+    },
+    {
+      "id": "eda.per_scene.urban-unmixing-roi",
+      "path": "data/derived/eda/per_scene/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 37759,
+      "schema": "output-schemas/eda_per_scene.schema.json",
+      "input_hash": "sha256:0f5a55e07ae0b2c29ba74bf3d24725214b391fa5659208a480e6a5eeb23c7fc5"
+    },
+    {
+      "id": "field.field_samples",
+      "path": "data/derived/field/field_samples.json",
+      "format": "json",
+      "bytes": 18156,
+      "schema": null,
+      "input_hash": "sha256:548c5ab53a36bb85d3b638e56acda55f6217f15d3c7a4ae04f8f4120f35c49b1"
+    },
+    {
+      "id": "field.previews.micasense-example-1-ndvi",
+      "path": "data/derived/field/previews/micasense-example-1-ndvi.png",
+      "format": "png",
+      "bytes": 863058,
+      "schema": null,
+      "input_hash": "sha256:b857134b5761beafa9abdc4c565077c056420ba6ea2deeda244bdf24569de081"
+    },
+    {
+      "id": "field.previews.micasense-example-1-rgb",
+      "path": "data/derived/field/previews/micasense-example-1-rgb.png",
+      "format": "png",
+      "bytes": 2305527,
+      "schema": null,
+      "input_hash": "sha256:f18d97dca724f7bfb1297d72954f95114779478a4f92f27bedf02735dd75f556"
+    },
+    {
+      "id": "field.previews.micasense-example-2-ndvi",
+      "path": "data/derived/field/previews/micasense-example-2-ndvi.png",
+      "format": "png",
+      "bytes": 368941,
+      "schema": null,
+      "input_hash": "sha256:839c1fd9cd525d6f30765bf9d3999d7f21139aea6366ebb316a9338aa24b9034"
+    },
+    {
+      "id": "field.previews.micasense-example-2-rgb",
+      "path": "data/derived/field/previews/micasense-example-2-rgb.png",
+      "format": "png",
+      "bytes": 620502,
+      "schema": null,
+      "input_hash": "sha256:eb1e2f3442aa2e427b666d7ae9243b0838b38ced8ce5ab737b847082a5916b23"
+    },
+    {
+      "id": "groupings.patch_15.botswana",
+      "path": "data/derived/groupings/patch_15/botswana.json",
+      "format": "json",
+      "bytes": 430516,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:5b5289faf2688edb15b965320960a6877946edf190f3ba72d0125b1cf521dcee"
+    },
+    {
+      "id": "groupings.patch_15.botswana.mean",
+      "path": "data/derived/groupings/patch_15/botswana.mean.bin",
+      "format": "binary",
+      "bytes": 1033560,
+      "schema": null,
+      "input_hash": "sha256:70ca29ed6cab2161607da33d398bc3ecae8c47008935669a03c8299c1856a4e3"
+    },
+    {
+      "id": "groupings.patch_15.botswana.std",
+      "path": "data/derived/groupings/patch_15/botswana.std.bin",
+      "format": "binary",
+      "bytes": 1033560,
+      "schema": null,
+      "input_hash": "sha256:14f4329d4e9f1cfc2dcf2f6e7a31d7eb9716fddef6720dc1c83a25523eaad7e9"
+    },
+    {
+      "id": "groupings.patch_15.cuprite-aviris-reflectance",
+      "path": "data/derived/groupings/patch_15/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 346402,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:122b327faee8007268c47545510f3bcdf529dc056204e7d83d9b15480c171184"
+    },
+    {
+      "id": "groupings.patch_15.cuprite-aviris-reflectance.mean",
+      "path": "data/derived/groupings/patch_15/cuprite-aviris-reflectance.mean.bin",
+      "format": "binary",
+      "bytes": 1285760,
+      "schema": null,
+      "input_hash": "sha256:abc0dcac2b88426ca5ec4012f201350ac6b88a21c790451402ecaae4769a7d85"
+    },
+    {
+      "id": "groupings.patch_15.cuprite-aviris-reflectance.std",
+      "path": "data/derived/groupings/patch_15/cuprite-aviris-reflectance.std.bin",
+      "format": "binary",
+      "bytes": 1285760,
+      "schema": null,
+      "input_hash": "sha256:b9ab87d63f63da211739f8249775c664f328e57c7825f726e5e444586315cee2"
+    },
+    {
+      "id": "groupings.patch_15.indian-pines-corrected",
+      "path": "data/derived/groupings/patch_15/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 24842,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:c4edd8176355f1e2c333d9e7755a697617e1d3bd16733625df4f22f81f1105a9"
+    },
+    {
+      "id": "groupings.patch_15.indian-pines-corrected.mean",
+      "path": "data/derived/groupings/patch_15/indian-pines-corrected.mean.bin",
+      "format": "binary",
+      "bytes": 80000,
+      "schema": null,
+      "input_hash": "sha256:46595ac5090163f76e8d579ce9ca9382b378760ccecbb166088ffafbc4c8c504"
+    },
+    {
+      "id": "groupings.patch_15.indian-pines-corrected.std",
+      "path": "data/derived/groupings/patch_15/indian-pines-corrected.std.bin",
+      "format": "binary",
+      "bytes": 80000,
+      "schema": null,
+      "input_hash": "sha256:edb9be6bd532c7986fa8014b81a491e8e67824a020572e9f0054afe245b6a550"
+    },
+    {
+      "id": "groupings.patch_15.jasper-ridge-unmixing-roi",
+      "path": "data/derived/groupings/patch_15/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 12749,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:de1183db30b5c9d7d38127c0ee977fcf54a949762b778c73f7bec879e4fbe0d5"
+    },
+    {
+      "id": "groupings.patch_15.jasper-ridge-unmixing-roi.mean",
+      "path": "data/derived/groupings/patch_15/jasper-ridge-unmixing-roi.mean.bin",
+      "format": "binary",
+      "bytes": 38808,
+      "schema": null,
+      "input_hash": "sha256:bb0c74ff2998667d32ce06dac6959bb139709ab9b19bb948c1a9f3b321172b76"
+    },
+    {
+      "id": "groupings.patch_15.jasper-ridge-unmixing-roi.std",
+      "path": "data/derived/groupings/patch_15/jasper-ridge-unmixing-roi.std.bin",
+      "format": "binary",
+      "bytes": 38808,
+      "schema": null,
+      "input_hash": "sha256:6496b5b54342017ca6df4107bf42d9e8a7ab21f9793ff0db535bb3bea5323342"
+    },
+    {
+      "id": "groupings.patch_15.kennedy-space-center",
+      "path": "data/derived/groupings/patch_15/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 345626,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:d5d16bb27f26d79bd4fe1812cf4890bdfcb40648d063b354484412e14a30f402"
+    },
+    {
+      "id": "groupings.patch_15.kennedy-space-center.mean",
+      "path": "data/derived/groupings/patch_15/kennedy-space-center.mean.bin",
+      "format": "binary",
+      "bytes": 1010240,
+      "schema": null,
+      "input_hash": "sha256:85c95089f9d26bf3833632e3510f9f58d128af798c281a3c30fa34d21e059efb"
+    },
+    {
+      "id": "groupings.patch_15.kennedy-space-center.std",
+      "path": "data/derived/groupings/patch_15/kennedy-space-center.std.bin",
+      "format": "binary",
+      "bytes": 1010240,
+      "schema": null,
+      "input_hash": "sha256:4ae03a52ed40dae2138fd8b112d10ab4e7471a778a658f1c0a43122cdbe17265"
+    },
+    {
+      "id": "groupings.patch_15.pavia-university",
+      "path": "data/derived/groupings/patch_15/pavia-university.json",
+      "format": "json",
+      "bytes": 226728,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:f50943f18a7a047b59d34743c0936555e1b7ec9d44ed83d3211f793d003db013"
+    },
+    {
+      "id": "groupings.patch_15.pavia-university.mean",
+      "path": "data/derived/groupings/patch_15/pavia-university.mean.bin",
+      "format": "binary",
+      "bytes": 388516,
+      "schema": null,
+      "input_hash": "sha256:8cce239f197e22467c3733bacef32d085a72296818da5306e6c2f505dd985630"
+    },
+    {
+      "id": "groupings.patch_15.pavia-university.std",
+      "path": "data/derived/groupings/patch_15/pavia-university.std.bin",
+      "format": "binary",
+      "bytes": 388516,
+      "schema": null,
+      "input_hash": "sha256:00c9aab35c9667e893c34838c5037262942af3d74cdd91d3263ebafb8a7ee424"
+    },
+    {
+      "id": "groupings.patch_15.salinas-a-corrected",
+      "path": "data/derived/groupings/patch_15/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 9662,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:378198346913a7ca2ab8928d084d5dd8069820102bc29f04eb7a13b4de1e296a"
+    },
+    {
+      "id": "groupings.patch_15.salinas-a-corrected.mean",
+      "path": "data/derived/groupings/patch_15/salinas-a-corrected.mean.bin",
+      "format": "binary",
+      "bytes": 29376,
+      "schema": null,
+      "input_hash": "sha256:59d3f667700e34b6d2d26f64ee43c6b76f8db9e17b1c1d34ece564343068ff3b"
+    },
+    {
+      "id": "groupings.patch_15.salinas-a-corrected.std",
+      "path": "data/derived/groupings/patch_15/salinas-a-corrected.std.bin",
+      "format": "binary",
+      "bytes": 29376,
+      "schema": null,
+      "input_hash": "sha256:8528c6a0a3057051e05b524d9b642b0378fcfd86eb339faafd2ef0bb69a65b42"
+    },
+    {
+      "id": "groupings.patch_15.salinas-corrected",
+      "path": "data/derived/groupings/patch_15/salinas-corrected.json",
+      "format": "json",
+      "bytes": 126971,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:357217f26661120d167251561871e4fe0874e80afa6d0a8aba402006a1c87b76"
+    },
+    {
+      "id": "groupings.patch_15.salinas-corrected.mean",
+      "path": "data/derived/groupings/patch_15/salinas-corrected.mean.bin",
+      "format": "binary",
+      "bytes": 428400,
+      "schema": null,
+      "input_hash": "sha256:dd75a028a0619dba8fd728c45bd47032ec88f856e65145fc69e35742d5254567"
+    },
+    {
+      "id": "groupings.patch_15.salinas-corrected.std",
+      "path": "data/derived/groupings/patch_15/salinas-corrected.std.bin",
+      "format": "binary",
+      "bytes": 428400,
+      "schema": null,
+      "input_hash": "sha256:e11be590d62ede8e9ed7b8b1512e5de72d81cefcd15aba581e6f7d1d17e1149b"
+    },
+    {
+      "id": "groupings.patch_15.samson-unmixing-roi",
+      "path": "data/derived/groupings/patch_15/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 12750,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:21076490b537dd09ee02914ff15e7461e2bb9469b58cae97d4cc8fb0ecca590a"
+    },
+    {
+      "id": "groupings.patch_15.samson-unmixing-roi.mean",
+      "path": "data/derived/groupings/patch_15/samson-unmixing-roi.mean.bin",
+      "format": "binary",
+      "bytes": 30576,
+      "schema": null,
+      "input_hash": "sha256:f6f56963f7666192f2d4109499de19b795a6f6dda940f35f6833d327f6aa00a0"
+    },
+    {
+      "id": "groupings.patch_15.samson-unmixing-roi.std",
+      "path": "data/derived/groupings/patch_15/samson-unmixing-roi.std.bin",
+      "format": "binary",
+      "bytes": 30576,
+      "schema": null,
+      "input_hash": "sha256:bfc60d1cd46018d5811a9d4606dc94e50e034c37fb258274b691c6c2762770c4"
+    },
+    {
+      "id": "groupings.patch_15.urban-unmixing-roi",
+      "path": "data/derived/groupings/patch_15/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 106505,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:14b30ae6a75e3090debe00e7d3d46c6431bee31969e87a38193a4beb8ff3e167"
+    },
+    {
+      "id": "groupings.patch_15.urban-unmixing-roi.mean",
+      "path": "data/derived/groupings/patch_15/urban-unmixing-roi.mean.bin",
+      "format": "binary",
+      "bytes": 285768,
+      "schema": null,
+      "input_hash": "sha256:a81bce1ee821283c54f26e638b7f3781811ba570e97847f74183c0ab1d4e1de0"
+    },
+    {
+      "id": "groupings.patch_15.urban-unmixing-roi.std",
+      "path": "data/derived/groupings/patch_15/urban-unmixing-roi.std.bin",
+      "format": "binary",
+      "bytes": 285768,
+      "schema": null,
+      "input_hash": "sha256:dd931b95458eb296c7fd85de31fc46786d761aca842e29cafe0c01cee445890b"
+    },
+    {
+      "id": "groupings.previews.botswana-patch_15",
+      "path": "data/derived/groupings/previews/botswana-patch_15.png",
+      "format": "png",
+      "bytes": 6877,
+      "schema": null,
+      "input_hash": "sha256:27b400fec9270a56e72b105eca213063c5dcb48e566d21dd01c0021e4d31dcb8"
+    },
+    {
+      "id": "groupings.previews.botswana-slic_200",
+      "path": "data/derived/groupings/previews/botswana-slic_200.png",
+      "format": "png",
+      "bytes": 4928,
+      "schema": null,
+      "input_hash": "sha256:af6f0cca26fe761f60f78aed89df46fbc80d7ab098d033b9de7878ab6fc8f6ba"
+    },
+    {
+      "id": "groupings.previews.cuprite-aviris-reflectance-patch_15",
+      "path": "data/derived/groupings/previews/cuprite-aviris-reflectance-patch_15.png",
+      "format": "png",
+      "bytes": 3666,
+      "schema": null,
+      "input_hash": "sha256:dea31eae420b94c1ccca101a2dbb78e1e372e0564c2e6ea8246c814f221248fa"
+    },
+    {
+      "id": "groupings.previews.cuprite-aviris-reflectance-slic_200",
+      "path": "data/derived/groupings/previews/cuprite-aviris-reflectance-slic_200.png",
+      "format": "png",
+      "bytes": 3116,
+      "schema": null,
+      "input_hash": "sha256:7d4b6f3d49b751fe69094be961107d161deb7bb7e8f4f0c8eb575731f5964cdc"
+    },
+    {
+      "id": "groupings.previews.indian-pines-corrected-patch_15",
+      "path": "data/derived/groupings/previews/indian-pines-corrected-patch_15.png",
+      "format": "png",
+      "bytes": 659,
+      "schema": null,
+      "input_hash": "sha256:585c2593437b57dfed4c67ac826a9f5f99a046eca3527fd943e71623c856aca4"
+    },
+    {
+      "id": "groupings.previews.indian-pines-corrected-slic_200",
+      "path": "data/derived/groupings/previews/indian-pines-corrected-slic_200.png",
+      "format": "png",
+      "bytes": 937,
+      "schema": null,
+      "input_hash": "sha256:8a19eafcf0e1c1474d680b12cdcdea664f9d1b1875d89ef9a91cf16b80ea295c"
+    },
+    {
+      "id": "groupings.previews.jasper-ridge-unmixing-roi-patch_15",
+      "path": "data/derived/groupings/previews/jasper-ridge-unmixing-roi-patch_15.png",
+      "format": "png",
+      "bytes": 372,
+      "schema": null,
+      "input_hash": "sha256:336c4e09fb29e2768bd52b8aff6ebc98dee0839743fdb10e43da135d847a9482"
+    },
+    {
+      "id": "groupings.previews.jasper-ridge-unmixing-roi-slic_200",
+      "path": "data/derived/groupings/previews/jasper-ridge-unmixing-roi-slic_200.png",
+      "format": "png",
+      "bytes": 553,
+      "schema": null,
+      "input_hash": "sha256:4d692ad6af74e077ae856498d2de834850bf86dc46f2e9ae4c72d2063793f5c7"
+    },
+    {
+      "id": "groupings.previews.kennedy-space-center-patch_15",
+      "path": "data/derived/groupings/previews/kennedy-space-center-patch_15.png",
+      "format": "png",
+      "bytes": 3666,
+      "schema": null,
+      "input_hash": "sha256:dea31eae420b94c1ccca101a2dbb78e1e372e0564c2e6ea8246c814f221248fa"
+    },
+    {
+      "id": "groupings.previews.kennedy-space-center-slic_200",
+      "path": "data/derived/groupings/previews/kennedy-space-center-slic_200.png",
+      "format": "png",
+      "bytes": 3085,
+      "schema": null,
+      "input_hash": "sha256:f2c8270118b4ea9936d46eaf19e93f37e8d1acdb6a6c6697b133094dec342c97"
+    },
+    {
+      "id": "groupings.previews.pavia-university-patch_15",
+      "path": "data/derived/groupings/previews/pavia-university-patch_15.png",
+      "format": "png",
+      "bytes": 2767,
+      "schema": null,
+      "input_hash": "sha256:dd466898869e68a4194a59e8f3823f391b74a19733931349b391be21aed07e33"
+    },
+    {
+      "id": "groupings.previews.pavia-university-slic_200",
+      "path": "data/derived/groupings/previews/pavia-university-slic_200.png",
+      "format": "png",
+      "bytes": 2692,
+      "schema": null,
+      "input_hash": "sha256:19e9fcf0d8301ad025f6adb50808787904739f8eec514d5dbfda5c6fffc3d95f"
+    },
+    {
+      "id": "groupings.previews.salinas-a-corrected-patch_15",
+      "path": "data/derived/groupings/previews/salinas-a-corrected-patch_15.png",
+      "format": "png",
+      "bytes": 416,
+      "schema": null,
+      "input_hash": "sha256:338684947c2c29d5e9084127d72812c6b98aad77c5494c61c19f4ca02181306a"
+    },
+    {
+      "id": "groupings.previews.salinas-a-corrected-slic_200",
+      "path": "data/derived/groupings/previews/salinas-a-corrected-slic_200.png",
+      "format": "png",
+      "bytes": 503,
+      "schema": null,
+      "input_hash": "sha256:692d525745f19788bd939fd3c25c4d8b6944016762b47d2b603551a916acfae0"
+    },
+    {
+      "id": "groupings.previews.salinas-corrected-patch_15",
+      "path": "data/derived/groupings/previews/salinas-corrected-patch_15.png",
+      "format": "png",
+      "bytes": 2073,
+      "schema": null,
+      "input_hash": "sha256:3bdc898d1a09c8e2e79bb9b2e64aa6fa29d1e92712b5be4a64220a0b50ce5fa1"
+    },
+    {
+      "id": "groupings.previews.salinas-corrected-slic_200",
+      "path": "data/derived/groupings/previews/salinas-corrected-slic_200.png",
+      "format": "png",
+      "bytes": 2025,
+      "schema": null,
+      "input_hash": "sha256:f64ceda982c94af6a091ef1bc08965d766515c99a6939386153271a825379c0e"
+    },
+    {
+      "id": "groupings.previews.samson-unmixing-roi-patch_15",
+      "path": "data/derived/groupings/previews/samson-unmixing-roi-patch_15.png",
+      "format": "png",
+      "bytes": 354,
+      "schema": null,
+      "input_hash": "sha256:a3fbfdf0de7248ee18200009a61cb99ab7be925b7e4df931752dc02341bd15a8"
+    },
+    {
+      "id": "groupings.previews.samson-unmixing-roi-slic_200",
+      "path": "data/derived/groupings/previews/samson-unmixing-roi-slic_200.png",
+      "format": "png",
+      "bytes": 473,
+      "schema": null,
+      "input_hash": "sha256:9206d482d5bb5b36272752a5da0b9be7b63fa764aef5c657e367a53ca42746d0"
+    },
+    {
+      "id": "groupings.previews.urban-unmixing-roi-patch_15",
+      "path": "data/derived/groupings/previews/urban-unmixing-roi-patch_15.png",
+      "format": "png",
+      "bytes": 1406,
+      "schema": null,
+      "input_hash": "sha256:e212ed4d6bf432a9b2d1423145b38b858692d2329c218d4a5d520abb8d1516ee"
+    },
+    {
+      "id": "groupings.previews.urban-unmixing-roi-slic_200",
+      "path": "data/derived/groupings/previews/urban-unmixing-roi-slic_200.png",
+      "format": "png",
+      "bytes": 1236,
+      "schema": null,
+      "input_hash": "sha256:9c6734c1d04c1cf7029081619e0c0ab0d50296f5238b4f378306a6c232b3956b"
+    },
+    {
+      "id": "groupings.slic_200.botswana",
+      "path": "data/derived/groupings/slic_200/botswana.json",
+      "format": "json",
+      "bytes": 49716,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:2f30efe918265cf2a8881b58afd7b1b6a2c179526808912ce00ad6eefeff0c42"
+    },
+    {
+      "id": "groupings.slic_200.botswana.mean",
+      "path": "data/derived/groupings/slic_200/botswana.mean.bin",
+      "format": "binary",
+      "bytes": 118320,
+      "schema": null,
+      "input_hash": "sha256:023aa5afa4225b3181c8797cd29256401d2210a362f653748ae55ab4e489346e"
+    },
+    {
+      "id": "groupings.slic_200.botswana.std",
+      "path": "data/derived/groupings/slic_200/botswana.std.bin",
+      "format": "binary",
+      "bytes": 118320,
+      "schema": null,
+      "input_hash": "sha256:4a5032cde23d4d6ea5b4ae7e3be9660efa7588c257109b6c6877c6c3f6b33f84"
+    },
+    {
+      "id": "groupings.slic_200.cuprite-aviris-reflectance",
+      "path": "data/derived/groupings/slic_200/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 47699,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:8d2e15bf6fe1b3d0751d4057377e6f2c819e04be360338d4187af6d988cd879c"
+    },
+    {
+      "id": "groupings.slic_200.cuprite-aviris-reflectance.mean",
+      "path": "data/derived/groupings/slic_200/cuprite-aviris-reflectance.mean.bin",
+      "format": "binary",
+      "bytes": 174720,
+      "schema": null,
+      "input_hash": "sha256:0a7a7ccce380a665e979bc23d6d8827963068fa4af04b790b2ab174f33045059"
+    },
+    {
+      "id": "groupings.slic_200.cuprite-aviris-reflectance.std",
+      "path": "data/derived/groupings/slic_200/cuprite-aviris-reflectance.std.bin",
+      "format": "binary",
+      "bytes": 174720,
+      "schema": null,
+      "input_hash": "sha256:3a614a84e3015e9646f3496e1629e7771d49979e17f8feea668504744b4f8c08"
+    },
+    {
+      "id": "groupings.slic_200.indian-pines-corrected",
+      "path": "data/derived/groupings/slic_200/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 47914,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:95de65d288724d1cd24b0aebe6ce0d2bc596c76377782219a8314b6a211b72af"
+    },
+    {
+      "id": "groupings.slic_200.indian-pines-corrected.mean",
+      "path": "data/derived/groupings/slic_200/indian-pines-corrected.mean.bin",
+      "format": "binary",
+      "bytes": 156800,
+      "schema": null,
+      "input_hash": "sha256:b6fb529998cf29d58506464d34e51aea1037c4ba1718a1dc9b49202277843ebb"
+    },
+    {
+      "id": "groupings.slic_200.indian-pines-corrected.std",
+      "path": "data/derived/groupings/slic_200/indian-pines-corrected.std.bin",
+      "format": "binary",
+      "bytes": 156800,
+      "schema": null,
+      "input_hash": "sha256:6d5252646f8dd6f88ec2398a0b1b5e73822addc8d9ecff61476ba3163cb0b534"
+    },
+    {
+      "id": "groupings.slic_200.jasper-ridge-unmixing-roi",
+      "path": "data/derived/groupings/slic_200/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 47861,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:fe0329ab4acf51b2317f2bf41281f1e791f4945ab1de22873969e32b7c599632"
+    },
+    {
+      "id": "groupings.slic_200.jasper-ridge-unmixing-roi.mean",
+      "path": "data/derived/groupings/slic_200/jasper-ridge-unmixing-roi.mean.bin",
+      "format": "binary",
+      "bytes": 155232,
+      "schema": null,
+      "input_hash": "sha256:ab2ee9875c1781c7feb01b1d5a9afc3ff149a82a583cf3c1a110b17f43620223"
+    },
+    {
+      "id": "groupings.slic_200.jasper-ridge-unmixing-roi.std",
+      "path": "data/derived/groupings/slic_200/jasper-ridge-unmixing-roi.std.bin",
+      "format": "binary",
+      "bytes": 155232,
+      "schema": null,
+      "input_hash": "sha256:15303d5a2a4859e5f98ab15d40c939615e4a50ee6dfbe7455bc6e527c61620c5"
+    },
+    {
+      "id": "groupings.slic_200.kennedy-space-center",
+      "path": "data/derived/groupings/slic_200/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 47573,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:9b1d71e22b9376777e13741198d16f610277a568e851c784ac3162da4b0b5432"
+    },
+    {
+      "id": "groupings.slic_200.kennedy-space-center.mean",
+      "path": "data/derived/groupings/slic_200/kennedy-space-center.mean.bin",
+      "format": "binary",
+      "bytes": 137280,
+      "schema": null,
+      "input_hash": "sha256:a86044252b456c6f8a83afd2c6f7118a907d5ba918d8e8d69ccb25ad42e37e9f"
+    },
+    {
+      "id": "groupings.slic_200.kennedy-space-center.std",
+      "path": "data/derived/groupings/slic_200/kennedy-space-center.std.bin",
+      "format": "binary",
+      "bytes": 137280,
+      "schema": null,
+      "input_hash": "sha256:6f80464ef1fbe93f1e30bfba623cc85b74e6aa013b1225a574c605e3a586cf1c"
+    },
+    {
+      "id": "groupings.slic_200.pavia-university",
+      "path": "data/derived/groupings/slic_200/pavia-university.json",
+      "format": "json",
+      "bytes": 50907,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:883037148be305056abce2a9d1c74fa3124e68e6e24e85f643df0dbde46fda83"
+    },
+    {
+      "id": "groupings.slic_200.pavia-university.mean",
+      "path": "data/derived/groupings/slic_200/pavia-university.mean.bin",
+      "format": "binary",
+      "bytes": 86108,
+      "schema": null,
+      "input_hash": "sha256:7dd62f3ea51ac57eee24e8796ae57943990281962bb24c8ae9d9df78015350a7"
+    },
+    {
+      "id": "groupings.slic_200.pavia-university.std",
+      "path": "data/derived/groupings/slic_200/pavia-university.std.bin",
+      "format": "binary",
+      "bytes": 86108,
+      "schema": null,
+      "input_hash": "sha256:5b89c3292bb770852ccc2fd3da96502e0c6184b40760cf660581bbad3329d75e"
+    },
+    {
+      "id": "groupings.slic_200.salinas-a-corrected",
+      "path": "data/derived/groupings/slic_200/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 47872,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:5ff01c517807348bbd68bfda21fb7228e7141279f6c94ccdda875faf8dc1d862"
+    },
+    {
+      "id": "groupings.slic_200.salinas-a-corrected.mean",
+      "path": "data/derived/groupings/slic_200/salinas-a-corrected.mean.bin",
+      "format": "binary",
+      "bytes": 159936,
+      "schema": null,
+      "input_hash": "sha256:ee81c407f874736be30c64dd89622b061645dac002664b3fafd4aca0e2396d0e"
+    },
+    {
+      "id": "groupings.slic_200.salinas-a-corrected.std",
+      "path": "data/derived/groupings/slic_200/salinas-a-corrected.std.bin",
+      "format": "binary",
+      "bytes": 159936,
+      "schema": null,
+      "input_hash": "sha256:a33b867ad76b57e19610ea6d9bc8406ab5d8f83e2788120546996d79692558bf"
+    },
+    {
+      "id": "groupings.slic_200.salinas-corrected",
+      "path": "data/derived/groupings/slic_200/salinas-corrected.json",
+      "format": "json",
+      "bytes": 46246,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:085583dd47c965fe3fb0a452d17293282400f9d5abfe5b105d3fb6e2955a6328"
+    },
+    {
+      "id": "groupings.slic_200.salinas-corrected.mean",
+      "path": "data/derived/groupings/slic_200/salinas-corrected.mean.bin",
+      "format": "binary",
+      "bytes": 154224,
+      "schema": null,
+      "input_hash": "sha256:66657270079055ea0042baf5e14178bd897d60b8387839f8913eabce48d213a8"
+    },
+    {
+      "id": "groupings.slic_200.salinas-corrected.std",
+      "path": "data/derived/groupings/slic_200/salinas-corrected.std.bin",
+      "format": "binary",
+      "bytes": 154224,
+      "schema": null,
+      "input_hash": "sha256:fd5f4920186ef850ccad88f52877676168e8865706d3dfeb3cdceae4bcb3c572"
+    },
+    {
+      "id": "groupings.slic_200.samson-unmixing-roi",
+      "path": "data/derived/groupings/slic_200/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 47975,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:38db56e9d3bb36d305e9b2e950c20d34c8f0f85aa2f12bb5fe56b0b4d4e26da6"
+    },
+    {
+      "id": "groupings.slic_200.samson-unmixing-roi.mean",
+      "path": "data/derived/groupings/slic_200/samson-unmixing-roi.mean.bin",
+      "format": "binary",
+      "bytes": 122304,
+      "schema": null,
+      "input_hash": "sha256:de29d459269037d66e668ccf174bcb5e16f6658e489f90f037befd0c39c260bb"
+    },
+    {
+      "id": "groupings.slic_200.samson-unmixing-roi.std",
+      "path": "data/derived/groupings/slic_200/samson-unmixing-roi.std.bin",
+      "format": "binary",
+      "bytes": 122304,
+      "schema": null,
+      "input_hash": "sha256:f6f6935e7810270579f2b66c1c39d62d1968c2472659a0b88cc2a7e22a5f6c73"
+    },
+    {
+      "id": "groupings.slic_200.urban-unmixing-roi",
+      "path": "data/derived/groupings/slic_200/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 47801,
+      "schema": "output-schemas/grouping_scene.schema.json",
+      "input_hash": "sha256:8552206335d18fbeb4c0a014b21580ed63be8b2572d4a70f971bf20c024f65e2"
+    },
+    {
+      "id": "groupings.slic_200.urban-unmixing-roi.mean",
+      "path": "data/derived/groupings/slic_200/urban-unmixing-roi.mean.bin",
+      "format": "binary",
+      "bytes": 127008,
+      "schema": null,
+      "input_hash": "sha256:de8c02c83649db6a6e14ec49b3215bfe79e1abf0b7013a70c96a9667937c3f48"
+    },
+    {
+      "id": "groupings.slic_200.urban-unmixing-roi.std",
+      "path": "data/derived/groupings/slic_200/urban-unmixing-roi.std.bin",
+      "format": "binary",
+      "bytes": 127008,
+      "schema": null,
+      "input_hash": "sha256:86a26f587852817b8f63aa82b3a5431ba57fc408b474c0e2f8029d1f85cc43e2"
+    },
+    {
+      "id": "manifests.builder_inventory",
+      "path": "data/derived/manifests/builder_inventory.json",
+      "format": "json",
+      "bytes": 11805,
+      "schema": null,
+      "input_hash": "sha256:262c385dbf7fa613bbd893e9d131acf8f59eb0ae0463e2779f0956bdd2b2902b"
+    },
+    {
+      "id": "manifests.web_contract",
+      "path": "data/derived/manifests/web_contract.json",
+      "format": "json",
+      "bytes": 2004,
+      "schema": null,
+      "input_hash": "sha256:6f63150c82365f145d461d0b4467838b85650a8e82cf542b8fe074933e396bec"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.botswana",
+      "path": "data/derived/quantization/quantile_global_Q16/botswana.json",
+      "format": "json",
+      "bytes": 13771,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:b60e2cdaf701747f0446c697c25ac2ce2461b5fe21673412cd7dbb138644dd45"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/quantile_global_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19759,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:60815b2f57750f8ee91d39d49e1524ac154f17166f93f7095c52d34448433438"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.indian-pines-corrected",
+      "path": "data/derived/quantization/quantile_global_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 18263,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:5dd4b525fc786a65825d904f9fe52d8dd5a62ee806fa100e7248da13f4a591a9"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/quantile_global_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17893,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:63c07f220c51b48e269cd0885b38f56c3f4e73e790e235b4ed5950f93e00d282"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.kennedy-space-center",
+      "path": "data/derived/quantization/quantile_global_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 15901,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:21c6820d48729b0da1dd1401dee5979ad3a9753aae24cf6aa6a22a13a80620a1"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.pavia-university",
+      "path": "data/derived/quantization/quantile_global_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 10656,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:ffbc0b5c0b77eef667288f95c3eccb9179c09f355bffdfa8a55e9e4ea685da85"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.salinas-a-corrected",
+      "path": "data/derived/quantization/quantile_global_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18532,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:4878b15298cc785c2570c491c6dba0e4356b513644a01c77484975ebb29e944a"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.salinas-corrected",
+      "path": "data/derived/quantization/quantile_global_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18568,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:a2e5dc5ff8c6a91b092a189c7e526bbaee7ea4b0733b3759d5d5cced8c7af058"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.samson-unmixing-roi",
+      "path": "data/derived/quantization/quantile_global_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14527,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:f80eb9d945eb2c2c413944e1e9849242043381a2fb29369069d14445e0a3aaa5"
+    },
+    {
+      "id": "quantization.quantile_global_Q16.urban-unmixing-roi",
+      "path": "data/derived/quantization/quantile_global_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 15057,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:1ef170f89d40dfbc2cc8895c4a2d0a7f8ed6c628af755db4d73311344ff38d84"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.botswana",
+      "path": "data/derived/quantization/quantile_global_Q8/botswana.json",
+      "format": "json",
+      "bytes": 13695,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:3300f124a4253f2e834614ec30bc469e3a06a6de646b48db640c94ef0c9068e5"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/quantile_global_Q8/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19703,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:8e8fe07afbbac590950828bac5d488fe84c83b81c3dcfbc8211da0d4128e3b60"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.indian-pines-corrected",
+      "path": "data/derived/quantization/quantile_global_Q8/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 18153,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:208acb877c14098055cf144695459c389561fae1207c8b7f27ef80d3853c63d1"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/quantile_global_Q8/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17769,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:277311944e692fa176d3dd4cb8594c7f9931717f9c35b09ee3bbee3732257314"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.kennedy-space-center",
+      "path": "data/derived/quantization/quantile_global_Q8/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 15767,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:ceeb054140804e9dba57a67c4472f3a80be538e55e6bac44dbe0069cf5c5649a"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.pavia-university",
+      "path": "data/derived/quantization/quantile_global_Q8/pavia-university.json",
+      "format": "json",
+      "bytes": 10534,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:bd05a76bee15925f02c4d194bd98389722a370bdeb99fe39bf640753c8d4eeea"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.salinas-a-corrected",
+      "path": "data/derived/quantization/quantile_global_Q8/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18446,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:6a8a739f6ebbb79bbac2f726e2b00648535b5ef4a7c57aaf685602fc3369e4e8"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.salinas-corrected",
+      "path": "data/derived/quantization/quantile_global_Q8/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18476,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:f51d1bafe1aa1bb2cfdbe1c46dec083ec552db85419d1c5da366e3f5d6a57ade"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.samson-unmixing-roi",
+      "path": "data/derived/quantization/quantile_global_Q8/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14390,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:c078851580ff57c41bef939c043eb6c9a4067745af19772ff04c4bbe1f733af7"
+    },
+    {
+      "id": "quantization.quantile_global_Q8.urban-unmixing-roi",
+      "path": "data/derived/quantization/quantile_global_Q8/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14945,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:4ab3aada2fe7db09f6889698e21ad1428f84e2c3af54629e9bb3607e469cca44"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.botswana",
+      "path": "data/derived/quantization/quantile_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 13768,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:bd2b0b2b735ce05d36f4046911321397f71ae79ddebef095360d68ecaae5d27e"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/quantile_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19756,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:e828b9ac8eacb2077a0069a0a9d217a21fc423ab23c686a86bcc3cd47c4d8ba6"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/quantization/quantile_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 18197,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:8ad76e48b5e28e847e82dc9723ef146427476fe77a52eb3342c56630d028eb00"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/quantile_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17864,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:06ee573c20e077aba4d256ab72a49a4a7ebf2deeef2b60d6f5007763a24cb439"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/quantization/quantile_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 15923,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:b61a8111462c993e09627c1a51dbbc0bd90182fde896d92cf0b8985f27ed737b"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.pavia-university",
+      "path": "data/derived/quantization/quantile_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 10673,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:997255d7c3cdb7dd8bac092e348b6df463e86bcbe34460fe5c5754f92c5793eb"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/quantization/quantile_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18538,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:fcc87edd059de3eec941389e87cd2a7d9078ab81939afa29a42487e7c49b1a54"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.salinas-corrected",
+      "path": "data/derived/quantization/quantile_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18551,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:db05ba718fcd13648a3ff6cbe31c27856e3a55c342e08aacc13ee10b98c564d8"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/quantization/quantile_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14517,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:6849c5ce714fc66749359564b1efe9a6ab1f87aa695f373e0c076b5879015682"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/quantization/quantile_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 15055,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:9d7d9f53fa94282c889184247428afc65834da40bc578ae21ae0486abf4fc05c"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.botswana",
+      "path": "data/derived/quantization/quantile_per_band_Q8/botswana.json",
+      "format": "json",
+      "bytes": 13672,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d84ef55b14acab98149f729a07b6716b3bd718a61e34b62018567f4095a53982"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/quantile_per_band_Q8/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19640,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:3ec15a8bcc89dba81cf080fbfb6a57675f800b926e63d53f196bf69477aaed76"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.indian-pines-corrected",
+      "path": "data/derived/quantization/quantile_per_band_Q8/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 18143,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:9613de84620fe1916d5cc898ec98ad031bfdb2cb490dc6a910f29c0dafb1b2de"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/quantile_per_band_Q8/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17749,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:bf63ed12a49e0356cc48a1431e2b1713cd417861ae42dae6fbb2b41dcde31eae"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.kennedy-space-center",
+      "path": "data/derived/quantization/quantile_per_band_Q8/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 15783,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:10746ac9958342f716ea65af25ad42aefbbc3426bb3ccbb1a1a3e092016fe05e"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.pavia-university",
+      "path": "data/derived/quantization/quantile_per_band_Q8/pavia-university.json",
+      "format": "json",
+      "bytes": 10542,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:9ed6822e5793de574a2aaf73d4d84c75d38b10495049e32e6644fe7049051930"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.salinas-a-corrected",
+      "path": "data/derived/quantization/quantile_per_band_Q8/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18475,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:3cc71d306f5b01bbc6ce72baf920eadf6961265aad01008464e61752092bf602"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.salinas-corrected",
+      "path": "data/derived/quantization/quantile_per_band_Q8/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18486,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:c28064f1c91781e09699d5ab4df605483a3e8afcc6a1e31c0c018f816950d7aa"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.samson-unmixing-roi",
+      "path": "data/derived/quantization/quantile_per_band_Q8/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14395,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:db19541a0e288f3d8e62af08949ad2d935650127592700d46f3bb83fbf153632"
+    },
+    {
+      "id": "quantization.quantile_per_band_Q8.urban-unmixing-roi",
+      "path": "data/derived/quantization/quantile_per_band_Q8/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14924,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:47a87adf05026fec78732e16a3a1378439cbf8abe7421ee07c820ebb75cf2e95"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.botswana",
+      "path": "data/derived/quantization/uniform_global_Q16/botswana.json",
+      "format": "json",
+      "bytes": 12789,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:1dac1d737adb40687625d6913d58e0647fd8b3f576e6fe29ac1b0b81391c397d"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/uniform_global_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19928,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:8f1f8141103dffdc536389516d0cbf87acff3218484c6254806e3744ce3c8c58"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.indian-pines-corrected",
+      "path": "data/derived/quantization/uniform_global_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 17937,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:dc95100d0e7b3cf6deb34fe723013ac7f85445fa9fa5b38151b9a54a1235f3ea"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/uniform_global_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17840,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:ae7f3a0c783631dfe9387fd4391c7a89e811ed6c01c2f5804dce051ae7b804fd"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.kennedy-space-center",
+      "path": "data/derived/quantization/uniform_global_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 13929,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:e26aac8869e453b5cf18af6b19f8cf2110af4847d24d34516b1c0f3f43791cb9"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.pavia-university",
+      "path": "data/derived/quantization/uniform_global_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 10667,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:cda795f76bdcd7b5c3493f1aa37e34b5a8a039cc111f41fd029f0da0a9ada271"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.salinas-a-corrected",
+      "path": "data/derived/quantization/uniform_global_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18319,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d97efdc64457c16d78b71e9d4a7fa94d835b8ffb6299d11573daf477d6f062cc"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.salinas-corrected",
+      "path": "data/derived/quantization/uniform_global_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18644,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:b483702a923b4f613cac233d97d878e86ca5c972d83cc18a2c82bc27fb9dc142"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.samson-unmixing-roi",
+      "path": "data/derived/quantization/uniform_global_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14508,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d27355f82639ee78cca06c4f5b1462b7ba070f814bad0636defb9fcae9bc0b76"
+    },
+    {
+      "id": "quantization.uniform_global_Q16.urban-unmixing-roi",
+      "path": "data/derived/quantization/uniform_global_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 15056,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:fd880eeb8ad637a43dd9af1d7c474de482c28ae5d9112bf190cb3a9a58cc3f60"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.botswana",
+      "path": "data/derived/quantization/uniform_global_Q8/botswana.json",
+      "format": "json",
+      "bytes": 12243,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:ad48b86f691600742fc01a97672c0815b6c7e4f1dbd108ddeaebef5095718091"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/uniform_global_Q8/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19789,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:b05c11803caf46c239298b7e70a3f0dd078ec10161677b6c32b4ce43b922c282"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.indian-pines-corrected",
+      "path": "data/derived/quantization/uniform_global_Q8/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 17205,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:9a2142b59f717ab7863d101a979b6c25eb27fefc715d80e75db8f1b8b472f101"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/uniform_global_Q8/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17727,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:9f5d1b8a3784a9fe0f04d34390124d71d8c3ad923b4c119e3bd73dc8f0d8cb09"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.kennedy-space-center",
+      "path": "data/derived/quantization/uniform_global_Q8/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 13846,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d0822040dd8b24b3f1625c4bdbe6f45e09ce29aabfb747c61ced28f37b4d9b7d"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.pavia-university",
+      "path": "data/derived/quantization/uniform_global_Q8/pavia-university.json",
+      "format": "json",
+      "bytes": 10532,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:760c1b7ae0c7234fe82edbde1316f9f80550e1232b81d2f3caeba6d2f971f252"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.salinas-a-corrected",
+      "path": "data/derived/quantization/uniform_global_Q8/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18022,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:4d76326d5376ecf3c26cfac12d8fdb7bfaa49dbd0fef2edd38b6a26e68fcc36f"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.salinas-corrected",
+      "path": "data/derived/quantization/uniform_global_Q8/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18153,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d2ba83df79dc627c2829c80ea17d961bcffd1ae9d32c3c9b3d0e11fabbe3d9c2"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.samson-unmixing-roi",
+      "path": "data/derived/quantization/uniform_global_Q8/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14273,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d21c95b07962b4ef27b7e40d418e1b12007f01d2abb12792e6b90b1c71b2b774"
+    },
+    {
+      "id": "quantization.uniform_global_Q8.urban-unmixing-roi",
+      "path": "data/derived/quantization/uniform_global_Q8/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14945,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:1ca6620294e59952f6d18ba492d10101c1686f1043fb3e07c06cf6556d5c0bf1"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.botswana",
+      "path": "data/derived/quantization/uniform_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 13765,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:ba1c78ec645d48df5176de43fdcd67fbc0fda18b6a3a7a2b09a3dd1930e70c9f"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/uniform_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19740,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:69f0783a639012dee82799af4d81c63f822235cb4bc059a200d3f939e36c1b03"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/quantization/uniform_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 18201,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:6b7f4fcd30952f004981f7dfb3edbd62fb86b6aa219d87ee14be45a48d559ffc"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/uniform_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17881,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:d51ce037ed80f108040afe36fd43c999abfdea0c566e02b677ff344fe6a4d992"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/quantization/uniform_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 14946,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:53a31b2cf46584ef3b6789072693caf2e25d0bcd43b6598689e7674100f0c0ee"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.pavia-university",
+      "path": "data/derived/quantization/uniform_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 10671,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:c88a504a581f56760744ec9449e0e18606020fb0eea9efcccda8cd40d28a7431"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/quantization/uniform_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18488,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:93efc9acdc50b30d6fbe2883c5543a463ee546550b7988140a0aa2b29ae2a985"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/quantization/uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18562,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:35620e2d7c34a5775a01f0182da1dfce5e2c9f686cc3da72476365e6600986ad"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/quantization/uniform_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14519,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:9ce8d94bebb6141a1baa0b3bfd83f0f0d8fa0ad82c2ee9920b75ec04da305f93"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/quantization/uniform_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 15060,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:a3552b831ac2cd33fc6a18a8b6263821661bafef9ccea9d53f959330e205cc03"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.botswana",
+      "path": "data/derived/quantization/uniform_per_band_Q8/botswana.json",
+      "format": "json",
+      "bytes": 13667,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:2f58aa53c248445476de9659bce27f8b0cf672d50e4ea59afaab00676ebecb7f"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.cuprite-aviris-reflectance",
+      "path": "data/derived/quantization/uniform_per_band_Q8/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 19773,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:1c2c96161d5f80f3f81afe676244c30bd94cf1324303c672772c28e43ff87fe2"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.indian-pines-corrected",
+      "path": "data/derived/quantization/uniform_per_band_Q8/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 18158,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:5d7ff19fa47e7e22d244eb00862c832bb7bed9a95f363de6edca65ad814b28e4"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.jasper-ridge-unmixing-roi",
+      "path": "data/derived/quantization/uniform_per_band_Q8/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 17756,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:8376c2e6af7a2ddfc7a3ba93677e1f3e09b15f4f24e69b2256306cd8237143ce"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.kennedy-space-center",
+      "path": "data/derived/quantization/uniform_per_band_Q8/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 14854,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:99e23f65d7afaa2545fb854c584c95349b4e9001759ceb19d26dadc473aec097"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.pavia-university",
+      "path": "data/derived/quantization/uniform_per_band_Q8/pavia-university.json",
+      "format": "json",
+      "bytes": 10539,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:8bbea20e4994ea227f5419252de58f46d2639b8546b351d601ae682e34724e5c"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.salinas-a-corrected",
+      "path": "data/derived/quantization/uniform_per_band_Q8/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 18401,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:942917c6b37a5a351b9a2f283b021f28b5d475570ee5f9a8a060f96b06850720"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.salinas-corrected",
+      "path": "data/derived/quantization/uniform_per_band_Q8/salinas-corrected.json",
+      "format": "json",
+      "bytes": 18449,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:a0af8629b909cf1ee051cc6fa0524cd2f9916c9f4d76400c1a5ec37b663b3abf"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.samson-unmixing-roi",
+      "path": "data/derived/quantization/uniform_per_band_Q8/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14388,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:e77bc87382b82a84be2951a1a63faa11ac8949de5136444aa4c563df8199a60f"
+    },
+    {
+      "id": "quantization.uniform_per_band_Q8.urban-unmixing-roi",
+      "path": "data/derived/quantization/uniform_per_band_Q8/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 14935,
+      "schema": "output-schemas/quantization_scene.schema.json",
+      "input_hash": "sha256:e7e0b7f089bb0c374692c4fd83edf7e34e8807884753086b85aa1001e922942c"
+    },
+    {
+      "id": "real.previews.botswana-labels",
+      "path": "data/derived/real/previews/botswana-labels.png",
+      "format": "png",
+      "bytes": 4596,
+      "schema": null,
+      "input_hash": "sha256:c3e1d8d6126c0f14e8c1709fcbb5ab7135b40b228e82285b16a619db29d4f246"
+    },
+    {
+      "id": "real.previews.botswana-rgb",
+      "path": "data/derived/real/previews/botswana-rgb.png",
+      "format": "png",
+      "bytes": 918428,
+      "schema": null,
+      "input_hash": "sha256:ed11c382edef3cb4897c36e275c458e0f0e74e27481f01d0a4e1f53b02becc77"
+    },
+    {
+      "id": "real.previews.cuprite-aviris-reflectance-labels",
+      "path": "data/derived/real/previews/cuprite-aviris-reflectance-labels.png",
+      "format": "png",
+      "bytes": 96446,
+      "schema": null,
+      "input_hash": "sha256:a770f631e8dee5c2ec2dbc5e9fb0292dad9c0924395450f5bd34b75bccda7b91"
+    },
+    {
+      "id": "real.previews.cuprite-aviris-reflectance-rgb",
+      "path": "data/derived/real/previews/cuprite-aviris-reflectance-rgb.png",
+      "format": "png",
+      "bytes": 715838,
+      "schema": null,
+      "input_hash": "sha256:8091d6a0fd35faa984b42a653aeb768cf0b5ef31fff65e235d03eec468c932a2"
+    },
+    {
+      "id": "real.previews.indian-pines-corrected-labels",
+      "path": "data/derived/real/previews/indian-pines-corrected-labels.png",
+      "format": "png",
+      "bytes": 1689,
+      "schema": null,
+      "input_hash": "sha256:96c51516e2e170abe69bf573e01311377482d7efdb4dedcaed5e2154138a7cd5"
+    },
+    {
+      "id": "real.previews.indian-pines-corrected-rgb",
+      "path": "data/derived/real/previews/indian-pines-corrected-rgb.png",
+      "format": "png",
+      "bytes": 48353,
+      "schema": null,
+      "input_hash": "sha256:9c2d51550e0bfdc00cfb000166ea7c4e2316faa09de9752052e32b11aa947dfb"
+    },
+    {
+      "id": "real.previews.jasper-ridge-unmixing-roi-labels",
+      "path": "data/derived/real/previews/jasper-ridge-unmixing-roi-labels.png",
+      "format": "png",
+      "bytes": 2601,
+      "schema": null,
+      "input_hash": "sha256:568747fb418f6cc73c67913f0d5f2c282ee9d1d2599e604ee70ad446680b2c2e"
+    },
+    {
+      "id": "real.previews.jasper-ridge-unmixing-roi-rgb",
+      "path": "data/derived/real/previews/jasper-ridge-unmixing-roi-rgb.png",
+      "format": "png",
+      "bytes": 21247,
+      "schema": null,
+      "input_hash": "sha256:d1605183861ac7944dee45d8a1644bcff6d27bcc088f36cf407f8ae41248bb69"
+    },
+    {
+      "id": "real.previews.kennedy-space-center-labels",
+      "path": "data/derived/real/previews/kennedy-space-center-labels.png",
+      "format": "png",
+      "bytes": 4301,
+      "schema": null,
+      "input_hash": "sha256:53ff37b463d591ad7e16926c9292c45f4f2606eeb07222c0520f5e2c97305741"
+    },
+    {
+      "id": "real.previews.kennedy-space-center-rgb",
+      "path": "data/derived/real/previews/kennedy-space-center-rgb.png",
+      "format": "png",
+      "bytes": 627770,
+      "schema": null,
+      "input_hash": "sha256:128aacaa834bcab5c5507c19c0e118358d9f1f51305ceae6198183df394a98a0"
+    },
+    {
+      "id": "real.previews.pavia-university-labels",
+      "path": "data/derived/real/previews/pavia-university-labels.png",
+      "format": "png",
+      "bytes": 15090,
+      "schema": null,
+      "input_hash": "sha256:3c32c93bdf22b33bab9726a36ff105174090e83baa7eb486d1b924afc95bc7f1"
+    },
+    {
+      "id": "real.previews.pavia-university-rgb",
+      "path": "data/derived/real/previews/pavia-university-rgb.png",
+      "format": "png",
+      "bytes": 476975,
+      "schema": null,
+      "input_hash": "sha256:dd94eb7ae1d5aaa68a75ad2106d3d49dc4067e418352fb5572633da7e7e57069"
+    },
+    {
+      "id": "real.previews.salinas-a-corrected-labels",
+      "path": "data/derived/real/previews/salinas-a-corrected-labels.png",
+      "format": "png",
+      "bytes": 722,
+      "schema": null,
+      "input_hash": "sha256:5573ad1fbccdc3c6dd772912f72ab5ac5dbfe6da419089a5bb6580e79334edbe"
+    },
+    {
+      "id": "real.previews.salinas-a-corrected-rgb",
+      "path": "data/derived/real/previews/salinas-a-corrected-rgb.png",
+      "format": "png",
+      "bytes": 10094,
+      "schema": null,
+      "input_hash": "sha256:ed7c2e1910a8f2913952f0b3440ab5a57d7d6a5f061c184ae57c6b6a87fe9cd3"
+    },
+    {
+      "id": "real.previews.salinas-corrected-labels",
+      "path": "data/derived/real/previews/salinas-corrected-labels.png",
+      "format": "png",
+      "bytes": 5589,
+      "schema": null,
+      "input_hash": "sha256:81441b18689aeb564075d8bb6606e72c788f96ecadc2eecb213cbe970d6e77ff"
+    },
+    {
+      "id": "real.previews.salinas-corrected-rgb",
+      "path": "data/derived/real/previews/salinas-corrected-rgb.png",
+      "format": "png",
+      "bytes": 177773,
+      "schema": null,
+      "input_hash": "sha256:d8be163fc2c5f464a0af276d5c9440e5d7c47fa02b2305832771a3e1eee57c7d"
+    },
+    {
+      "id": "real.previews.samson-unmixing-roi-labels",
+      "path": "data/derived/real/previews/samson-unmixing-roi-labels.png",
+      "format": "png",
+      "bytes": 1713,
+      "schema": null,
+      "input_hash": "sha256:6f4e85ad1d0620770efe39c06dfb6f2d00290b9abe8167f05e3eeed383d9c8d3"
+    },
+    {
+      "id": "real.previews.samson-unmixing-roi-rgb",
+      "path": "data/derived/real/previews/samson-unmixing-roi-rgb.png",
+      "format": "png",
+      "bytes": 17987,
+      "schema": null,
+      "input_hash": "sha256:164154fef0682f9fd9dcf877553bbf2e1ef03ca59e18f60c1d668d69ef51871e"
+    },
+    {
+      "id": "real.previews.urban-unmixing-roi-labels",
+      "path": "data/derived/real/previews/urban-unmixing-roi-labels.png",
+      "format": "png",
+      "bytes": 34118,
+      "schema": null,
+      "input_hash": "sha256:45f400c3b29083d99bdceb56e63d6bdc84f8caa9fdd042dcd6d57c19e7c948ec"
+    },
+    {
+      "id": "real.previews.urban-unmixing-roi-rgb",
+      "path": "data/derived/real/previews/urban-unmixing-roi-rgb.png",
+      "format": "png",
+      "bytes": 200999,
+      "schema": null,
+      "input_hash": "sha256:7a87ee00b84a2cd683aec698f2b102530aea19c8115b22ab50fcf97804fe7088"
+    },
+    {
+      "id": "real.real_samples",
+      "path": "data/derived/real/real_samples.json",
+      "format": "json",
+      "bytes": 1066075,
+      "schema": null,
+      "input_hash": "sha256:22ac58e03bf75d6deb28f370e381172c8e49b3f5f1bfc9a1472418b18fda8dd2"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.botswana",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 40353,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:9d7d40f3293f5ac5152e0c513b9d2ce1c4f43722e687c87a82f793953aff7e9c"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 50538,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:b026e2b0e641ecef6f7e60bef9a395f7fc2a8277121b9f401ffe758960ff9140"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 53092,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:07ed75bd69b90f26fe268eb20d5d5d85318bc415830a7c084b2cbb2ce6a6ab1f"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 49573,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:191bac41d9ed2b9d5e067f9cacfbb5981bd392975f6b3c29f169143b7a039598"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 46320,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:cf2b8a14989067e2d4434386fbac3cab5fd15589e64b07ebc57ec8a8db127089"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 30333,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:3746f09dcebeeb83a9d5d3eae6454ded96b18eeb2962c9f913edd7da577ab88f"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 51625,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:7a366c08f39a816208aad0fcd1d6d226a1466ee037263319f4f4679e36a781bc"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 53450,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:c922da735615f149e98606a49176c4498ccc9c88d35428a10973e2e5977c92e7"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 40211,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:3b4ca08196d7895b93b1f8f08648a55ff081faea483dd6cbc395d5b5ec387bff"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__quantile_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/band-frequency__pixel__quantile_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 41628,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:ec974ab7b05a2be489809ba814a710560322e8514344b5ffffc5a7ddd186d591"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.botswana",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 40291,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:2de102c70a4af71811120c6cc36c1b16020aef96c3a0799cd629160bbde5929e"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 50135,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:f08f02ccdb453d98cf9815945cf36a59c3a0654744bd92a4abc8f62a3f989d89"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 52847,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:6923aa805adb34e0ba5e9982c74adb6ed88e47cbd9fc731202131ed3cf0e317c"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 49561,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:db3a9be136f167c1414cd51a4b6a98b1aae94b7426c3ff9bbc2d826891cd8c90"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 40293,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:a6ea151780fd59aeb533868de093af78f7dad866061365e73c4ef0f67799c367"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 30323,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:044dd8c993e4645b46f8ac223ad6671d1aa60715bde1174dec12357d0bc461a9"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 51473,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:87687871e71d86247051ed1f7eff6c613ef2747647adb8e30f9cdccf0128de64"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 52923,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:0a23a56f66ebed6979f1a636990f99e6d8cc9e25226e5b87e5f386f4297961d6"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 40208,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:30a29b4474593832c32e5b22086d1499a86f837fedcfe7b1558531846b2a2dfb"
+    },
+    {
+      "id": "recipes.band-frequency__pixel__uniform_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/band-frequency__pixel__uniform_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 41599,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:e05bb16c4778ce539f77cfb19890b8d0652a8cd2d92cf561acaa205f58603017"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.botswana",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 287953,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:93bee20e9bb4c74f3ffb1b336cf8a2c8c740cbf80a82e7e5b275d46d6c455739"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 394314,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:65f58dd7b2503bbeb73219ed47d91f35c06223d6bb55f5d02cb84e17b03406c5"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 389405,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:97d923edb16b9625fa112fdaefa18c8f39a68278839aa7e7bbef3029046a158f"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 382632,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:631044ead4f79ebcca618f672a22bb6ab66dc2e2c5d021bc2f766b46c7e30adf"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 332479,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:690a0838484131708b7736695e788c2d30f058c2e629d6edeae3cf77b5de37d0"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 214410,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:18d1a70d8b4305b4bed9eb0aaa23e0de79a974df99be4b7fd5bd5cabe4b3f857"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 392918,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:071056aa2bfad32efaac144028d7c6131f02ea75ef60e6c913ed767c3ad4c431"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 395981,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:7ef36bdf40e9aca5d206f09981d5a719207929ac37e28f056fb231c4f7d76fe6"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 302897,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:2fe67eef4a4271c6a1010a358b7f2b0e97ccd931347304f00f87bcfe56d97a4b"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__quantile_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/band-magnitude__pixel__quantile_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 317531,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:432c68de4c0ece3bc27f693f6de98ed124a58ff211d4b04a5c5d17c007d29416"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.botswana",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 227553,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:eb06a8833a49aa69e8072f8896d03e82197c3525f2428052d46ef35f40873383"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 360564,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:a90e030d869edd407e61cabf79f3e90d3b7d7d518f0329582dbaecc833750314"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 326930,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:469a8f118196567f27b3216c75a8fc5a2eba385440288f3f6136dc5b1e228c21"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 378805,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:dff40b022eada4297ee918845996f92eb1fb99435972bac35d72939450607d9a"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 145045,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:f7a33da9114409fef412e17495ebcd6fc8ac5a66d4bbd506754d92032753af1b"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 151696,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:5c1a1078e68ea859d45fa151dd64aa6145742304ff80e0dbc4b356dc28f99ead"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 268694,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:44d7a013360737c59c7244536846f4dadfdb801e58cb70b833dcbe7858fc7b7b"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 233978,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:4606c6b355a57d38185b42233d46b5ed83fe9647813fd171647e8bf333486397"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 306714,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:93a50e9d610b63533a75b541ca26e6f22bcdda357728e591cb336cb9078bae9d"
+    },
+    {
+      "id": "recipes.band-magnitude__pixel__uniform_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/band-magnitude__pixel__uniform_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 267502,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:f102caa6a23201e1ba18a8b9f1ede69330c0923c0077625f4353ed8af4139961"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.botswana",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 10843,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:d68a75eb8df1c0d599e5183bac955ed65382a62cfe6e9c65a71d6c149438b020"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 8314,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:d56ae36eceb35e798086a72e5c5200be21b83be2d30a926cccc5161efcccd73c"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 11273,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:52100cfedfa1a2c359f6fe7dd127c04730e6a21827dbd2b50cc28b3bcbe4f078"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 8299,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:eaed879d11e465df898777edd5c11ecc95fa53e04dedacc6fb1cff9a7e49420a"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 10660,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:9bbc368e0809eb74331dc181a181d9909e62d08be70450b670a477310b05a982"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 9945,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:ee6bc012da1692f06a0cfd9b47125968971bbc566bc0ca3696a80658173d4c2b"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 9537,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:d2dd76fe719cbdf5aa68db9dd70544ccd689600c099926844f633bbb0a61e526"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 11314,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:b2bdbd897a880560ffac52a8e88d12cc8863bdd51e59ee9191c0e499d0ab4df9"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 8268,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:7ead868dae86cf4fc110d11f9c33ef4ce60fccc686aa37c71c6c402d72a94364"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__quantile_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__quantile_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 8284,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:532950aa4e97c822c1981fce351206baf4ac0c083727f479e6eeb1dae74da528"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.botswana",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 10832,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:9492f683db5819fbfc387d72f18b8d99c3a8423f3dd3621aae17769cb19d3096"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 8293,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:a2f53625a064920bc471b37affa36982f65d1ccc9e73bf1caf98b5e071ab37eb"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 11266,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:690073d8b8b19728e5338de187fd23d297a88a22af82ae6079920b9897da812b"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 8283,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:75f4f703e03d6a906c2bbeed2def8cd939fb455089d9ee6e8435394e84222dfc"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 10606,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:bde7d398e448b942fd857e626552f8a9eee19ddae4c2862ba40b7a1e18e1fadc"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 9671,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:e45f55942bbf0a43b46e6108c75af7895e5c646436592c32882e54d665a32267"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 9515,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:9660820597fb0dd7b6c60816b0919293313818ce6d56f8abee8840e19508cfd5"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 11282,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:b935b1766af13c17f21b114c9bbf874c2c9ac6a1c4336b634eb62a4f7eef6552"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 8264,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:261a8b999932d48c07f741559124497a13f6d7ba49c2f9975674a837927de9c0"
+    },
+    {
+      "id": "recipes.magnitude-phrase__pixel__uniform_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/magnitude-phrase__pixel__uniform_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 8259,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:5c65e03c73bc0f2b33296e6680f1db071e13616f4ce77bb61fe103d8561a9513"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.botswana",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 289062,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:60b59411428464d89e4718f4ee3b12f30c0b5a2248d2e9360706478e2f00cd22"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 395295,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:6eb0a93f5d3dbf62057ca0d53f885e01b1f962577b6ab46572f93b6d0d914591"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 388640,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:27f650a481dbc3b8e735f883ab31058d104612abc2c3e42a741a155de3fb659f"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 382955,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:fb96d885b1743a2367be7c0bbf02954cc4bb33c9479ec704baa4a02c77d78745"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 333368,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:a54283aac6510f6fccca180343f820de28c7dd6f20317fefb2460b8163b55e7c"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 215335,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:bd2597471884ed5b9ea325af0279a538bf71a401409ea5cd57fa2b846e2abfa8"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 393108,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:40e5038c6f0826ae79dabccaebe6c09b2ab001e5bb03c3759d4064a325893dd1"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 396355,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:7bbfa1589d04ad988ac79bca9d95a0f4001dd34b872cc425890aac4f423c1584"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 303195,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:f38caa437885aa85d3c049509dbb325b3c8ef8a892ddd28d9b7f1b39fbc69c18"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__quantile_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__patch_15__quantile_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 318233,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:9b920e40f2c5dc5bac80a768981027fce26de4f8135e5d76cd2c9d2300394fdd"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.botswana",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 257744,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:06b2f5c692d6873320c3e439f330517081e31cb28b163b762718637398841b18"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 398858,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:192a26c27d032cd7b4cc9c862e1269fccb5fca0d3245bb6d277239ee4519ffe5"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 351445,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:7ecffb237127e06dd37dfde717e3a0d2e20b413eb643698c031671dc3b4b858b"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 378901,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:73101f739af2a05eb52063abb74d37223712393eb9932a7ea6063147e2365184"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 169751,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:5fafaec910ef31b76c08357c925f604d2f470a03173f50fc1c7d7ab581da4171"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 215008,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:8334639494071fa9e7dc7b86cc225b2e053c46edf4d2b5195fc397f5d944412f"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 268563,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:a1ce76f31322cf6a1cbc14475bb396a5bfbf1dea52bf05c755b2549f91073348"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 359939,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:d98b93855f1957142f5e233bb25a15d32e8feac946a6d84739183ec5f0fb1806"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 306835,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:3160ff13ae493691a575e0bf208ef1fd75863d3263ad8a2697808c14b3dfcbc5"
+    },
+    {
+      "id": "recipes.region-documents__patch_15__uniform_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__patch_15__uniform_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 310275,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:278a80aeaa4b20c65117b7972af13ed01bb0f22157c89ab9c395c36a755b244a"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.botswana",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 288973,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:7dee49ef04c0ef36cad3a60ec39a5d7a395de6d9d2e9fc50565b53738dfd3b6b"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 395104,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:f379adfeae2c121dd483027d2c6439bfd86f3a80ba288b07d7013f632f4abcfb"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 389449,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:5f12545fb6474e7fd8e844a050668b521647324fb0c8e251b174f215fa40f33b"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 382938,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:b9659469a774795f59e52efe494d77c3cec6dc7637bb1b90fb89a544311a51cd"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 333352,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:f22d611aced0882bd2613d43dd9b6a94a64753ab33fdc05c49fb9594e4058a2f"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 215031,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:ab5a319d5fbea00a6a8ae785f6e958e5f26a73d958bb253c09480ea0f6dc7606"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 393181,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:ba01f69cb39dd87af2f90cf37e50e0d258e67f7b140c9dc6d77e21be4e980368"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 396368,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:0266177cad7426a7e246bc34f6895f59ff6fe37528bc6305448bc30c131a5277"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 303244,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:c75614acb3fa4bc652cda15a95179c1b327388ee64b75443925488d66e3f9aa9"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__quantile_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__slic_200__quantile_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 318220,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:639dc42a97a611c898b717cfa7871e4ac132c5308742925247b124eaf78ad8ab"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.botswana",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/botswana.json",
+      "format": "json",
+      "bytes": 257289,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:6062853ceb4df514396dacc467f66f8dad55eb26af02bff490929c992d3a1ea3"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.cuprite-aviris-reflectance",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/cuprite-aviris-reflectance.json",
+      "format": "json",
+      "bytes": 398109,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:49a378a4fc9fdb227e1034e9d78f850e2e9f06701def2ba2045dd60b4d57b44a"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.indian-pines-corrected",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/indian-pines-corrected.json",
+      "format": "json",
+      "bytes": 352488,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:8f026a8dc63149c9a8d70938fb7e0a43548eadd3da00d5a8de3837d8a9a05cd8"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.jasper-ridge-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/jasper-ridge-unmixing-roi.json",
+      "format": "json",
+      "bytes": 378937,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:b5ea507a32c05df44965d83e2cf5655b179908280f8ac9dfc47e75153ca87dae"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.kennedy-space-center",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/kennedy-space-center.json",
+      "format": "json",
+      "bytes": 169597,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:829a88d0abf3480b0a0de5a529ee57903e110a830f095d0814bbb7a4871769ad"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.pavia-university",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/pavia-university.json",
+      "format": "json",
+      "bytes": 214463,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:2bf2743503c2612044e0358c04ae1e886717d929fa81a28ddbd01df2293e997b"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.salinas-a-corrected",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/salinas-a-corrected.json",
+      "format": "json",
+      "bytes": 268847,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:9be5a571b841fb060e4590dac99a8446e49cc7a17194eb6271f6d7b479fa7987"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 359979,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:2a5ee3a6cfdebf2f406361e064b2ec7e6bb1c35c0e7a82290a8f9ec615e226ec"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.samson-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/samson-unmixing-roi.json",
+      "format": "json",
+      "bytes": 306915,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:cefa1891a3657d0ef2b9000bd5c615a50bd022ea07da0587020fcad8c295c14c"
+    },
+    {
+      "id": "recipes.region-documents__slic_200__uniform_per_band_Q16.urban-unmixing-roi",
+      "path": "data/derived/recipes/region-documents__slic_200__uniform_per_band_Q16/urban-unmixing-roi.json",
+      "format": "json",
+      "bytes": 310057,
+      "schema": "output-schemas/recipe_scene.schema.json",
+      "input_hash": "sha256:eb452cef80ec834d2f7b28743b1529c62f860b3bfce521bddb2c4fca22877a1d"
+    },
+    {
+      "id": "spectral.library_samples",
+      "path": "data/derived/spectral/library_samples.json",
+      "format": "json",
+      "bytes": 183717,
+      "schema": null,
+      "input_hash": "sha256:206a34e21a1f6285e0ca92f6e2c7cad9a7d640622da272149fe0090636198bfc"
+    }
+  ],
+  "claims_allowed": [
+    "Compact scene and dataset inventory summaries backed by checked-in derived JSON",
+    "Document-grouping summaries for implemented methods when they are backed by named derived groupings artifacts",
+    "Quantization summaries for implemented configs when the claim is limited to vocabulary size, document length, bin population, reconstruction error, entropy proxies, or quantizer-level sensitivity present in data/derived/quantization/",
+    "Recipe summaries for named corpora when they are backed by data/derived/recipes/ artifacts and the UI states the recipe, document constructor, quantization config, and any sampling caveat",
+    "Corpus preview definitions that explicitly state alphabet, word, document, corpus, and caveats",
+    "Compact local-core benchmark summaries for labeled, unlabeled, unmixing, and measured-target cases",
+    "Compact HIDSAG subset inventory, region-document, band-quality, and preprocessing-sensitivity summaries",
+    "Segmentation baseline summaries and preview overlays generated offline",
+    "Derived PCA or KMeans analytical diagnostics computed from compact derived assets"
+  ]
+}

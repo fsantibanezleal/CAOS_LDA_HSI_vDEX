@@ -1,0 +1,104 @@
+# Offline compute stack for CAOS_LDA_HSI.
+# Intentionally excluded as direct local-pipeline requirements:
+# - matplotlib
+# - seaborn
+# - plotly
+# - pyLDAvis
+# - earthpy
+#
+# The local pipeline only computes and curates artifacts for the web app.
+# Any visual rendering belongs in the web layer over `data/derived/`.
+# Some of those packages may still appear transitively because a few of the
+# requested analytics libraries currently depend on them.
+
+# Core numerics / parallel
+numpy
+scipy
+pandas
+polars
+numba
+dask
+distributed
+joblib
+pyarrow
+cloudpickle
+tqdm
+requests
+einops
+
+# HSI / geospatial I/O
+spectral
+rasterio
+rioxarray
+xarray
+h5py
+tifffile
+pymatreader
+geopandas
+shapely
+pyproj
+Pillow
+
+# Spectral processing
+pysptools
+spectres
+PyWavelets
+ssqueezepy
+scikit-image
+jenkspy
+astropy
+nanopq
+
+# General ML
+scikit-learn
+sklearn-compat
+imbalanced-learn
+shap
+optuna
+
+# Multivariate / factor
+prince
+factor-analyzer
+
+# Statistics
+statsmodels
+pingouin
+scikit-posthocs
+pymc
+arviz
+
+# Classical PTM / LDA
+gensim
+tomotopy
+corextopic
+lda
+
+# Neural / probabilistic PTM
+torch
+torchvision
+torchmetrics
+pytorch-lightning
+lightning-utilities
+pyro-ppl
+pyro-api
+numpyro
+jax
+jaxlib
+contextualized-topic-models
+nltk
+
+# Embedding-based topics
+bertopic
+sentence-transformers
+transformers
+top2vec
+faiss-cpu
+
+# Dimensionality reduction / clustering
+umap-learn
+openTSNE
+pacmap
+hdbscan
+
+# Experiment tracking
+mlflow

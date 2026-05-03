@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caos-lda-hsi.local/output-schemas/eda_per_scene.schema.json",
+  "title": "CAOS LDA HSI EDA Per Scene",
+  "type": "object",
+  "required": [
+    "scene_id",
+    "n_pixels",
+    "n_labelled_pixels",
+    "wavelengths_nm",
+    "class_distribution",
+    "imbalance_gini",
+    "class_mean_spectra",
+    "class_distance_matrix_cosine",
+    "class_distance_matrix_sam",
+    "band_discriminative",
+    "class_separability"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "scene_id": {
+      "type": "string"
+    },
+    "n_pixels": {
+      "type": "integer"
+    },
+    "n_labelled_pixels": {
+      "type": "integer"
+    },
+    "wavelengths_nm": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "class_distribution": {
+      "type": "array"
+    },
+    "imbalance_gini": {
+      "type": "number"
+    },
+    "class_mean_spectra": {
+      "type": "object"
+    },
+    "class_distance_matrix_cosine": {
+      "type": "array"
+    },
+    "class_distance_matrix_sam": {
+      "type": "array"
+    },
+    "band_discriminative": {
+      "type": "array"
+    },
+    "class_separability": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,293 @@
+# CAOS LDA HSI -- local dev runner (Windows / PowerShell 5.1+)
+
+[CmdletBinding()]
+param(
+    [Parameter(Position = 0)]
+    [ValidateSet("setup-web", "setup-pipeline", "setup-all", "dev", "build", "preview", "demo", "fetch", "fetch-msi", "fetch-spectral", "fetch-unmixing", "fetch-hidsag", "fetch-ecostress", "fetch-all", "build-real", "build-field", "build-spectral", "build-analysis", "build-corpus", "build-baselines", "build-inventory", "inspect-hidsag", "build-hidsag", "build-hidsag-band-quality", "run-core", "run-hidsag-sensitivity", "build-local-core", "smoke", "smoke-dev", "clean", "stop", "help")]
+    [string]$Command = "help"
+)
+
+$ErrorActionPreference = "Stop"
+$Root = Split-Path -Parent $PSScriptRoot
+Set-Location $Root
+
+function Show-Help {
+    Write-Host ""
+    Write-Host "CAOS LDA HSI -- local dev runner" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "Subcommands:"
+    Write-Host "  setup-web   Prepare backend + frontend local web dependencies"
+    Write-Host "  setup-pipeline Prepare the local data-pipeline environment"
+    Write-Host "  setup-all   Prepare both web and pipeline environments"
+    Write-Host "  dev         Start backend (uvicorn :8437) + frontend dev server (Vite :5437)"
+    Write-Host "  build       Build the frontend bundle into frontend/dist"
+    Write-Host "  preview     Build the frontend, regenerate demo assets, and run FastAPI"
+    Write-Host "  demo        Rebuild the synthetic demo payload"
+    Write-Host "  fetch       Download official compact public HSI raw scenes into data/raw"
+    Write-Host "  fetch-msi   Download official MicaSense MSI sample data into data/raw"
+    Write-Host "  fetch-spectral Download compact USGS spectral-library archives"
+    Write-Host "  fetch-unmixing Download compact public HSI unmixing scenes and libraries"
+    Write-Host "  fetch-hidsag Fetch HIDSAG collection metadata and optionally selected subsets"
+    Write-Host "  fetch-ecostress Record ECOSTRESS public category metadata and access blocker"
+    Write-Host "  fetch-all   Download all public raw sources used by the local demo"
+    Write-Host "  build-real  Rebuild compact real-scene HSI derived assets from downloaded raw scenes"
+    Write-Host "  build-field Rebuild compact field MSI derived assets from downloaded raw scenes"
+    Write-Host "  build-spectral Rebuild compact USGS spectral-library samples"
+    Write-Host "  build-analysis Rebuild compact PCA/KMeans diagnostics from derived assets"
+    Write-Host "  build-corpus Rebuild static corpus previews from derived assets"
+    Write-Host "  build-baselines Rebuild static SLIC segmentation baselines from raw scenes"
+    Write-Host "  build-inventory Build unified local dataset/raw inventory for the validation backend"
+    Write-Host "  inspect-hidsag Inspect downloaded HIDSAG ZIP subsets without full extraction"
+    Write-Host "  build-hidsag Build compact HIDSAG spectral subset from downloaded ZIP archives"
+    Write-Host "  build-hidsag-band-quality Build heuristic HIDSAG bad-band summary from compact subset"
+    Write-Host "  run-core    Run local PTM/LDA, clustering, stability, SAM, NMF, and supervised benchmarks"
+    Write-Host "  run-hidsag-sensitivity Run HIDSAG preprocessing-sensitivity benchmark"
+    Write-Host "  build-local-core Run inventory + full local-core benchmarks"
+    Write-Host "  smoke       Smoke test the backend-served app at http://127.0.0.1:8437"
+    Write-Host "  smoke-dev   Smoke test the Vite dev app at http://127.0.0.1:5437"
+    Write-Host "  clean       Remove build outputs and Python caches"
+    Write-Host "  stop        Kill local Python and Node processes started from this repo"
+    Write-Host "  help        Show this message"
+}
+
+function Ensure-Venv {
+    if (-not (Test-Path ".venv")) {
+        Write-Host "Creating .venv ..." -ForegroundColor DarkGray
+        python -m venv .venv
+    }
+    & .\.venv\Scripts\python.exe -m pip install --upgrade pip wheel | Out-Null
+    & .\.venv\Scripts\python.exe -m pip install -r requirements.txt | Out-Null
+}
+
+function Ensure-PipelineVenv {
+    if (-not (Test-Path ".venv-pipeline")) {
+        Write-Host "Creating .venv-pipeline ..." -ForegroundColor DarkGray
+        python -m venv .venv-pipeline
+    }
+    & .\.venv-pipeline\Scripts\python.exe -m pip install --upgrade pip wheel | Out-Null
+    & .\.venv-pipeline\Scripts\python.exe -m pip install -r data-pipeline\requirements.txt | Out-Null
+}
+
+function Ensure-Frontend {
+    if (-not (Test-Path "frontend\node_modules")) {
+        Push-Location frontend
+        try {
+            $pnpm = Get-Command pnpm -ErrorAction SilentlyContinue
+            if ($pnpm) { pnpm install } else { npm install }
+        } finally { Pop-Location }
+    }
+}
+
+function Ensure-DerivedIfMissing {
+    if ((Test-Path "data\\raw\\upv_ehu") -and -not (Test-Path "data\\derived\\real\\real_samples.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_real_samples.py | Out-Null
+    }
+    if ((Test-Path "data\\raw\\micasense") -and -not (Test-Path "data\\derived\\field\\field_samples.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_field_samples.py | Out-Null
+    }
+    if ((Test-Path "data\\raw\\usgs_splib07") -and -not (Test-Path "data\\derived\\spectral\\library_samples.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_spectral_library_samples.py | Out-Null
+    }
+    if ((Test-Path "data\\derived\\real\\real_samples.json") -and (Test-Path "data\\derived\\spectral\\library_samples.json") -and -not (Test-Path "data\\derived\\analysis\\analysis.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_analysis_payload.py | Out-Null
+    }
+    if ((Test-Path "data\\derived\\real\\real_samples.json") -and (Test-Path "data\\derived\\spectral\\library_samples.json") -and -not (Test-Path "data\\derived\\corpus\\corpus_previews.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_corpus_previews.py | Out-Null
+    }
+    if ((Test-Path "data\\raw\\upv_ehu") -and -not (Test-Path "data\\derived\\baselines\\segmentation_baselines.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_segmentation_baselines.py | Out-Null
+    }
+    if ((Test-Path "data\\raw") -and -not (Test-Path "data\\derived\\core\\local_dataset_inventory.json")) {
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_local_inventory.py | Out-Null
+    }
+}
+
+switch ($Command) {
+    "setup-web" {
+        & .\scripts\local\setup-web.ps1
+    }
+
+    "setup-pipeline" {
+        & .\scripts\local\setup-pipeline.ps1
+    }
+
+    "setup-all" {
+        & .\scripts\local\setup-all.ps1
+    }
+
+    "dev" {
+        Ensure-Venv
+        Ensure-Frontend
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_demo.py | Out-Null
+        Ensure-DerivedIfMissing
+        Write-Host "[backend] uvicorn :8437 (in background)" -ForegroundColor Green
+        $back = Start-Process -PassThru -WindowStyle Hidden -FilePath ".\.venv\Scripts\python.exe" `
+            -ArgumentList "-m","uvicorn","app.main:app","--reload","--host","127.0.0.1","--port","8437"
+        Start-Sleep -Seconds 1
+        Push-Location frontend
+        try {
+            $pnpm = Get-Command pnpm -ErrorAction SilentlyContinue
+            if ($pnpm) { pnpm dev } else { npm run dev }
+        } finally {
+            Pop-Location
+            if ($back -and -not $back.HasExited) { Stop-Process -Id $back.Id -Force }
+        }
+    }
+
+    "build" {
+        Ensure-Frontend
+        Push-Location frontend
+        try {
+            $pnpm = Get-Command pnpm -ErrorAction SilentlyContinue
+            if ($pnpm) { pnpm build } else { npm run build }
+        } finally { Pop-Location }
+    }
+
+    "preview" {
+        Ensure-Venv
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_demo.py
+        Ensure-DerivedIfMissing
+        & "$PSCommandPath" build
+        Write-Host "Backend serving the built SPA at http://127.0.0.1:8437" -ForegroundColor Green
+        & .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8437
+    }
+
+    "demo" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_demo.py
+    }
+
+    "fetch" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_hsi.py
+    }
+
+    "fetch-msi" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_msi.py
+    }
+
+    "fetch-spectral" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_spectral_libraries.py
+    }
+
+    "fetch-unmixing" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_unmixing.py
+    }
+
+    "fetch-hidsag" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_hidsag.py
+    }
+
+    "fetch-ecostress" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_ecostress_metadata.py
+    }
+
+    "fetch-all" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_hsi.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_msi.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_spectral_libraries.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_public_unmixing.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_hidsag.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\fetch_ecostress_metadata.py
+    }
+
+    "build-real" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_real_samples.py
+    }
+
+    "build-field" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_field_samples.py
+    }
+
+    "build-spectral" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_spectral_library_samples.py
+    }
+
+    "build-analysis" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_analysis_payload.py
+    }
+
+    "build-corpus" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_corpus_previews.py
+    }
+
+    "build-baselines" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_segmentation_baselines.py
+    }
+
+    "build-inventory" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_local_inventory.py
+    }
+
+    "inspect-hidsag" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\inspect_hidsag_zip.py
+    }
+
+    "build-hidsag" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_hidsag_curated_subset.py
+    }
+
+    "build-hidsag-band-quality" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_hidsag_band_quality.py
+    }
+
+    "run-core" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\run_local_core_benchmarks.py
+    }
+
+    "run-hidsag-sensitivity" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\run_hidsag_preprocessing_sensitivity.py
+    }
+
+    "build-local-core" {
+        Ensure-PipelineVenv
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_local_inventory.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\run_local_core_benchmarks.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\build_hidsag_band_quality.py
+        & .\.venv-pipeline\Scripts\python.exe data-pipeline\run_hidsag_preprocessing_sensitivity.py
+    }
+
+    "smoke" {
+        & .\scripts\smoke.ps1 -BaseUrl "http://127.0.0.1:8437"
+    }
+
+    "smoke-dev" {
+        & .\scripts\smoke.ps1 -BaseUrl "http://127.0.0.1:5437"
+    }
+
+    "clean" {
+        Get-ChildItem -Recurse -Force -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force
+        if (Test-Path "frontend\dist") { Remove-Item -Recurse -Force "frontend\dist" }
+        if (Test-Path "frontend\.vite") { Remove-Item -Recurse -Force "frontend\.vite" }
+        Write-Host "Cleaned build outputs." -ForegroundColor Green
+    }
+
+    "stop" {
+        Get-Process -Name "uvicorn","python","node","pnpm","npm" -ErrorAction SilentlyContinue |
+            Where-Object { $_.Path -match "CAOS_LDA_HSI" } |
+            ForEach-Object { Stop-Process -Id $_.Id -Force -ErrorAction SilentlyContinue }
+        Write-Host "Stopped local dev processes." -ForegroundColor Green
+    }
+
+    default { Show-Help }
+}

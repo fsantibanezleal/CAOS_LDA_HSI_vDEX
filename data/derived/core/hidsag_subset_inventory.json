@@ -1,0 +1,2676 @@
+{
+  "source": "HIDSAG ZIP inspection",
+  "generated_at": "2026-05-01",
+  "subsets": [
+    {
+      "zip_name": "GEOCHEM.zip",
+      "subset_code": "GEOCHEM",
+      "size_bytes": 6195326462,
+      "file_count": 665,
+      "suffix_counts": {
+        ".h5": 318,
+        ".png": 318,
+        ".json": 29
+      },
+      "top_level_entries": {
+        "GEOCHEM": 665
+      },
+      "header_examples": [],
+      "metadata_json_count": 29,
+      "sample_count": 28,
+      "crop_count": 106,
+      "cube_file_count": 318,
+      "rgb_preview_count": 318,
+      "metadata_keys": [
+        "crops",
+        "datarecord",
+        "sample_name",
+        "vars"
+      ],
+      "variable_count": 18,
+      "variable_names": [
+        "Al",
+        "As",
+        "Ca",
+        "Cu",
+        "Fe",
+        "K",
+        "Mo",
+        "Nb",
+        "P",
+        "Pb",
+        "Rb",
+        "S",
+        "Si",
+        "Sr",
+        "Ti",
+        "Y",
+        "Zn",
+        "Zr"
+      ],
+      "numeric_variable_count": 18,
+      "numeric_variable_names": [
+        "Al",
+        "As",
+        "Ca",
+        "Cu",
+        "Fe",
+        "K",
+        "Mo",
+        "Nb",
+        "P",
+        "Pb",
+        "Rb",
+        "S",
+        "Si",
+        "Sr",
+        "Ti",
+        "Y",
+        "Zn",
+        "Zr"
+      ],
+      "categorical_variable_count": 0,
+      "categorical_variable_names": [],
+      "categorical_value_counts": {},
+      "composition_sum_stats": {
+        "min": 32.4808,
+        "median": 34.5921,
+        "max": 35.8806,
+        "mean": 34.4802
+      },
+      "nonzero_variable_count_stats": {
+        "min": 16.0,
+        "median": 17.0,
+        "max": 18.0,
+        "mean": 16.8571
+      },
+      "dominant_variables_by_mean": [
+        {
+          "name": "Si",
+          "mean": 18.1932,
+          "max": 19.43,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Fe",
+          "mean": 4.3234,
+          "max": 5.24,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Al",
+          "mean": 4.1871,
+          "max": 4.55,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "K",
+          "mean": 2.6545,
+          "max": 2.9778,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "S",
+          "mean": 1.5661,
+          "max": 2.1479,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Cu",
+          "mean": 1.5428,
+          "max": 1.8508,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Ca",
+          "mean": 0.9383,
+          "max": 1.4755,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "P",
+          "mean": 0.5439,
+          "max": 0.6234,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Ti",
+          "mean": 0.3733,
+          "max": 0.4853,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Mo",
+          "mean": 0.044,
+          "max": 0.0752,
+          "nonzero_samples": 28
+        }
+      ],
+      "modality_wavelength_ranges_nm": {
+        "swir_low": {
+          "band_count": 268,
+          "start": 1000.21,
+          "stop": 2499.26
+        },
+        "vnir_high": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        },
+        "vnir_low": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        }
+      },
+      "modality_summary": {
+        "swir_low": {
+          "cube_count": 106,
+          "image_width_stats": {
+            "min": 62.0,
+            "median": 139.5,
+            "max": 172.0,
+            "mean": 140.6509
+          },
+          "image_height_stats": {
+            "min": 25.0,
+            "median": 74.0,
+            "max": 87.0,
+            "mean": 73.4906
+          },
+          "real_width_stats": {
+            "min": 38.4,
+            "median": 86.45,
+            "max": 106.6,
+            "mean": 87.1764
+          },
+          "real_height_stats": {
+            "min": 20.4,
+            "median": 60.3,
+            "max": 70.9,
+            "mean": 59.8972
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            1.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            4.0
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_low": {
+          "cube_count": 106,
+          "image_width_stats": {
+            "min": 62.0,
+            "median": 139.5,
+            "max": 172.0,
+            "mean": 140.6509
+          },
+          "image_height_stats": {
+            "min": 25.0,
+            "median": 74.0,
+            "max": 87.0,
+            "mean": 73.4906
+          },
+          "real_width_stats": {
+            "min": 38.4,
+            "median": 86.45,
+            "max": 106.6,
+            "mean": 87.1764
+          },
+          "real_height_stats": {
+            "min": 20.4,
+            "median": 60.3,
+            "max": 70.9,
+            "mean": 59.8972
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_high": {
+          "cube_count": 106,
+          "image_width_stats": {
+            "min": 140.0,
+            "median": 315.0,
+            "max": 384.0,
+            "mean": 315.8962
+          },
+          "image_height_stats": {
+            "min": 27.0,
+            "median": 76.0,
+            "max": 89.0,
+            "mean": 76.3491
+          },
+          "real_width_stats": {
+            "min": 38.7,
+            "median": 87.15,
+            "max": 106.3,
+            "mean": 87.4226
+          },
+          "real_height_stats": {
+            "min": 22.0,
+            "median": 61.9,
+            "max": 72.5,
+            "mean": 62.2292
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        }
+      },
+      "sample_previews": [
+        {
+          "sample_name": "GCH-0001",
+          "crop_ids": [
+            "01",
+            "02",
+            "03",
+            "04"
+          ],
+          "measurement_tags": [
+            "coarse",
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 34.8933,
+          "nonzero_variable_count": 17,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Si",
+              "value": 17.96
+            },
+            {
+              "name": "Fe",
+              "value": 4.31
+            },
+            {
+              "name": "Al",
+              "value": 4.29
+            },
+            {
+              "name": "K",
+              "value": 2.7361
+            },
+            {
+              "name": "S",
+              "value": 1.6674
+            }
+          ]
+        },
+        {
+          "sample_name": "GCH-0002",
+          "crop_ids": [
+            "01",
+            "02",
+            "03",
+            "04"
+          ],
+          "measurement_tags": [
+            "coarse",
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 34.6678,
+          "nonzero_variable_count": 17,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Si",
+              "value": 17.43
+            },
+            {
+              "name": "Fe",
+              "value": 4.58
+            },
+            {
+              "name": "Al",
+              "value": 4.37
+            },
+            {
+              "name": "K",
+              "value": 2.6938
+            },
+            {
+              "name": "S",
+              "value": 1.6598
+            }
+          ]
+        },
+        {
+          "sample_name": "GCH-0003",
+          "crop_ids": [
+            "01",
+            "02",
+            "03",
+            "04"
+          ],
+          "measurement_tags": [
+            "coarse",
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 33.9775,
+          "nonzero_variable_count": 18,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Si",
+              "value": 17.2
+            },
+            {
+              "name": "Fe",
+              "value": 4.96
+            },
+            {
+              "name": "Al",
+              "value": 4.41
+            },
+            {
+              "name": "K",
+              "value": 2.651
+            },
+            {
+              "name": "Cu",
+              "value": 1.4774
+            }
+          ]
+        },
+        {
+          "sample_name": "GCH-0004",
+          "crop_ids": [
+            "01",
+            "02",
+            "03",
+            "04"
+          ],
+          "measurement_tags": [
+            "coarse",
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 33.8445,
+          "nonzero_variable_count": 18,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Si",
+              "value": 17.56
+            },
+            {
+              "name": "Fe",
+              "value": 5.03
+            },
+            {
+              "name": "Al",
+              "value": 4.27
+            },
+            {
+              "name": "K",
+              "value": 2.429
+            },
+            {
+              "name": "S",
+              "value": 1.4214
+            }
+          ]
+        },
+        {
+          "sample_name": "GCH-0005",
+          "crop_ids": [
+            "01",
+            "02",
+            "03",
+            "04"
+          ],
+          "measurement_tags": [
+            "coarse",
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 34.7499,
+          "nonzero_variable_count": 17,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Si",
+              "value": 16.95
+            },
+            {
+              "name": "Fe",
+              "value": 5.24
+            },
+            {
+              "name": "Al",
+              "value": 4.12
+            },
+            {
+              "name": "K",
+              "value": 2.448
+            },
+            {
+              "name": "S",
+              "value": 2.0052
+            }
+          ]
+        },
+        {
+          "sample_name": "GCH-0006",
+          "crop_ids": [
+            "01",
+            "02",
+            "03",
+            "04"
+          ],
+          "measurement_tags": [
+            "coarse",
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 34.6376,
+          "nonzero_variable_count": 16,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Si",
+              "value": 18.36
+            },
+            {
+              "name": "Fe",
+              "value": 4.24
+            },
+            {
+              "name": "Al",
+              "value": 4.17
+            },
+            {
+              "name": "K",
+              "value": 2.6476
+            },
+            {
+              "name": "S",
+              "value": 1.7037
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zip_name": "GEOMET.zip",
+      "subset_code": "GEOMET",
+      "size_bytes": 3264279514,
+      "file_count": 1023,
+      "suffix_counts": {
+        ".h5": 438,
+        ".png": 438,
+        ".json": 147
+      },
+      "top_level_entries": {
+        "GEOMET": 1023
+      },
+      "header_examples": [],
+      "metadata_json_count": 147,
+      "sample_count": 146,
+      "crop_count": 146,
+      "cube_file_count": 438,
+      "rgb_preview_count": 438,
+      "metadata_keys": [
+        "crops",
+        "datarecord",
+        "sample_name",
+        "vars"
+      ],
+      "variable_count": 5,
+      "variable_names": [
+        "Cu rec",
+        "Lime cons",
+        "Mo rec",
+        "PH",
+        "WI"
+      ],
+      "numeric_variable_count": 5,
+      "numeric_variable_names": [
+        "Cu rec",
+        "Lime cons",
+        "Mo rec",
+        "PH",
+        "WI"
+      ],
+      "categorical_variable_count": 0,
+      "categorical_variable_names": [],
+      "categorical_value_counts": {},
+      "composition_sum_stats": {
+        "min": 92.46,
+        "median": 176.36,
+        "max": 205.61,
+        "mean": 167.9001
+      },
+      "nonzero_variable_count_stats": {
+        "min": 5.0,
+        "median": 5.0,
+        "max": 5.0,
+        "mean": 5.0
+      },
+      "dominant_variables_by_mean": [
+        {
+          "name": "Cu rec",
+          "mean": 88.7767,
+          "max": 95.2,
+          "nonzero_samples": 146
+        },
+        {
+          "name": "Mo rec",
+          "mean": 56.9699,
+          "max": 89.7,
+          "nonzero_samples": 146
+        },
+        {
+          "name": "WI",
+          "mean": 14.6185,
+          "max": 21.8,
+          "nonzero_samples": 146
+        },
+        {
+          "name": "PH",
+          "mean": 7.3116,
+          "max": 9.2,
+          "nonzero_samples": 146
+        },
+        {
+          "name": "Lime cons",
+          "mean": 0.2234,
+          "max": 0.88,
+          "nonzero_samples": 146
+        }
+      ],
+      "modality_wavelength_ranges_nm": {
+        "swir_low": {
+          "band_count": 268,
+          "start": 1000.21,
+          "stop": 2499.26
+        },
+        "vnir_high": {
+          "band_count": 471,
+          "start": 400.42,
+          "stop": 999.06
+        },
+        "vnir_low": {
+          "band_count": 471,
+          "start": 400.42,
+          "stop": 999.06
+        }
+      },
+      "modality_summary": {
+        "swir_low": {
+          "cube_count": 146,
+          "image_width_stats": {
+            "min": 100.0,
+            "median": 142.0,
+            "max": 149.0,
+            "mean": 140.726
+          },
+          "image_height_stats": {
+            "min": 69.0,
+            "median": 79.0,
+            "max": 90.0,
+            "mean": 79.4315
+          },
+          "real_width_stats": {
+            "min": 62.0,
+            "median": 88.0,
+            "max": 92.3,
+            "mean": 87.2178
+          },
+          "real_height_stats": {
+            "min": 56.2,
+            "median": 64.4,
+            "max": 73.4,
+            "mean": 64.7452
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            1.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            4.0
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_low": {
+          "cube_count": 146,
+          "image_width_stats": {
+            "min": 100.0,
+            "median": 142.0,
+            "max": 149.0,
+            "mean": 140.726
+          },
+          "image_height_stats": {
+            "min": 69.0,
+            "median": 79.0,
+            "max": 90.0,
+            "mean": 79.4315
+          },
+          "real_width_stats": {
+            "min": 62.0,
+            "median": 88.0,
+            "max": 92.3,
+            "mean": 87.2178
+          },
+          "real_height_stats": {
+            "min": 56.2,
+            "median": 64.4,
+            "max": 73.4,
+            "mean": 64.7452
+          },
+          "spectral_binning_values": [
+            2.0
+          ],
+          "spatial_binning_values": [
+            4.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_high": {
+          "cube_count": 146,
+          "image_width_stats": {
+            "min": 111.0,
+            "median": 156.0,
+            "max": 165.0,
+            "mean": 155.089
+          },
+          "image_height_stats": {
+            "min": 71.0,
+            "median": 82.0,
+            "max": 93.0,
+            "mean": 81.8493
+          },
+          "real_width_stats": {
+            "min": 30.7,
+            "median": 43.2,
+            "max": 45.7,
+            "mean": 42.9137
+          },
+          "real_height_stats": {
+            "min": 57.9,
+            "median": 66.8,
+            "max": 75.8,
+            "mean": 66.7164
+          },
+          "spectral_binning_values": [
+            2.0
+          ],
+          "spatial_binning_values": [
+            4.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        }
+      },
+      "sample_previews": [
+        {
+          "sample_name": "GMET-0001",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 171.32,
+          "nonzero_variable_count": 5,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Cu rec",
+              "value": 85.5
+            },
+            {
+              "name": "Mo rec",
+              "value": 63.5
+            },
+            {
+              "name": "WI",
+              "value": 14.5
+            },
+            {
+              "name": "PH",
+              "value": 7.7
+            },
+            {
+              "name": "Lime cons",
+              "value": 0.12
+            }
+          ]
+        },
+        {
+          "sample_name": "GMET-0002",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 155.26,
+          "nonzero_variable_count": 5,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Cu rec",
+              "value": 86.6
+            },
+            {
+              "name": "Mo rec",
+              "value": 43.8
+            },
+            {
+              "name": "WI",
+              "value": 16.0
+            },
+            {
+              "name": "PH",
+              "value": 8.7
+            },
+            {
+              "name": "Lime cons",
+              "value": 0.16
+            }
+          ]
+        },
+        {
+          "sample_name": "GMET-0003",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 121.51,
+          "nonzero_variable_count": 5,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Cu rec",
+              "value": 87.8
+            },
+            {
+              "name": "WI",
+              "value": 15.7
+            },
+            {
+              "name": "Mo rec",
+              "value": 9.0
+            },
+            {
+              "name": "PH",
+              "value": 8.9
+            },
+            {
+              "name": "Lime cons",
+              "value": 0.11
+            }
+          ]
+        },
+        {
+          "sample_name": "GMET-0004",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 153.37,
+          "nonzero_variable_count": 5,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Cu rec",
+              "value": 84.6
+            },
+            {
+              "name": "Mo rec",
+              "value": 49.3
+            },
+            {
+              "name": "WI",
+              "value": 12.1
+            },
+            {
+              "name": "PH",
+              "value": 7.2
+            },
+            {
+              "name": "Lime cons",
+              "value": 0.17
+            }
+          ]
+        },
+        {
+          "sample_name": "GMET-0005",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 169.21,
+          "nonzero_variable_count": 5,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Cu rec",
+              "value": 89.9
+            },
+            {
+              "name": "Mo rec",
+              "value": 57.3
+            },
+            {
+              "name": "WI",
+              "value": 13.5
+            },
+            {
+              "name": "PH",
+              "value": 8.4
+            },
+            {
+              "name": "Lime cons",
+              "value": 0.11
+            }
+          ]
+        },
+        {
+          "sample_name": "GMET-0006",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 167.71,
+          "nonzero_variable_count": 5,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Cu rec",
+              "value": 91.0
+            },
+            {
+              "name": "Mo rec",
+              "value": 57.6
+            },
+            {
+              "name": "WI",
+              "value": 11.8
+            },
+            {
+              "name": "PH",
+              "value": 7.2
+            },
+            {
+              "name": "Lime cons",
+              "value": 0.11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zip_name": "MINERAL1.zip",
+      "subset_code": "MINERAL1",
+      "size_bytes": 4684251855,
+      "file_count": 694,
+      "suffix_counts": {
+        ".h5": 297,
+        ".png": 297,
+        ".json": 100
+      },
+      "top_level_entries": {
+        "MINERAL1": 694
+      },
+      "header_examples": [],
+      "metadata_json_count": 100,
+      "sample_count": 99,
+      "crop_count": 99,
+      "cube_file_count": 297,
+      "rgb_preview_count": 297,
+      "metadata_keys": [
+        "crops",
+        "datarecord",
+        "sample_name",
+        "vars"
+      ],
+      "variable_count": 33,
+      "variable_names": [
+        "Actinolite",
+        "Albite",
+        "Andesina_An40",
+        "Anhydrite/Gypsum",
+        "Anorthite",
+        "Apatite",
+        "Biotite",
+        "Bornite",
+        "Bytownite_An80",
+        "Calcite",
+        "Chalcopyrite",
+        "Chalcosite/Digenite",
+        "Chlorite",
+        "Covelite",
+        "Epidote",
+        "Fe Oxides",
+        "Fe-Clays",
+        "K-Feldspar",
+        "Kaolinite",
+        "Labradorite_An60",
+        "Molybdenite",
+        "Muscovite/Sericite",
+        "Oligoclasa_An20",
+        "Other Amphibole",
+        "Others",
+        "Others Carbonates",
+        "Others Ti Minerals",
+        "Pyrite",
+        "Pyroxene",
+        "Quartz",
+        "Rutile",
+        "Siderite",
+        "Tourmaline"
+      ],
+      "numeric_variable_count": 33,
+      "numeric_variable_names": [
+        "Actinolite",
+        "Albite",
+        "Andesina_An40",
+        "Anhydrite/Gypsum",
+        "Anorthite",
+        "Apatite",
+        "Biotite",
+        "Bornite",
+        "Bytownite_An80",
+        "Calcite",
+        "Chalcopyrite",
+        "Chalcosite/Digenite",
+        "Chlorite",
+        "Covelite",
+        "Epidote",
+        "Fe Oxides",
+        "Fe-Clays",
+        "K-Feldspar",
+        "Kaolinite",
+        "Labradorite_An60",
+        "Molybdenite",
+        "Muscovite/Sericite",
+        "Oligoclasa_An20",
+        "Other Amphibole",
+        "Others",
+        "Others Carbonates",
+        "Others Ti Minerals",
+        "Pyrite",
+        "Pyroxene",
+        "Quartz",
+        "Rutile",
+        "Siderite",
+        "Tourmaline"
+      ],
+      "categorical_variable_count": 0,
+      "categorical_variable_names": [],
+      "categorical_value_counts": {},
+      "composition_sum_stats": {
+        "min": 100.0,
+        "median": 100.0,
+        "max": 100.0,
+        "mean": 100.0
+      },
+      "nonzero_variable_count_stats": {
+        "min": 29.0,
+        "median": 33.0,
+        "max": 33.0,
+        "mean": 32.0404
+      },
+      "dominant_variables_by_mean": [
+        {
+          "name": "Quartz",
+          "mean": 25.967,
+          "max": 35.28,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Muscovite/Sericite",
+          "mean": 17.1777,
+          "max": 28.03,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Biotite",
+          "mean": 9.0159,
+          "max": 15.05,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Chlorite",
+          "mean": 7.413,
+          "max": 13.47,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Albite",
+          "mean": 5.4856,
+          "max": 8.94,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Oligoclasa_An20",
+          "mean": 4.8121,
+          "max": 9.0,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Anhydrite/Gypsum",
+          "mean": 4.8025,
+          "max": 10.27,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Labradorite_An60",
+          "mean": 3.7766,
+          "max": 6.25,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "Anorthite",
+          "mean": 3.6218,
+          "max": 7.83,
+          "nonzero_samples": 99
+        },
+        {
+          "name": "K-Feldspar",
+          "mean": 2.9267,
+          "max": 6.28,
+          "nonzero_samples": 99
+        }
+      ],
+      "modality_wavelength_ranges_nm": {
+        "swir_low": {
+          "band_count": 268,
+          "start": 1000.21,
+          "stop": 2499.26
+        },
+        "vnir_high": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        },
+        "vnir_low": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        }
+      },
+      "modality_summary": {
+        "swir_low": {
+          "cube_count": 99,
+          "image_width_stats": {
+            "min": 44.0,
+            "median": 110.0,
+            "max": 151.0,
+            "mean": 105.2727
+          },
+          "image_height_stats": {
+            "min": 28.0,
+            "median": 81.0,
+            "max": 119.0,
+            "mean": 79.1818
+          },
+          "real_width_stats": {
+            "min": 27.3,
+            "median": 68.2,
+            "max": 93.6,
+            "mean": 65.2505
+          },
+          "real_height_stats": {
+            "min": 22.8,
+            "median": 66.0,
+            "max": 97.0,
+            "mean": 64.5434
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            1.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            4.0
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_low": {
+          "cube_count": 99,
+          "image_width_stats": {
+            "min": 44.0,
+            "median": 110.0,
+            "max": 151.0,
+            "mean": 105.2727
+          },
+          "image_height_stats": {
+            "min": 28.0,
+            "median": 81.0,
+            "max": 119.0,
+            "mean": 79.1818
+          },
+          "real_width_stats": {
+            "min": 27.3,
+            "median": 68.2,
+            "max": 93.6,
+            "mean": 65.2505
+          },
+          "real_height_stats": {
+            "min": 22.8,
+            "median": 66.0,
+            "max": 97.0,
+            "mean": 64.5434
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_high": {
+          "cube_count": 99,
+          "image_width_stats": {
+            "min": 99.0,
+            "median": 246.0,
+            "max": 337.0,
+            "mean": 235.8283
+          },
+          "image_height_stats": {
+            "min": 29.0,
+            "median": 82.0,
+            "max": 120.0,
+            "mean": 80.7071
+          },
+          "real_width_stats": {
+            "min": 27.4,
+            "median": 68.1,
+            "max": 93.3,
+            "mean": 65.2626
+          },
+          "real_height_stats": {
+            "min": 23.6,
+            "median": 66.8,
+            "max": 97.8,
+            "mean": 65.7818
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        }
+      },
+      "sample_previews": [
+        {
+          "sample_name": "M1-0001",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [
+            "P1",
+            "S1",
+            "coarse"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 31,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 30.49
+            },
+            {
+              "name": "Muscovite/Sericite",
+              "value": 22.74
+            },
+            {
+              "name": "Chlorite",
+              "value": 9.97
+            },
+            {
+              "name": "Oligoclasa_An20",
+              "value": 5.81
+            },
+            {
+              "name": "Biotite",
+              "value": 5.58
+            }
+          ]
+        },
+        {
+          "sample_name": "M1-0002",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [
+            "P2",
+            "S1",
+            "coarse"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 30,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 20.6
+            },
+            {
+              "name": "Biotite",
+              "value": 14.92
+            },
+            {
+              "name": "Muscovite/Sericite",
+              "value": 13.14
+            },
+            {
+              "name": "Oligoclasa_An20",
+              "value": 9.0
+            },
+            {
+              "name": "Chlorite",
+              "value": 6.39
+            }
+          ]
+        },
+        {
+          "sample_name": "M1-0003",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [
+            "P3",
+            "S1",
+            "coarse"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 31,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 22.02
+            },
+            {
+              "name": "Muscovite/Sericite",
+              "value": 14.25
+            },
+            {
+              "name": "Biotite",
+              "value": 12.47
+            },
+            {
+              "name": "Oligoclasa_An20",
+              "value": 8.62
+            },
+            {
+              "name": "Albite",
+              "value": 8.19
+            }
+          ]
+        },
+        {
+          "sample_name": "M1-0004",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [
+            "P1",
+            "S2",
+            "coarse"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 31,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 34.18
+            },
+            {
+              "name": "Muscovite/Sericite",
+              "value": 23.65
+            },
+            {
+              "name": "Chlorite",
+              "value": 9.09
+            },
+            {
+              "name": "Andesina_An40",
+              "value": 4.02
+            },
+            {
+              "name": "Oligoclasa_An20",
+              "value": 4.0
+            }
+          ]
+        },
+        {
+          "sample_name": "M1-0005",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [
+            "P2",
+            "S2",
+            "coarse"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 32,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 22.73
+            },
+            {
+              "name": "Biotite",
+              "value": 13.56
+            },
+            {
+              "name": "Muscovite/Sericite",
+              "value": 10.65
+            },
+            {
+              "name": "Anorthite",
+              "value": 7.83
+            },
+            {
+              "name": "Oligoclasa_An20",
+              "value": 7.01
+            }
+          ]
+        },
+        {
+          "sample_name": "M1-0006",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [
+            "P3",
+            "S2",
+            "coarse"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 31,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 24.82
+            },
+            {
+              "name": "Muscovite/Sericite",
+              "value": 14.57
+            },
+            {
+              "name": "Biotite",
+              "value": 13.45
+            },
+            {
+              "name": "Oligoclasa_An20",
+              "value": 5.44
+            },
+            {
+              "name": "Labradorite_An60",
+              "value": 5.38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zip_name": "MINERAL2.zip",
+      "subset_code": "MINERAL2",
+      "size_bytes": 1476840683,
+      "file_count": 141,
+      "suffix_counts": {
+        ".h5": 60,
+        ".png": 60,
+        ".json": 21
+      },
+      "top_level_entries": {
+        "MINERAL2": 141
+      },
+      "header_examples": [],
+      "metadata_json_count": 21,
+      "sample_count": 20,
+      "crop_count": 20,
+      "cube_file_count": 60,
+      "rgb_preview_count": 60,
+      "metadata_keys": [
+        "crops",
+        "datarecord",
+        "sample_name",
+        "vars"
+      ],
+      "variable_count": 25,
+      "variable_names": [
+        "Alunite",
+        "Ankerite",
+        "Apatite",
+        "Bornite",
+        "Calcite",
+        "Chalcocite",
+        "Chalcopyrite",
+        "Clinochlore",
+        "Enargite",
+        "Gypsum",
+        "Hematite",
+        "Illite",
+        "Kaolin group",
+        "Molybdenite",
+        "Muscovite",
+        "Orthoclase",
+        "Phengite",
+        "Pirit",
+        "Plagioclase",
+        "Pyrophyllite",
+        "Quartz",
+        "Siderite",
+        "Sphalerite",
+        "Tenantite",
+        "Tetrahedrite"
+      ],
+      "numeric_variable_count": 25,
+      "numeric_variable_names": [
+        "Alunite",
+        "Ankerite",
+        "Apatite",
+        "Bornite",
+        "Calcite",
+        "Chalcocite",
+        "Chalcopyrite",
+        "Clinochlore",
+        "Enargite",
+        "Gypsum",
+        "Hematite",
+        "Illite",
+        "Kaolin group",
+        "Molybdenite",
+        "Muscovite",
+        "Orthoclase",
+        "Phengite",
+        "Pirit",
+        "Plagioclase",
+        "Pyrophyllite",
+        "Quartz",
+        "Siderite",
+        "Sphalerite",
+        "Tenantite",
+        "Tetrahedrite"
+      ],
+      "categorical_variable_count": 0,
+      "categorical_variable_names": [],
+      "categorical_value_counts": {},
+      "composition_sum_stats": {
+        "min": 99.998,
+        "median": 100.0,
+        "max": 100.001,
+        "mean": 99.9998
+      },
+      "nonzero_variable_count_stats": {
+        "min": 10.0,
+        "median": 13.0,
+        "max": 16.0,
+        "mean": 12.85
+      },
+      "dominant_variables_by_mean": [
+        {
+          "name": "Quartz",
+          "mean": 55.2423,
+          "max": 71.084,
+          "nonzero_samples": 20
+        },
+        {
+          "name": "Phengite",
+          "mean": 10.7231,
+          "max": 25.366,
+          "nonzero_samples": 19
+        },
+        {
+          "name": "Muscovite",
+          "mean": 7.8326,
+          "max": 24.36,
+          "nonzero_samples": 20
+        },
+        {
+          "name": "Illite",
+          "mean": 7.5906,
+          "max": 19.926,
+          "nonzero_samples": 20
+        },
+        {
+          "name": "Pyrophyllite",
+          "mean": 3.1128,
+          "max": 16.138,
+          "nonzero_samples": 11
+        },
+        {
+          "name": "Pirit",
+          "mean": 3.0438,
+          "max": 6.937,
+          "nonzero_samples": 19
+        },
+        {
+          "name": "Orthoclase",
+          "mean": 2.0804,
+          "max": 17.622,
+          "nonzero_samples": 15
+        },
+        {
+          "name": "Alunite",
+          "mean": 1.8209,
+          "max": 15.067,
+          "nonzero_samples": 8
+        },
+        {
+          "name": "Kaolin group",
+          "mean": 1.81,
+          "max": 7.542,
+          "nonzero_samples": 20
+        },
+        {
+          "name": "Chalcopyrite",
+          "mean": 1.6308,
+          "max": 4.937,
+          "nonzero_samples": 17
+        }
+      ],
+      "modality_wavelength_ranges_nm": {
+        "swir_low": {
+          "band_count": 268,
+          "start": 1000.21,
+          "stop": 2499.26
+        },
+        "vnir_high": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        },
+        "vnir_low": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        }
+      },
+      "modality_summary": {
+        "swir_low": {
+          "cube_count": 20,
+          "image_width_stats": {
+            "min": 106.0,
+            "median": 113.5,
+            "max": 124.0,
+            "mean": 114.75
+          },
+          "image_height_stats": {
+            "min": 108.0,
+            "median": 113.0,
+            "max": 119.0,
+            "mean": 113.45
+          },
+          "real_width_stats": {
+            "min": 65.7,
+            "median": 70.35,
+            "max": 76.9,
+            "mean": 71.12
+          },
+          "real_height_stats": {
+            "min": 88.0,
+            "median": 92.1,
+            "max": 97.0,
+            "mean": 92.47
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            1.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            4.0
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_low": {
+          "cube_count": 20,
+          "image_width_stats": {
+            "min": 106.0,
+            "median": 113.5,
+            "max": 124.0,
+            "mean": 114.75
+          },
+          "image_height_stats": {
+            "min": 108.0,
+            "median": 113.0,
+            "max": 119.0,
+            "mean": 113.45
+          },
+          "real_width_stats": {
+            "min": 65.7,
+            "median": 70.35,
+            "max": 76.9,
+            "mean": 71.12
+          },
+          "real_height_stats": {
+            "min": 88.0,
+            "median": 92.1,
+            "max": 97.0,
+            "mean": 92.47
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_high": {
+          "cube_count": 20,
+          "image_width_stats": {
+            "min": 237.0,
+            "median": 254.0,
+            "max": 278.0,
+            "mean": 257.5
+          },
+          "image_height_stats": {
+            "min": 111.0,
+            "median": 115.0,
+            "max": 122.0,
+            "mean": 115.6
+          },
+          "real_width_stats": {
+            "min": 65.6,
+            "median": 70.3,
+            "max": 76.9,
+            "mean": 71.265
+          },
+          "real_height_stats": {
+            "min": 90.5,
+            "median": 93.7,
+            "max": 99.4,
+            "mean": 94.22
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        }
+      },
+      "sample_previews": [
+        {
+          "sample_name": "M2-0001",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 99.998,
+          "nonzero_variable_count": 14,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 56.64
+            },
+            {
+              "name": "Phengite",
+              "value": 19.165
+            },
+            {
+              "name": "Illite",
+              "value": 8.653
+            },
+            {
+              "name": "Chalcopyrite",
+              "value": 4.937
+            },
+            {
+              "name": "Muscovite",
+              "value": 2.689
+            }
+          ]
+        },
+        {
+          "sample_name": "M2-0002",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 99.998,
+          "nonzero_variable_count": 16,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 54.806
+            },
+            {
+              "name": "Phengite",
+              "value": 11.523
+            },
+            {
+              "name": "Illite",
+              "value": 8.666
+            },
+            {
+              "name": "Kaolin group",
+              "value": 7.542
+            },
+            {
+              "name": "Plagioclase",
+              "value": 3.514
+            }
+          ]
+        },
+        {
+          "sample_name": "M2-0003",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 99.999,
+          "nonzero_variable_count": 13,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 44.329
+            },
+            {
+              "name": "Illite",
+              "value": 19.926
+            },
+            {
+              "name": "Pyrophyllite",
+              "value": 12.461
+            },
+            {
+              "name": "Pirit",
+              "value": 6.937
+            },
+            {
+              "name": "Kaolin group",
+              "value": 3.943
+            }
+          ]
+        },
+        {
+          "sample_name": "M2-0004",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 12,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 56.831
+            },
+            {
+              "name": "Alunite",
+              "value": 15.067
+            },
+            {
+              "name": "Pyrophyllite",
+              "value": 7.077
+            },
+            {
+              "name": "Pirit",
+              "value": 6.174
+            },
+            {
+              "name": "Kaolin group",
+              "value": 2.957
+            }
+          ]
+        },
+        {
+          "sample_name": "M2-0005",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.001,
+          "nonzero_variable_count": 14,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 62.739
+            },
+            {
+              "name": "Muscovite",
+              "value": 19.273
+            },
+            {
+              "name": "Illite",
+              "value": 7.349
+            },
+            {
+              "name": "Pirit",
+              "value": 3.552
+            },
+            {
+              "name": "Orthoclase",
+              "value": 1.695
+            }
+          ]
+        },
+        {
+          "sample_name": "M2-0006",
+          "crop_ids": [
+            "01"
+          ],
+          "measurement_tags": [],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.001,
+          "nonzero_variable_count": 12,
+          "categorical_variables": {},
+          "dominant_variables": [
+            {
+              "name": "Quartz",
+              "value": 48.255
+            },
+            {
+              "name": "Orthoclase",
+              "value": 17.622
+            },
+            {
+              "name": "Phengite",
+              "value": 13.561
+            },
+            {
+              "name": "Illite",
+              "value": 6.367
+            },
+            {
+              "name": "Clinochlore",
+              "value": 3.466
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zip_name": "PORPHYRY.zip",
+      "subset_code": "PORPHYRY",
+      "size_bytes": 17957837367,
+      "file_count": 365,
+      "suffix_counts": {
+        ".h5": 168,
+        ".png": 168,
+        ".json": 29
+      },
+      "top_level_entries": {
+        "PORPHYRY": 365
+      },
+      "header_examples": [],
+      "metadata_json_count": 29,
+      "sample_count": 28,
+      "crop_count": 56,
+      "cube_file_count": 168,
+      "rgb_preview_count": 168,
+      "metadata_keys": [
+        "crops",
+        "datarecord",
+        "sample_name",
+        "vars"
+      ],
+      "variable_count": 11,
+      "variable_names": [
+        "Bt (%)",
+        "Cal (%)",
+        "Esp (%)",
+        "Hem (%)",
+        "Kao (%)",
+        "Mb (%)",
+        "Mgt (%)",
+        "Py (%)",
+        "Qz (%)",
+        "[Cpy + Py + Bo] (%)",
+        "group"
+      ],
+      "numeric_variable_count": 10,
+      "numeric_variable_names": [
+        "Bt (%)",
+        "Cal (%)",
+        "Esp (%)",
+        "Hem (%)",
+        "Kao (%)",
+        "Mb (%)",
+        "Mgt (%)",
+        "Py (%)",
+        "Qz (%)",
+        "[Cpy + Py + Bo] (%)"
+      ],
+      "categorical_variable_count": 1,
+      "categorical_variable_names": [
+        "group"
+      ],
+      "categorical_value_counts": {
+        "group": [
+          {
+            "value": "Q2",
+            "count": 6
+          },
+          {
+            "value": "Q1",
+            "count": 4
+          },
+          {
+            "value": "Q3",
+            "count": 4
+          },
+          {
+            "value": "Q4",
+            "count": 4
+          },
+          {
+            "value": "Q6",
+            "count": 3
+          },
+          {
+            "value": "Q7",
+            "count": 3
+          },
+          {
+            "value": "Q8",
+            "count": 3
+          },
+          {
+            "value": "Q5",
+            "count": 1
+          }
+        ]
+      },
+      "composition_sum_stats": {
+        "min": 99.9,
+        "median": 100.0,
+        "max": 100.1,
+        "mean": 100.0286
+      },
+      "nonzero_variable_count_stats": {
+        "min": 2.0,
+        "median": 3.0,
+        "max": 6.0,
+        "mean": 3.1786
+      },
+      "dominant_variables_by_mean": [
+        {
+          "name": "Qz (%)",
+          "mean": 48.7536,
+          "max": 95.2,
+          "nonzero_samples": 28
+        },
+        {
+          "name": "Mb (%)",
+          "mean": 20.575,
+          "max": 55.6,
+          "nonzero_samples": 17
+        },
+        {
+          "name": "Bt (%)",
+          "mean": 9.7571,
+          "max": 84.6,
+          "nonzero_samples": 12
+        },
+        {
+          "name": "Kao (%)",
+          "mean": 5.0071,
+          "max": 33.3,
+          "nonzero_samples": 7
+        },
+        {
+          "name": "Py (%)",
+          "mean": 4.1214,
+          "max": 22.7,
+          "nonzero_samples": 9
+        },
+        {
+          "name": "Mgt (%)",
+          "mean": 3.9321,
+          "max": 28.6,
+          "nonzero_samples": 6
+        },
+        {
+          "name": "Hem (%)",
+          "mean": 3.1214,
+          "max": 45.5,
+          "nonzero_samples": 3
+        },
+        {
+          "name": "Esp (%)",
+          "mean": 2.8893,
+          "max": 28.6,
+          "nonzero_samples": 4
+        },
+        {
+          "name": "[Cpy + Py + Bo] (%)",
+          "mean": 1.3857,
+          "max": 26.3,
+          "nonzero_samples": 2
+        },
+        {
+          "name": "Cal (%)",
+          "mean": 0.4857,
+          "max": 13.6,
+          "nonzero_samples": 1
+        }
+      ],
+      "modality_wavelength_ranges_nm": {
+        "swir_low": {
+          "band_count": 268,
+          "start": 1000.21,
+          "stop": 2499.26
+        },
+        "vnir_high": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        },
+        "vnir_low": {
+          "band_count": 942,
+          "start": 400.11,
+          "stop": 999.39
+        }
+      },
+      "modality_summary": {
+        "swir_low": {
+          "cube_count": 56,
+          "image_width_stats": {
+            "min": 125.0,
+            "median": 229.5,
+            "max": 303.0,
+            "mean": 223.4464
+          },
+          "image_height_stats": {
+            "min": 125.0,
+            "median": 258.5,
+            "max": 314.0,
+            "mean": 252.5536
+          },
+          "real_width_stats": {
+            "min": 77.5,
+            "median": 142.25,
+            "max": 187.8,
+            "mean": 138.4982
+          },
+          "real_height_stats": {
+            "min": 101.9,
+            "median": 210.7,
+            "max": 255.9,
+            "mean": 205.8482
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            1.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            4.0
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_low": {
+          "cube_count": 56,
+          "image_width_stats": {
+            "min": 125.0,
+            "median": 229.5,
+            "max": 303.0,
+            "mean": 223.4464
+          },
+          "image_height_stats": {
+            "min": 125.0,
+            "median": 258.5,
+            "max": 314.0,
+            "mean": 252.5536
+          },
+          "real_width_stats": {
+            "min": 77.5,
+            "median": 142.25,
+            "max": 187.8,
+            "mean": 138.4982
+          },
+          "real_height_stats": {
+            "min": 101.9,
+            "median": 210.7,
+            "max": 255.9,
+            "mean": 205.8482
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        },
+        "vnir_high": {
+          "cube_count": 56,
+          "image_width_stats": {
+            "min": 275.0,
+            "median": 503.0,
+            "max": 666.0,
+            "mean": 490.5714
+          },
+          "image_height_stats": {
+            "min": 128.0,
+            "median": 260.0,
+            "max": 318.0,
+            "mean": 255.3036
+          },
+          "real_width_stats": {
+            "min": 76.1,
+            "median": 139.2,
+            "max": 184.3,
+            "mean": 135.7643
+          },
+          "real_height_stats": {
+            "min": 104.3,
+            "median": 211.9,
+            "max": 259.2,
+            "mean": 208.0839
+          },
+          "spectral_binning_values": [
+            1.0
+          ],
+          "spatial_binning_values": [
+            2.0
+          ],
+          "sample_frequency_values": [
+            50.0
+          ],
+          "integration_time_values": [
+            12.7
+          ],
+          "dolly_speed_values": [
+            40.0
+          ]
+        }
+      },
+      "sample_previews": [
+        {
+          "sample_name": "POR-0001",
+          "crop_ids": [
+            "01",
+            "02"
+          ],
+          "measurement_tags": [
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 2,
+          "categorical_variables": {
+            "group": "Q1"
+          },
+          "dominant_variables": [
+            {
+              "name": "Qz (%)",
+              "value": 80.0
+            },
+            {
+              "name": "Mb (%)",
+              "value": 20.0
+            },
+            {
+              "name": "Bt (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Kao (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Py (%)",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "sample_name": "POR-0002",
+          "crop_ids": [
+            "01",
+            "02"
+          ],
+          "measurement_tags": [
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 2,
+          "categorical_variables": {
+            "group": "Q1"
+          },
+          "dominant_variables": [
+            {
+              "name": "Qz (%)",
+              "value": 57.1
+            },
+            {
+              "name": "Mb (%)",
+              "value": 42.9
+            },
+            {
+              "name": "Bt (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Kao (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Py (%)",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "sample_name": "POR-0003",
+          "crop_ids": [
+            "01",
+            "02"
+          ],
+          "measurement_tags": [
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 2,
+          "categorical_variables": {
+            "group": "Q1"
+          },
+          "dominant_variables": [
+            {
+              "name": "Mb (%)",
+              "value": 55.6
+            },
+            {
+              "name": "Qz (%)",
+              "value": 44.4
+            },
+            {
+              "name": "Bt (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Kao (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Py (%)",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "sample_name": "POR-0004",
+          "crop_ids": [
+            "01",
+            "02"
+          ],
+          "measurement_tags": [
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 3,
+          "categorical_variables": {
+            "group": "Q1"
+          },
+          "dominant_variables": [
+            {
+              "name": "Mb (%)",
+              "value": 50.0
+            },
+            {
+              "name": "Qz (%)",
+              "value": 40.0
+            },
+            {
+              "name": "Bt (%)",
+              "value": 10.0
+            },
+            {
+              "name": "Kao (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Py (%)",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "sample_name": "POR-0005",
+          "crop_ids": [
+            "01",
+            "02"
+          ],
+          "measurement_tags": [
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 2,
+          "categorical_variables": {
+            "group": "Q2"
+          },
+          "dominant_variables": [
+            {
+              "name": "Qz (%)",
+              "value": 95.2
+            },
+            {
+              "name": "Kao (%)",
+              "value": 4.8
+            },
+            {
+              "name": "Bt (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Mb (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Py (%)",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "sample_name": "POR-0006",
+          "crop_ids": [
+            "01",
+            "02"
+          ],
+          "measurement_tags": [
+            "fine"
+          ],
+          "modalities": [
+            "swir_low",
+            "vnir_high",
+            "vnir_low"
+          ],
+          "composition_sum": 100.0,
+          "nonzero_variable_count": 2,
+          "categorical_variables": {
+            "group": "Q2"
+          },
+          "dominant_variables": [
+            {
+              "name": "Qz (%)",
+              "value": 90.9
+            },
+            {
+              "name": "Kao (%)",
+              "value": 9.1
+            },
+            {
+              "name": "Bt (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Mb (%)",
+              "value": 0.0
+            },
+            {
+              "name": "Py (%)",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
