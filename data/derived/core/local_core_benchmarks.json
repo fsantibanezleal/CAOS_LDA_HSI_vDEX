@@ -1,14 +1,20 @@
 {
   "source": "Local-first PTM/LDA, clustering, stability, and unmixing benchmarks over real spectral datasets",
-  "generated_at": "2026-05-01",
+  "generated_at": "2026-05-03",
   "methods": {
     "representation": "band-frequency count vectors from normalized spectra",
     "topic_model": "scikit-learn LatentDirichletAllocation",
+    "ptm_supervision_principle": "Topics are treated as latent regime layers. Flat theta-feature models are control baselines only; routed, soft-expert, or hierarchical variants are the canonical supervised PTM targets when available.",
     "classification_models": [
       "raw_logistic_regression",
       "pca_logistic_regression",
       "topic_logistic_regression"
     ],
+    "classification_model_roles": {
+      "raw_logistic_regression": "raw-spectral-baseline",
+      "pca_logistic_regression": "reduced-feature-baseline",
+      "topic_logistic_regression": "flat-topic-control-baseline"
+    },
     "clustering_baselines": [
       "raw_kmeans",
       "raw_gmm",
@@ -31,6 +37,13 @@
         "cube_topic_logistic_regression",
         "region_topic_logistic_regression"
       ],
+      "classification_roles": {
+        "raw_logistic_regression": "raw-spectral-baseline",
+        "pca_logistic_regression": "reduced-feature-baseline",
+        "topic_logistic_regression": "flat-topic-control-baseline",
+        "cube_topic_logistic_regression": "aggregated-topic-control-baseline",
+        "region_topic_logistic_regression": "regional-topic-control-baseline"
+      },
       "regression": [
         "raw_ridge_regression",
         "pls_regression",
@@ -38,7 +51,15 @@
         "cube_topic_mixture_linear_regression",
         "region_topic_mixture_linear_regression",
         "topic_routed_linear_regression"
-      ]
+      ],
+      "regression_roles": {
+        "raw_ridge_regression": "raw-spectral-baseline",
+        "pls_regression": "latent-linear-baseline",
+        "topic_mixture_linear_regression": "flat-topic-control-baseline",
+        "cube_topic_mixture_linear_regression": "aggregated-topic-control-baseline",
+        "region_topic_mixture_linear_regression": "regional-topic-control-baseline",
+        "topic_routed_linear_regression": "topic-routed-primary-ptm-model"
+      }
     },
     "stability_protocol": {
       "seeds": [
