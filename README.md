@@ -32,7 +32,7 @@ object, not merely as nuisance noise.
 - an offline validation layer for PTM/LDA, clustering, unmixing-style
   comparisons, and measured-target benchmarks
 - a local-only project memory under `wip/` kept outside Git tracking
-- a deep technical wiki under `wiki/`
+- a companion GitHub wiki for long-form technical documentation
 
 The canonical repo name is `CAOS_LDA_HSI_vDEX`. The current local folder
 name may still differ until a later filesystem rename.
@@ -55,8 +55,8 @@ name may still differ until a later filesystem rename.
   audited
 - `wip/`: local work-in-progress memory, decisions, and state kept
   outside Git tracking
-- `wiki/`: deep Markdown wiki with theory, research, datasets, and
-  workspace rationale
+- `wiki/`: transitional local mirror of pages now maintained in the
+  dedicated GitHub wiki repo
 - `docs/`: repo-oriented technical documents
 - `scripts/`: local setup, run, and smoke-test scripts
 
@@ -131,16 +131,14 @@ memory outside Git tracking:
 
 ## Deep Wiki
 
-The deeper scientific documentation now lives in:
+The canonical long-form wiki now lives at:
+
+- `https://github.com/fsantibanezleal/CAOS_LDA_HSI_vDEX/wiki`
+
+The local `wiki/` folder remains only as a transitional mirror while the
+repo references are being cleaned up:
 
 - [wiki/README.md](wiki/README.md)
-- [wiki/theory.md](wiki/theory.md)
-- [wiki/research-landscape.md](wiki/research-landscape.md)
-- [wiki/datasets.md](wiki/datasets.md)
-- [wiki/local-stack.md](wiki/local-stack.md)
-- [wiki/products-and-quality.md](wiki/products-and-quality.md)
-- [wiki/legacy-audit.md](wiki/legacy-audit.md)
-- [wiki/workspace-guide.md](wiki/workspace-guide.md)
 
 ## Local Setup
 
