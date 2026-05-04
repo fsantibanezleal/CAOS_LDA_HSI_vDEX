@@ -1,5 +1,16 @@
 # CAOS_LDA_HSI_vDEX
 
+## Important
+
+> This repository is an alternative exploratory analysis.
+>
+> The official repository is:
+> `https://github.com/fsantibanezleal/CAOS_LDA_HSI`
+>
+> Treat both repositories as parallel workflows. This repo should be
+> read and operated independently rather than assuming parity with the
+> official line.
+
 CAOS_LDA_HSI_vDEX is a local-first research workspace for probabilistic topic
 modelling over multispectral and hyperspectral data.
 
