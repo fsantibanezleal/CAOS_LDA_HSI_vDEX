@@ -1,5 +1,11 @@
 # CAOS LDA HSI Wiki
 
+> Canonical location:
+> `https://github.com/fsantibanezleal/CAOS_LDA_HSI_vDEX/wiki`
+>
+> The local `wiki/` folder is now a transitional mirror. Long-form wiki
+> edits should be made in the dedicated `.wiki` repository.
+
 This wiki is the deep scientific and technical companion to the
 repository.
 
