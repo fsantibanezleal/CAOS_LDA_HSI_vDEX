@@ -1,5 +1,16 @@
 # CAOS_LDA_HSI_vDEX
 
+## Important
+
+> This repository is an alternative exploratory analysis.
+>
+> The official repository is:
+> `https://github.com/fsantibanezleal/CAOS_LDA_HSI`
+>
+> Treat both repositories as parallel workflows. This repo should be
+> read and operated independently rather than assuming parity with the
+> official line.
+
 CAOS_LDA_HSI_vDEX is a local-first research workspace for probabilistic topic
 modelling over multispectral and hyperspectral data.
 
@@ -49,6 +60,12 @@ name may still differ until a later filesystem rename.
 - `docs/`: repo-oriented technical documents
 - `scripts/`: local setup, run, and smoke-test scripts
 
+## Git Branching
+
+- `develop` is the active integration and development branch
+- `main` is kept as the stable branch
+- the GitHub default branch is now `develop`
+
 ## Frontend Structure
 
 The current web app is intentionally split so the main runtime files do
@@ -56,7 +73,7 @@ not become giant again:
 
 - `frontend/src/App.tsx` handles route and shared-state orchestration
 - `frontend/src/app/pages/` holds route surfaces and page-local panels
-- `frontend/src/app/types.ts`, `constants.ts`, `utils.ts`, `ui.tsx`,
+- `frontend/src/app/types.ts`, `constants.ts`, `utils/`, `ui.tsx`,
   and `diagrams.tsx` hold shared app concerns
 - `frontend/src/styles/workspace.css` is only the style entrypoint and
   imports smaller partials:
@@ -102,7 +119,8 @@ instead of presenting every model as equivalent.
 
 ## Persistent Project Memory
 
-Planning and state now live inside the repository:
+Planning and state now live in the repository working tree as local-only
+memory outside Git tracking:
 
 - [wip/session-start.md](wip/session-start.md)
 - [wip/master-plan.md](wip/master-plan.md)
@@ -186,6 +204,15 @@ is now interpreted explicitly rather than preserved as a vague archive:
 
 - [legacy/README.md](legacy/README.md)
 - [wiki/legacy-audit.md](wiki/legacy-audit.md)
+
+## License
+
+This repository is licensed under Apache-2.0. See [LICENSE](LICENSE).
+
+Code, documentation, and original repo structure are covered by that
+license. Datasets, curated derived artifacts, papers, and other
+third-party materials remain subject to their own upstream licenses,
+terms of use, attribution rules, and redistribution limits.
 
 ## External Scientific Anchors
 
