@@ -98,7 +98,7 @@
     {
       "id": "build_lda_sweep",
       "order": 5,
-      "status": "planned",
+      "status": "partial",
       "script": "data-pipeline/build_lda_sweep.py",
       "current_repo_equivalents": [
         "data-pipeline/run_local_core_benchmarks.py"
@@ -109,7 +109,7 @@
       "writes_derived": [
         "data/derived/lda_sweep/"
       ],
-      "notes": "Current local-core benchmarks include compact repeated LDA runs but not the explicit K-by-seed sweep artifacts required by the master plan. This is the next builder to verify under the hardened offline PTM stack."
+      "notes": "Current local-core benchmarks include compact repeated LDA runs, and the dedicated builder now exists and has been verified on a narrow slice: salinas-corrected / region-documents__slic_200 / uniform_per_band_Q16 with K=6 and seed=0 writes both local fit artifacts and a derived sweep summary. The broader K-by-seed contract still needs widening and repeated verification across more scopes."
     },
     {
       "id": "build_lda_canonical_fits",

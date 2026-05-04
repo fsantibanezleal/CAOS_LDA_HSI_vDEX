@@ -1,0 +1,65 @@
+{
+  "scene_id": "salinas-corrected",
+  "variant_id": "lda_sklearn_online",
+  "recipe_variant_id": "region-documents__slic_200",
+  "quantization_config_id": "uniform_per_band_Q16",
+  "document_count": 189,
+  "vocabulary_size": 2931,
+  "k_values": [
+    6
+  ],
+  "seed_values": [
+    0
+  ],
+  "train_document_count": 151,
+  "test_document_count": 38,
+  "fits": [
+    {
+      "K": 6,
+      "seed": 0,
+      "train_perplexity": 541.37875,
+      "test_perplexity": 539.139091,
+      "npmi": 0.571461,
+      "umass": -0.076673,
+      "topic_diversity": 0.9,
+      "label_alignment": {
+        "ari": 0.421623,
+        "nmi": 0.64564
+      },
+      "local_fit_ref": "data/local/lda_fits/lda_sklearn_online/region-documents__slic_200__uniform_per_band_Q16__K6__s0/salinas-corrected",
+      "runtime_s": 5.101078
+    }
+  ],
+  "k_summary": [
+    {
+      "K": 6,
+      "train_perplexity_mean": 541.37875,
+      "test_perplexity_mean": 539.139091,
+      "npmi_mean": 0.571461,
+      "umass_mean": -0.076673,
+      "topic_diversity_mean": 0.9,
+      "runtime_s_mean": 5.101078,
+      "label_alignment_ari_mean": 0.421623,
+      "label_alignment_nmi_mean": 0.64564,
+      "stability_cosine_mean": null,
+      "stability_cosine_min": null,
+      "stability_jaccard_mean": null,
+      "seed_comparisons": []
+    }
+  ],
+  "recommended_k": {
+    "K": 6,
+    "rule": "minimum summed rank over test_perplexity, stability_cosine_mean, and npmi_mean",
+    "rank_score": 0,
+    "supporting_metrics": {
+      "test_perplexity_mean": 539.139091,
+      "stability_cosine_mean": null,
+      "npmi_mean": 0.571461
+    }
+  },
+  "implementation_scope": {
+    "builder_status": "partial",
+    "supported_variant": "lda_sklearn_online",
+    "notes": "This sweep currently targets the implemented canonical region-document corpus variants and quantization slices."
+  }
+}
