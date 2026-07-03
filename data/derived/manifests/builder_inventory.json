@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-05-03T11:58:47Z",
+  "generated_at": "2026-05-04T03:26:45Z",
   "source": "CAOS LDA HSI master-plan builder catalog aligned to the current repository scripts",
   "version": "0.1.0",
   "thin_slice_goal": [
     "Generate an explicit builder inventory that maps the current repo to the master-plan builder sequence",
     "Write derived/manifests/index.json from curated artifacts rather than letting the web infer structure ad hoc",
     "Treat the current derived tree as transitional until dedicated master-plan builders replace the older reset payload generators"
+  ],
+  "analysis_uplift_priorities": [
+    "Run all scientific builders only from .venv-pipeline with declared dependencies",
+    "Expand corpora toward relevance-first slices: high-variance, boundary-pure, boundary-mixed, HIDSAG region, and measurement-stratified documents",
+    "Promote build_lda_sweep from planned to verified thin slice under the hardened PTM stack",
+    "Add cross-engine topic-model comparison with sklearn, gensim, tomotopy, and BERTopic before widening the long-tail variant catalog",
+    "Treat statistical and external validation as required completion criteria, not as optional polish"
   ],
   "builders": [
     {
@@ -57,7 +64,7 @@
       "writes_derived": [
         "data/derived/representations/"
       ],
-      "notes": "Current repo computes compact PCA/NMF/LDA diagnostics but does not persist them under the master-plan representation contract."
+      "notes": "Current repo computes compact PCA/NMF/LDA diagnostics but does not persist them under the master-plan representation contract. Under the hardened stack this builder should become the entry point for PCA/NMF/ICA plus CAE/VAE latent exports."
     },
     {
       "id": "build_quantization_views",
@@ -87,12 +94,12 @@
       "writes_derived": [
         "data/derived/recipes/"
       ],
-      "notes": "Initial builder slice implemented with magnitude-phrase__pixel, band-frequency__pixel, band-magnitude__pixel, and region-documents over patch_15 and slic_200. Local Parquet corpora plus document/vocabulary sidecars and derived recipe summaries now exist for uniform_per_band_Q16 and quantile_per_band_Q16, but pixel corpora are still capped by deterministic sampling and the broader recipe catalog remains pending."
+      "notes": "Initial builder slice implemented with magnitude-phrase__pixel, band-frequency__pixel, band-magnitude__pixel, and region-documents over patch_15 and slic_200. Local Parquet corpora plus document/vocabulary sidecars and derived recipe summaries now exist for uniform_per_band_Q16 and quantile_per_band_Q16, but pixel corpora are still capped by deterministic sampling and the next priority is to add relevance-first corpus families rather than only more volume."
     },
     {
       "id": "build_lda_sweep",
       "order": 5,
-      "status": "planned",
+      "status": "partial",
       "script": "data-pipeline/build_lda_sweep.py",
       "current_repo_equivalents": [
         "data-pipeline/run_local_core_benchmarks.py"
@@ -103,7 +110,7 @@
       "writes_derived": [
         "data/derived/lda_sweep/"
       ],
-      "notes": "Current local-core benchmarks include compact repeated LDA runs but not the explicit K-by-seed sweep artifacts required by the master plan."
+      "notes": "Current local-core benchmarks include compact repeated LDA runs, and the dedicated builder now exists and has been verified on a narrow slice: salinas-corrected / region-documents__slic_200 / uniform_per_band_Q16 with K=6 and seed=0 writes both local fit artifacts and a derived sweep summary. The broader K-by-seed contract still needs widening and repeated verification across more scopes."
     },
     {
       "id": "build_lda_canonical_fits",
@@ -119,7 +126,7 @@
       "writes_derived": [
         "data/derived/lda_canonical/"
       ],
-      "notes": "Canonical phi/theta outputs and distance matrices are not yet written under the new contract."
+      "notes": "Canonical phi/theta outputs and distance matrices are not yet written under the new contract. After build_lda_sweep is verified, this builder should prioritise sklearn, gensim, tomotopy, and BERTopic adapters before long-tail variants."
     },
     {
       "id": "build_topic_views",

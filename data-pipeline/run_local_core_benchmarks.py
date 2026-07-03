@@ -1,8 +1,10 @@
 """Run local-core topic, clustering, stability, and unmixing benchmarks."""
 from __future__ import annotations
 
+import argparse
 import json
 import sys
+import time
 from collections import Counter
 from datetime import date
 from pathlib import Path
@@ -94,11 +96,29 @@ HIDSAG_SUBSET_REGION_TOPIC_COUNTS = {
     "GEOCHEM": 6,
     "PORPHYRY": 6,
 }
+HIDSAG_SUBSETS = ["MINERAL1", "MINERAL2", "GEOMET", "GEOCHEM", "PORPHYRY"]
+PAYLOAD_SECTION_KEYS = [
+    "labeled_scene_runs",
+    "topic_stability_runs",
+    "unlabeled_scene_runs",
+    "unmixing_runs",
+    "spectral_library_runs",
+    "measured_target_runs",
+]
 
 
 def load_json(path: Path) -> dict:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def canonical_selection(selected: list[str] | None, default_values: list[str]) -> list[str]:
+    if not selected:
+        return list(default_values)
+    seen: set[str] = set()
+    ordered = [value for value in selected if not (value in seen or seen.add(value))]
+    rank = {value: index for index, value in enumerate(default_values)}
+    return sorted(ordered, key=lambda value: rank.get(value, len(default_values)))
 
 
 def normalize_rows01(values: np.ndarray) -> np.ndarray:
@@ -1785,92 +1805,223 @@ def benchmark_hidsag_subset(subset_code: str = "MINERAL2") -> dict[str, object]:
     }
 
 
-def main() -> None:
-    payload = {
-        "source": "Local-first PTM/LDA, clustering, stability, and unmixing benchmarks over real spectral datasets",
-        "generated_at": str(date.today()),
-        "methods": {
-            "representation": "band-frequency count vectors from normalized spectra",
-            "topic_model": "scikit-learn LatentDirichletAllocation",
-            "ptm_supervision_principle": "Topics are treated as latent regime layers. Flat theta-feature models are control baselines only; routed, soft-expert, or hierarchical variants are the canonical supervised PTM targets when available.",
-            "classification_models": [
+def default_methods_payload() -> dict[str, object]:
+    return {
+        "representation": "band-frequency count vectors from normalized spectra",
+        "topic_model": "scikit-learn LatentDirichletAllocation",
+        "ptm_supervision_principle": "Topics are treated as latent regime layers. Flat theta-feature models are control baselines only; routed, soft-expert, or hierarchical variants are the canonical supervised PTM targets when available.",
+        "classification_models": [
+            "raw_logistic_regression",
+            "pca_logistic_regression",
+            "topic_logistic_regression",
+        ],
+        "classification_model_roles": {
+            "raw_logistic_regression": "raw-spectral-baseline",
+            "pca_logistic_regression": "reduced-feature-baseline",
+            "topic_logistic_regression": "flat-topic-control-baseline",
+        },
+        "clustering_baselines": [
+            "raw_kmeans",
+            "raw_gmm",
+            "raw_hierarchical",
+            "topic_kmeans",
+            "topic_gmm",
+            "topic_hierarchical",
+        ],
+        "reference_baselines": [
+            "spectral_angle_mapper",
+        ],
+        "unmixing_baselines": [
+            "nmf",
+        ],
+        "measured_target_models": {
+            "classification": [
                 "raw_logistic_regression",
                 "pca_logistic_regression",
                 "topic_logistic_regression",
+                "cube_topic_logistic_regression",
+                "region_topic_logistic_regression",
             ],
-            "classification_model_roles": {
+            "classification_roles": {
                 "raw_logistic_regression": "raw-spectral-baseline",
                 "pca_logistic_regression": "reduced-feature-baseline",
                 "topic_logistic_regression": "flat-topic-control-baseline",
+                "cube_topic_logistic_regression": "aggregated-topic-control-baseline",
+                "region_topic_logistic_regression": "regional-topic-control-baseline",
             },
-            "clustering_baselines": [
-                "raw_kmeans",
-                "raw_gmm",
-                "raw_hierarchical",
-                "topic_kmeans",
-                "topic_gmm",
-                "topic_hierarchical",
+            "regression": [
+                "raw_ridge_regression",
+                "pls_regression",
+                "topic_mixture_linear_regression",
+                "cube_topic_mixture_linear_regression",
+                "region_topic_mixture_linear_regression",
+                "topic_routed_linear_regression",
             ],
-            "reference_baselines": [
-                "spectral_angle_mapper",
-            ],
-            "unmixing_baselines": [
-                "nmf",
-            ],
-            "measured_target_models": {
-                "classification": [
-                    "raw_logistic_regression",
-                    "pca_logistic_regression",
-                    "topic_logistic_regression",
-                    "cube_topic_logistic_regression",
-                    "region_topic_logistic_regression",
-                ],
-                "classification_roles": {
-                    "raw_logistic_regression": "raw-spectral-baseline",
-                    "pca_logistic_regression": "reduced-feature-baseline",
-                    "topic_logistic_regression": "flat-topic-control-baseline",
-                    "cube_topic_logistic_regression": "aggregated-topic-control-baseline",
-                    "region_topic_logistic_regression": "regional-topic-control-baseline",
-                },
-                "regression": [
-                    "raw_ridge_regression",
-                    "pls_regression",
-                    "topic_mixture_linear_regression",
-                    "cube_topic_mixture_linear_regression",
-                    "region_topic_mixture_linear_regression",
-                    "topic_routed_linear_regression",
-                ],
-                "regression_roles": {
-                    "raw_ridge_regression": "raw-spectral-baseline",
-                    "pls_regression": "latent-linear-baseline",
-                    "topic_mixture_linear_regression": "flat-topic-control-baseline",
-                    "cube_topic_mixture_linear_regression": "aggregated-topic-control-baseline",
-                    "region_topic_mixture_linear_regression": "regional-topic-control-baseline",
-                    "topic_routed_linear_regression": "topic-routed-primary-ptm-model",
-                },
-            },
-            "stability_protocol": {
-                "seeds": TOPIC_STABILITY_SEEDS,
-                "comparison_metric": "aligned topic cosine similarity plus top-token jaccard",
+            "regression_roles": {
+                "raw_ridge_regression": "raw-spectral-baseline",
+                "pls_regression": "latent-linear-baseline",
+                "topic_mixture_linear_regression": "flat-topic-control-baseline",
+                "cube_topic_mixture_linear_regression": "aggregated-topic-control-baseline",
+                "region_topic_mixture_linear_regression": "regional-topic-control-baseline",
+                "topic_routed_linear_regression": "topic-routed-primary-ptm-model",
             },
         },
-        "labeled_scene_runs": [benchmark_labeled_scene(dataset_id) for dataset_id in LABELED_SCENES],
-        "topic_stability_runs": [topic_stability_benchmark(dataset_id) for dataset_id in LABELED_SCENES],
-        "unlabeled_scene_runs": [benchmark_unlabeled_scene(dataset_id) for dataset_id in UNLABELED_SCENES],
-        "unmixing_runs": [benchmark_unmixing_scene(dataset_id) for dataset_id in UNMIXING_SCENES],
-        "spectral_library_runs": [benchmark_spectral_library()],
-        "measured_target_runs": [
-            benchmark_hidsag_subset("MINERAL1"),
-            benchmark_hidsag_subset("MINERAL2"),
-            benchmark_hidsag_subset("GEOMET"),
-            benchmark_hidsag_subset("GEOCHEM"),
-            benchmark_hidsag_subset("PORPHYRY"),
-        ],
+        "stability_protocol": {
+            "seeds": TOPIC_STABILITY_SEEDS,
+            "comparison_metric": "aligned topic cosine similarity plus top-token jaccard",
+        },
     }
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with OUTPUT_PATH.open("w", encoding="utf-8") as handle:
+
+
+def empty_payload() -> dict[str, object]:
+    return {
+        "source": "Local-first PTM/LDA, clustering, stability, and unmixing benchmarks over real spectral datasets",
+        "generated_at": str(date.today()),
+        "methods": default_methods_payload(),
+        "labeled_scene_runs": [],
+        "topic_stability_runs": [],
+        "unlabeled_scene_runs": [],
+        "unmixing_runs": [],
+        "spectral_library_runs": [],
+        "measured_target_runs": [],
+    }
+
+
+def merged_base_payload(base_path: Path | None) -> tuple[dict[str, object], bool]:
+    payload = empty_payload()
+    if base_path is None or not base_path.exists():
+        return payload, False
+    existing = load_json(base_path)
+    for key in PAYLOAD_SECTION_KEYS:
+        value = existing.get(key)
+        if isinstance(value, list):
+            payload[key] = value
+    return payload, True
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--section",
+        action="append",
+        choices=PAYLOAD_SECTION_KEYS,
+        help="Payload section to refresh. Repeat to build more than one section. Defaults to all sections.",
+    )
+    parser.add_argument(
+        "--labeled-scene",
+        dest="labeled_scenes",
+        action="append",
+        choices=LABELED_SCENES,
+        help="Limit labeled-scene and topic-stability sections to selected datasets.",
+    )
+    parser.add_argument(
+        "--unlabeled-scene",
+        dest="unlabeled_scenes",
+        action="append",
+        choices=UNLABELED_SCENES,
+        help="Limit unlabeled-scene runs to selected datasets.",
+    )
+    parser.add_argument(
+        "--unmixing-scene",
+        dest="unmixing_scenes",
+        action="append",
+        choices=UNMIXING_SCENES,
+        help="Limit unmixing runs to selected datasets.",
+    )
+    parser.add_argument(
+        "--hidsag-subset",
+        dest="hidsag_subsets",
+        action="append",
+        choices=HIDSAG_SUBSETS,
+        help="Limit measured-target runs to selected HIDSAG subsets.",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUTPUT_PATH,
+        help=f"Output payload path. Defaults to {OUTPUT_PATH}.",
+    )
+    parser.add_argument(
+        "--base-payload",
+        type=Path,
+        default=None,
+        help="Existing payload used to preserve untouched sections during partial refreshes. Defaults to --output.",
+    )
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="Ignore any existing payload and write only the selected sections plus current metadata.",
+    )
+    parser.add_argument(
+        "--metadata-only",
+        action="store_true",
+        help="Refresh source/generated_at/method metadata while preserving all existing run sections.",
+    )
+    return parser.parse_args()
+
+
+def build_selected_sections(args: argparse.Namespace) -> dict[str, list[dict[str, object]]]:
+    sections = canonical_selection(args.section, PAYLOAD_SECTION_KEYS)
+    labeled_scenes = canonical_selection(args.labeled_scenes, LABELED_SCENES)
+    unlabeled_scenes = canonical_selection(args.unlabeled_scenes, UNLABELED_SCENES)
+    unmixing_scenes = canonical_selection(args.unmixing_scenes, UNMIXING_SCENES)
+    hidsag_subsets = canonical_selection(args.hidsag_subsets, HIDSAG_SUBSETS)
+    builders = {
+        "labeled_scene_runs": lambda: [benchmark_labeled_scene(dataset_id) for dataset_id in labeled_scenes],
+        "topic_stability_runs": lambda: [topic_stability_benchmark(dataset_id) for dataset_id in labeled_scenes],
+        "unlabeled_scene_runs": lambda: [benchmark_unlabeled_scene(dataset_id) for dataset_id in unlabeled_scenes],
+        "unmixing_runs": lambda: [benchmark_unmixing_scene(dataset_id) for dataset_id in unmixing_scenes],
+        "spectral_library_runs": lambda: [benchmark_spectral_library()],
+        "measured_target_runs": lambda: [benchmark_hidsag_subset(subset_code) for subset_code in hidsag_subsets],
+    }
+    selected_payload: dict[str, list[dict[str, object]]] = {}
+    for section in sections:
+        started_at = time.perf_counter()
+        print(f"[benchmarks] building {section}")
+        selected_payload[section] = builders[section]()
+        elapsed = time.perf_counter() - started_at
+        print(
+            f"[benchmarks] built {section} in {elapsed:.1f}s "
+            f"({len(selected_payload[section])} run(s))"
+        )
+    return selected_payload
+
+
+def main() -> None:
+    args = parse_args()
+    if args.metadata_only and any(
+        [
+            args.section,
+            args.labeled_scenes,
+            args.unlabeled_scenes,
+            args.unmixing_scenes,
+            args.hidsag_subsets,
+            args.fresh,
+        ]
+    ):
+        raise ValueError("--metadata-only cannot be combined with section, dataset filters, or --fresh")
+    base_path = None if args.fresh else (args.base_payload or args.output)
+    payload, merged_existing = merged_base_payload(base_path)
+    if args.metadata_only and not merged_existing:
+        raise FileNotFoundError(
+            f"--metadata-only requires an existing payload to merge from, but none was found at {base_path}"
+        )
+    if args.section and not merged_existing and not args.fresh:
+        print(
+            f"[benchmarks] base payload not found at {base_path}; "
+            "unselected sections will remain empty",
+            file=sys.stderr,
+        )
+    payload["generated_at"] = str(date.today())
+    payload["methods"] = default_methods_payload()
+    if not args.metadata_only:
+        payload.update(build_selected_sections(args))
+    else:
+        print("[benchmarks] refreshed metadata only")
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    with args.output.open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2)
-    print(f"Wrote local core benchmarks to {OUTPUT_PATH}")
+    print(f"Wrote local core benchmarks to {args.output}")
 
 
 if __name__ == "__main__":

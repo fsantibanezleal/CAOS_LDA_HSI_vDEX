@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-03T11:58:47Z",
-  "git_sha": null,
+  "generated_at": "2026-05-04T03:26:45Z",
+  "git_sha": "60fe3b1",
   "builders": {
     "build_eda_views": {
       "version": "0.1.0",
@@ -39,7 +39,7 @@
     },
     "build_lda_sweep": {
       "version": "0.1.0",
-      "status": "planned",
+      "status": "partial",
       "script_path": "data-pipeline/build_lda_sweep.py",
       "ran_at": null,
       "duration_s": null
@@ -139,7 +139,7 @@
       "version": "0.1.0",
       "status": "implemented",
       "script_path": "data-pipeline/curate_for_web.py",
-      "ran_at": "2026-05-03T11:58:47Z",
+      "ran_at": "2026-05-04T03:26:45Z",
       "duration_s": 0.0
     }
   },
@@ -298,9 +298,9 @@
       "id": "core.local_core_benchmarks",
       "path": "data/derived/core/local_core_benchmarks.json",
       "format": "json",
-      "bytes": 2021411,
+      "bytes": 2022750,
       "schema": null,
-      "input_hash": "sha256:f56ff79180396ebee043e1d4ea9d1290dbbeb646728a684ff7e1980a515c854d"
+      "input_hash": "sha256:c5ab25d6a708081a52ccb97e5084a780c77c88eedff6723aa2e31374e4605afc"
     },
     {
       "id": "core.local_dataset_inventory",
@@ -322,25 +322,25 @@
       "id": "eda.per_scene.botswana",
       "path": "data/derived/eda/per_scene/botswana.json",
       "format": "json",
-      "bytes": 309473,
+      "bytes": 309186,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:032f06ffb6599639aae73869c6343df2d9df37ae21115f61d25208097c7ae657"
+      "input_hash": "sha256:7d1b43efcb5d9ab1eb2040b8707045f830f70086714c6031634a878f1d540343"
     },
     {
       "id": "eda.per_scene.cuprite-aviris-reflectance",
       "path": "data/derived/eda/per_scene/cuprite-aviris-reflectance.json",
       "format": "json",
-      "bytes": 54676,
+      "bytes": 54678,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:c9122faa5f09e6d6ebeb68e4807e9d7d0546a317bdfe919fc618d8690b64c870"
+      "input_hash": "sha256:26f940bf53829e0b8eb19865a60733c889d51a14aeb8b3327418282405bcfe85"
     },
     {
       "id": "eda.per_scene.indian-pines-corrected",
       "path": "data/derived/eda/per_scene/indian-pines-corrected.json",
       "format": "json",
-      "bytes": 483866,
+      "bytes": 483752,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:76738037c9d66d9fbe1e05725979222a1a053921e3f8dd95609555d7b1330b28"
+      "input_hash": "sha256:9d0a9c31b3719da71d22ca39ec5c72d4bb1620fdc15253f4dd29cfd905946c76"
     },
     {
       "id": "eda.per_scene.jasper-ridge-unmixing-roi",
@@ -354,49 +354,49 @@
       "id": "eda.per_scene.kennedy-space-center",
       "path": "data/derived/eda/per_scene/kennedy-space-center.json",
       "format": "json",
-      "bytes": 322005,
+      "bytes": 321842,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:135a56d3dd17e7cbc5f5c277887b29b3228dd6d0cc7c079177447db722d4f0c0"
+      "input_hash": "sha256:292e334b13d21d15acf70057b2fce4669a8a0971e62c7e43fdfdb36fc0be7925"
     },
     {
       "id": "eda.per_scene.pavia-university",
       "path": "data/derived/eda/per_scene/pavia-university.json",
       "format": "json",
-      "bytes": 149767,
+      "bytes": 149747,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:906bb7ec3da2e965bef60f095c76c58e129742df96ab70ffd0e7eb70accbc6d8"
+      "input_hash": "sha256:d6fa411c0b73fa400488bf04aafcc4b4be986b54ef87904c5fecb6961ef6bf3d"
     },
     {
       "id": "eda.per_scene.salinas-a-corrected",
       "path": "data/derived/eda/per_scene/salinas-a-corrected.json",
       "format": "json",
-      "bytes": 198254,
+      "bytes": 198231,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:c9328cebd0697237fbb1ff192e1318b25da0d4ff15fa4b36032e510d6db3f2a4"
+      "input_hash": "sha256:69c1abbc0cf7416793340203e497ef6dd14d4a980016082c3ab88ed9d07b9106"
     },
     {
       "id": "eda.per_scene.salinas-corrected",
       "path": "data/derived/eda/per_scene/salinas-corrected.json",
       "format": "json",
-      "bytes": 466749,
+      "bytes": 466708,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:cd99c853fab370c34bdd55424806f18d157d391f3d0d6f7cd8dcab2404643142"
+      "input_hash": "sha256:ef6b1a87b7f35f14a0f2f5c7f2013c21d3f989d9b726a7e1cf9bc38b48bc15d9"
     },
     {
       "id": "eda.per_scene.samson-unmixing-roi",
       "path": "data/derived/eda/per_scene/samson-unmixing-roi.json",
       "format": "json",
-      "bytes": 38534,
+      "bytes": 38535,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:f5e603f8d07b9b1037c8f4492e471812930d6766d1785df2fef316986a76e212"
+      "input_hash": "sha256:d9bfa3165bec423a6660179fea3a4b4e98e547b1956440b4aefeb637dbcf728b"
     },
     {
       "id": "eda.per_scene.urban-unmixing-roi",
       "path": "data/derived/eda/per_scene/urban-unmixing-roi.json",
       "format": "json",
-      "bytes": 37759,
+      "bytes": 37747,
       "schema": "output-schemas/eda_per_scene.schema.json",
-      "input_hash": "sha256:0f5a55e07ae0b2c29ba74bf3d24725214b391fa5659208a480e6a5eeb23c7fc5"
+      "input_hash": "sha256:cfec183e662bb2baf5c315588aae0bd585f656fb13164d92ec0222ac41a8e852"
     },
     {
       "id": "field.field_samples",
@@ -1079,12 +1079,20 @@
       "input_hash": "sha256:86a26f587852817b8f63aa82b3a5431ba57fc408b474c0e2f8029d1f85cc43e2"
     },
     {
+      "id": "lda_sweep.region-documents__slic_200__uniform_per_band_Q16.salinas-corrected",
+      "path": "data/derived/lda_sweep/region-documents__slic_200__uniform_per_band_Q16/salinas-corrected.json",
+      "format": "json",
+      "bytes": 1903,
+      "schema": null,
+      "input_hash": "sha256:ffd9ad5eaaeec1426725171e946c9c6a21fde52174fdc037129e9d21f88f0848"
+    },
+    {
       "id": "manifests.builder_inventory",
       "path": "data/derived/manifests/builder_inventory.json",
       "format": "json",
-      "bytes": 11805,
+      "bytes": 12980,
       "schema": null,
-      "input_hash": "sha256:262c385dbf7fa613bbd893e9d131acf8f59eb0ae0463e2779f0956bdd2b2902b"
+      "input_hash": "sha256:e5b2739316a6a5d158e73d348159a47a4e15e0a8784f7190b8e2f1abc303c6b5"
     },
     {
       "id": "manifests.web_contract",
@@ -1092,7 +1100,7 @@
       "format": "json",
       "bytes": 2004,
       "schema": null,
-      "input_hash": "sha256:6f63150c82365f145d461d0b4467838b85650a8e82cf542b8fe074933e396bec"
+      "input_hash": "sha256:b7609e480db8643e9c2d796acb5ebb39a609ea9f625bc89b115f1c7e5b9874a2"
     },
     {
       "id": "quantization.quantile_global_Q16.botswana",

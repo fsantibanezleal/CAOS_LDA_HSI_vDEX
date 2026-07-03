@@ -1,5 +1,8 @@
 # CAOS_LDA_HSI_vDEX
 
+[![License](https://img.shields.io/github/license/fsantibanezleal/CAOS_LDA_HSI_vDEX)](LICENSE)
+[![Version](https://img.shields.io/github/v/tag/fsantibanezleal/CAOS_LDA_HSI_vDEX?label=version&sort=semver)](https://github.com/fsantibanezleal/CAOS_LDA_HSI_vDEX/tags)
+
 ## Important
 
 > This repository is an alternative exploratory analysis.

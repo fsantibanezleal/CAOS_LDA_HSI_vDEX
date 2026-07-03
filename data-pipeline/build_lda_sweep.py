@@ -228,9 +228,13 @@ def topic_npmi_umass(phi: np.ndarray, presence: np.ndarray, co: np.ndarray, doc_
                 p_j = presence[j] / doc_count
                 p_ij = co[i, j] / doc_count
                 if p_i > 0 and p_j > 0 and p_ij > 0:
-                    pmi = np.log(p_ij / (p_i * p_j))
-                    npmi = pmi / (-np.log(p_ij))
-                    npmi_values.append(float(npmi))
+                    if p_ij >= 1.0:
+                        npmi = 1.0
+                    else:
+                        pmi = np.log(p_ij / (p_i * p_j))
+                        npmi = pmi / (-np.log(p_ij))
+                    if np.isfinite(npmi):
+                        npmi_values.append(float(npmi))
                 denom = max(presence[j], 1.0)
                 umass_values.append(float(np.log((co[i, j] + 1.0) / denom)))
         topic_npmis.append(float(np.mean(npmi_values)) if npmi_values else 0.0)
